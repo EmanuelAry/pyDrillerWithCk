@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.9.8" sequence="0" timestamp="1780864284426" analysisTimestamp="1780864286193" release="">
+  <Project projectName="">
+    <Jar>C:\Users\Emanuel\Documents\pt-BR\pyDriller\bugs_archive\downloads\monitor-1.3.0-alpha04.jar</Jar>
+    <Plugin id="com.h3xstream.findsecbugs" enabled="true"/>
+  </Project>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="98932cfe7a7c11ef8b3837e56d5c6e1f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.internal.platform.ServiceLoaderWrapper.loadSingleService(Class, ServiceLoaderWrapper$Factory) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.internal.platform.ServiceLoaderWrapper" primary="true">
+      <SourceLine classname="androidx.test.internal.platform.ServiceLoaderWrapper" start="33" end="76" sourcefile="ServiceLoaderWrapper.java" sourcepath="androidx/test/internal/platform/ServiceLoaderWrapper.java">
+        <Message>At ServiceLoaderWrapper.java:[lines 33-76]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.platform.ServiceLoaderWrapper</Message>
+    </Class>
+    <Method classname="androidx.test.internal.platform.ServiceLoaderWrapper" name="loadSingleService" signature="(Ljava/lang/Class;Landroidx/test/internal/platform/ServiceLoaderWrapper$Factory;)Ljava/lang/Object;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.platform.ServiceLoaderWrapper" start="69" end="76" startBytecode="0" endBytecode="269" sourcefile="ServiceLoaderWrapper.java" sourcepath="androidx/test/internal/platform/ServiceLoaderWrapper.java"/>
+      <Message>In method androidx.test.internal.platform.ServiceLoaderWrapper.loadSingleService(Class, ServiceLoaderWrapper$Factory)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.platform.ServiceLoaderWrapper" primary="true" start="76" end="76" startBytecode="71" endBytecode="71" sourcefile="ServiceLoaderWrapper.java" sourcepath="androidx/test/internal/platform/ServiceLoaderWrapper.java">
+      <Message>At ServiceLoaderWrapper.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_BROADCAST" priority="2" rank="12" abbrev="SECBROAD" category="SECURITY" instanceHash="cbb5d711e1a0a6869de3a553e5288f1e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="276">
+    <ShortMessage>Broadcast (Android)</ShortMessage>
+    <LongMessage>Broadcast intents could be received by a malicious application</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" classAnnotationNames="androidx.test.annotation.Beta">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="77" end="275" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 77-275]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection" name="init" signature="(Landroid/app/Instrumentation;Landroidx/test/runner/MonitoringInstrumentation$ActivityFinisher;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="154" end="178" startBytecode="0" endBytecode="374" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method androidx.test.internal.runner.InstrumentationConnection.init(Instrumentation, MonitoringInstrumentation$ActivityFinisher)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" start="171" end="171" startBytecode="116" endBytecode="116" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 171]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="662201727f663392bc13443c3020b079" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.internal.runner.InstrumentationConnection.registerClient(String, Messenger) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" classAnnotationNames="androidx.test.annotation.Beta">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="77" end="275" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 77-275]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection" name="registerClient" signature="(Ljava/lang/String;Landroid/os/Messenger;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="239" end="247" startBytecode="0" endBytecode="273" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method androidx.test.internal.runner.InstrumentationConnection.registerClient(String, Messenger)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" start="240" end="240" startBytecode="45" endBytecode="45" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 240]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="5c3704d52a5cc354fee9fcd4daf50cad" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.internal.runner.InstrumentationConnection.unregisterClient(String, Messenger) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" classAnnotationNames="androidx.test.annotation.Beta">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="77" end="275" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 77-275]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection" name="unregisterClient" signature="(Ljava/lang/String;Landroid/os/Messenger;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="267" end="275" startBytecode="0" endBytecode="273" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method androidx.test.internal.runner.InstrumentationConnection.unregisterClient(String, Messenger)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" start="268" end="268" startBytecode="45" endBytecode="45" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 268]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" instanceHash="ea43451fb965c2aa3077f39dcda17cd9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="366">
+    <ShortMessage>Inconsistent synchronization</ShortMessage>
+    <LongMessage>Inconsistent synchronization of androidx.test.internal.runner.InstrumentationConnection.incomingHandler; locked 90% of time</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" classAnnotationNames="androidx.test.annotation.Beta">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="77" end="275" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 77-275]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection</Message>
+    </Class>
+    <Field classname="androidx.test.internal.runner.InstrumentationConnection" name="incomingHandler" signature="Landroidx/test/internal/runner/InstrumentationConnection$IncomingHandler;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>In InstrumentationConnection.java</Message>
+      </SourceLine>
+      <Message>Field androidx.test.internal.runner.InstrumentationConnection.incomingHandler</Message>
+    </Field>
+    <Int value="90" role="INT_SYNC_PERCENT">
+      <Message>Synchronized 90% of the time</Message>
+    </Int>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection$MessengerReceiver" primary="true" start="294" end="294" startBytecode="66" endBytecode="66" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_UNSYNC_ACCESS">
+      <Message>Unsynchronized access at InstrumentationConnection.java:[line 294]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection$MessengerReceiver" start="296" end="296" startBytecode="86" endBytecode="86" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_UNSYNC_ACCESS">
+      <Message>Unsynchronized access at InstrumentationConnection.java:[line 296]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="187" end="187" startBytecode="12" endBytecode="12" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 187]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="189" end="189" startBytecode="19" endBytecode="19" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 189]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="198" end="198" startBytecode="47" endBytecode="47" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 198]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="257" end="257" startBytecode="1" endBytecode="1" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 257]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="156" end="156" startBytecode="13" endBytecode="13" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 156]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="161" end="161" startBytecode="53" endBytecode="53" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 161]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="166" end="166" startBytecode="85" endBytecode="85" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 166]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="239" end="239" startBytecode="1" endBytecode="1" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 239]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="244" end="244" startBytecode="75" endBytecode="75" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 244]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="246" end="246" startBytecode="92" endBytecode="92" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 246]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="207" end="207" startBytecode="1" endBytecode="1" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 207]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="211" end="211" startBytecode="31" endBytecode="31" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 211]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="213" end="213" startBytecode="40" endBytecode="40" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 213]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="214" end="214" startBytecode="51" endBytecode="51" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 214]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="218" end="218" startBytecode="81" endBytecode="81" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 218]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="228" end="228" startBytecode="221" endBytecode="221" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 228]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="228" end="228" startBytecode="148" endBytecode="148" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 228]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="228" end="228" startBytecode="208" endBytecode="208" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 228]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="267" end="267" startBytecode="1" endBytecode="1" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 267]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="272" end="272" startBytecode="75" endBytecode="75" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 272]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="274" end="274" startBytecode="92" endBytecode="92" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at InstrumentationConnection.java:[line 274]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SING_SINGLETON_HAS_NONPRIVATE_CONSTRUCTOR" priority="2" rank="7" abbrev="SING" category="CORRECTNESS" instanceHash="4e860516e16eefc0ba8659606333479e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="543">
+    <ShortMessage>Class using singleton design pattern has non-private constructor.</ShortMessage>
+    <LongMessage>Class (androidx.test.internal.runner.InstrumentationConnection) using singleton design pattern has non-private constructor.</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" classAnnotationNames="androidx.test.annotation.Beta">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="77" end="275" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 77-275]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection" name="&lt;init&gt;" signature="(Landroid/content/Context;)V" isStatic="false" primary="true" classAnnotationNames="androidx.annotation.VisibleForTesting">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="123" end="125" startBytecode="0" endBytecode="93" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method new androidx.test.internal.runner.InstrumentationConnection(Context)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="123" end="125" startBytecode="0" endBytecode="93" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java" synthetic="true">
+      <Message>At InstrumentationConnection.java:[lines 123-125]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SSD_DO_NOT_USE_INSTANCE_LOCK_ON_SHARED_STATIC_DATA" priority="2" rank="14" abbrev="SSD" category="MT_CORRECTNESS" instanceHash="1d48607ff0052bde092c7e1b2b5ef71a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="667">
+    <ShortMessage>Instance level lock was used on a shared static data</ShortMessage>
+    <LongMessage>Static field &quot;activityFinisher&quot; is modified by an instance level synchronized method.</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" classAnnotationNames="androidx.test.annotation.Beta">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="77" end="275" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 77-275]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection" name="init" signature="(Landroid/app/Instrumentation;Landroidx/test/runner/MonitoringInstrumentation$ActivityFinisher;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="154" end="178" startBytecode="0" endBytecode="374" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method androidx.test.internal.runner.InstrumentationConnection.init(Instrumentation, MonitoringInstrumentation$ActivityFinisher)</Message>
+    </Method>
+    <String value="activityFinisher">
+      <Message>Value activityFinisher</Message>
+    </String>
+    <String value="synchronized method">
+      <Message>Value synchronized method</Message>
+    </String>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" start="158" end="158" startBytecode="24" endBytecode="24" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 158]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SSD_DO_NOT_USE_INSTANCE_LOCK_ON_SHARED_STATIC_DATA" priority="2" rank="14" abbrev="SSD" category="MT_CORRECTNESS" instanceHash="cf27a7cbc44c6f6e7649e2ef06d898e9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="667">
+    <ShortMessage>Instance level lock was used on a shared static data</ShortMessage>
+    <LongMessage>Static field &quot;instrumentation&quot; is modified by an instance level synchronized method.</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" classAnnotationNames="androidx.test.annotation.Beta">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="77" end="275" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 77-275]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection" name="init" signature="(Landroid/app/Instrumentation;Landroidx/test/runner/MonitoringInstrumentation$ActivityFinisher;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="154" end="178" startBytecode="0" endBytecode="374" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method androidx.test.internal.runner.InstrumentationConnection.init(Instrumentation, MonitoringInstrumentation$ActivityFinisher)</Message>
+    </Method>
+    <String value="instrumentation">
+      <Message>Value instrumentation</Message>
+    </String>
+    <String value="synchronized method">
+      <Message>Value synchronized method</Message>
+    </String>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" start="157" end="157" startBytecode="20" endBytecode="20" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 157]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="afd0b8121dc8b9cc48d34c9a91d16575" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field androidx.test.internal.runner.InstrumentationConnection.activityFinisher from instance method androidx.test.internal.runner.InstrumentationConnection.init(Instrumentation, MonitoringInstrumentation$ActivityFinisher)</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" classAnnotationNames="androidx.test.annotation.Beta">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="77" end="275" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 77-275]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection" name="init" signature="(Landroid/app/Instrumentation;Landroidx/test/runner/MonitoringInstrumentation$ActivityFinisher;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="154" end="178" startBytecode="0" endBytecode="374" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method androidx.test.internal.runner.InstrumentationConnection.init(Instrumentation, MonitoringInstrumentation$ActivityFinisher)</Message>
+    </Method>
+    <Field classname="androidx.test.internal.runner.InstrumentationConnection" name="activityFinisher" signature="Landroidx/test/runner/MonitoringInstrumentation$ActivityFinisher;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>In InstrumentationConnection.java</Message>
+      </SourceLine>
+      <Message>Field androidx.test.internal.runner.InstrumentationConnection.activityFinisher</Message>
+    </Field>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" start="158" end="158" startBytecode="24" endBytecode="24" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 158]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="1fbc35f268b74de8c047eb9499d1e7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field androidx.test.internal.runner.InstrumentationConnection.instrumentation from instance method androidx.test.internal.runner.InstrumentationConnection.init(Instrumentation, MonitoringInstrumentation$ActivityFinisher)</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" classAnnotationNames="androidx.test.annotation.Beta">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="77" end="275" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 77-275]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection" name="init" signature="(Landroid/app/Instrumentation;Landroidx/test/runner/MonitoringInstrumentation$ActivityFinisher;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" start="154" end="178" startBytecode="0" endBytecode="374" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method androidx.test.internal.runner.InstrumentationConnection.init(Instrumentation, MonitoringInstrumentation$ActivityFinisher)</Message>
+    </Method>
+    <Field classname="androidx.test.internal.runner.InstrumentationConnection" name="instrumentation" signature="Landroid/app/Instrumentation;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>In InstrumentationConnection.java</Message>
+      </SourceLine>
+      <Message>Field androidx.test.internal.runner.InstrumentationConnection.instrumentation</Message>
+    </Field>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection" primary="true" start="157" end="157" startBytecode="20" endBytecode="20" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 157]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="CT_CONSTRUCTOR_THROW" priority="2" rank="16" abbrev="CT" category="BAD_PRACTICE" instanceHash="8460ef989e53a4fca04e24c677c46600" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Be wary of letting constructors throw exceptions.</ShortMessage>
+    <LongMessage>Exception thrown in class androidx.test.internal.runner.InstrumentationConnection$IncomingHandler at new androidx.test.internal.runner.InstrumentationConnection$IncomingHandler(Looper) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" primary="true" classAnnotationNames="androidx.annotation.VisibleForTesting">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" start="307" end="669" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 307-669]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection$IncomingHandler</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" name="&lt;init&gt;" signature="(Landroid/os/Looper;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" start="328" end="334" startBytecode="0" endBytecode="176" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method new androidx.test.internal.runner.InstrumentationConnection$IncomingHandler(Looper)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" primary="true" start="330" end="330" startBytecode="73" endBytecode="73" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 330]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" start="330" end="330" startBytecode="73" endBytecode="73" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 330]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="2b2fcfd5310c5eac1102c5fbace58c67" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.internal.runner.InstrumentationConnection$IncomingHandler.unregisterClient(String, Messenger) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" primary="true" classAnnotationNames="androidx.annotation.VisibleForTesting">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" start="307" end="669" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+        <Message>At InstrumentationConnection.java:[lines 307-669]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.runner.InstrumentationConnection$IncomingHandler</Message>
+    </Class>
+    <Method classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" name="unregisterClient" signature="(Ljava/lang/String;Landroid/os/Messenger;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" start="636" end="663" startBytecode="0" endBytecode="386" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java"/>
+      <Message>In method androidx.test.internal.runner.InstrumentationConnection$IncomingHandler.unregisterClient(String, Messenger)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" primary="true" start="642" end="642" startBytecode="77" endBytecode="77" sourcefile="InstrumentationConnection.java" sourcepath="androidx/test/internal/runner/InstrumentationConnection.java">
+      <Message>At InstrumentationConnection.java:[line 642]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="FORMAT_STRING_MANIPULATION" priority="3" rank="15" abbrev="SECFSM" category="SECURITY" instanceHash="d0f1ff93ef863e4cde5395605fe30eba" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="134">
+    <ShortMessage>Format String Manipulation</ShortMessage>
+    <LongMessage>Format string argument allowing user controlled parameters</LongMessage>
+    <Class classname="androidx.test.internal.util.LogUtil" primary="true">
+      <SourceLine classname="androidx.test.internal.util.LogUtil" start="22" end="83" sourcefile="LogUtil.java" sourcepath="androidx/test/internal/util/LogUtil.java">
+        <Message>At LogUtil.java:[lines 22-83]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.LogUtil</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.LogUtil" name="logDebug" signature="(Ljava/lang/String;Landroidx/test/internal/util/LogUtil$Supplier;[Ljava/lang/Object;)V" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.util.LogUtil" start="40" end="43" startBytecode="0" endBytecode="123" sourcefile="LogUtil.java" sourcepath="androidx/test/internal/util/LogUtil.java"/>
+      <Message>In method androidx.test.internal.util.LogUtil.logDebug(String, LogUtil$Supplier, Object[])</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.LogUtil" primary="true" start="41" end="41" startBytecode="19" endBytecode="19" sourcefile="LogUtil.java" sourcepath="androidx/test/internal/util/LogUtil.java">
+      <Message>At LogUtil.java:[line 41]</Message>
+    </SourceLine>
+    <String value="java/lang/String.format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" role="Sink method">
+      <Message>Sink method java/lang/String.format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;</Message>
+    </String>
+    <String value="1" role="Sink parameter">
+      <Message>Sink parameter 1</Message>
+    </String>
+    <String value="androidx/test/internal/util/LogUtil$Supplier.get()Ljava/lang/Object;" role="Unknown source">
+      <Message>Unknown source androidx/test/internal/util/LogUtil$Supplier.get()Ljava/lang/Object;</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="3" rank="15" abbrev="UwF" category="CORRECTNESS" instanceHash="6c7db2199a8a4f155a64345cb7356bcd" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Field only ever set to null</ShortMessage>
+    <LongMessage>Field only ever set to null: androidx.test.internal.util.LogUtil.myProcName</LongMessage>
+    <Class classname="androidx.test.internal.util.LogUtil" primary="true">
+      <SourceLine classname="androidx.test.internal.util.LogUtil" start="22" end="83" sourcefile="LogUtil.java" sourcepath="androidx/test/internal/util/LogUtil.java">
+        <Message>At LogUtil.java:[lines 22-83]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.LogUtil</Message>
+    </Class>
+    <Field classname="androidx.test.internal.util.LogUtil" name="myProcName" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.util.LogUtil" sourcefile="LogUtil.java" sourcepath="androidx/test/internal/util/LogUtil.java">
+        <Message>In LogUtil.java</Message>
+      </SourceLine>
+      <Message>Field androidx.test.internal.util.LogUtil.myProcName</Message>
+    </Field>
+    <SourceLine classname="androidx.test.internal.util.LogUtil" primary="true" start="54" end="54" startBytecode="0" endBytecode="0" sourcefile="LogUtil.java" sourcepath="androidx/test/internal/util/LogUtil.java">
+      <Message>At LogUtil.java:[line 54]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="204f8f2e7593a545475de2e58ba03b56" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="173">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in androidx.test.internal.util.ProcSummary.readToString(File): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="androidx.test.internal.util.ProcSummary" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary" start="27" end="215" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+        <Message>At ProcSummary.java:[lines 27-215]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.ProcSummary</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.ProcSummary" name="readToString" signature="(Ljava/io/File;)Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary" start="68" end="91" startBytecode="0" endBytecode="552" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java"/>
+      <Message>In method androidx.test.internal.util.ProcSummary.readToString(File)</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="82" end="85" startBytecode="0" endBytecode="93" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.ProcSummary" primary="true" start="72" end="72" startBytecode="28" endBytecode="28" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+      <Message>At ProcSummary.java:[line 72]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="3" rank="15" abbrev="SECPTI" category="SECURITY" instanceHash="6593fde814df00f3f7994b16f701aad" instanceOccurrenceNum="0" instanceOccurrenceMax="2" cweid="22">
+    <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
+    <LongMessage>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input</LongMessage>
+    <Class classname="androidx.test.internal.util.ProcSummary" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary" start="27" end="215" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+        <Message>At ProcSummary.java:[lines 27-215]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.ProcSummary</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.ProcSummary" name="summarize" signature="(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary" start="53" end="64" startBytecode="0" endBytecode="213" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java"/>
+      <Message>In method androidx.test.internal.util.ProcSummary.summarize(String)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.ProcSummary" primary="true" start="53" end="53" startBytecode="11" endBytecode="11" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+      <Message>At ProcSummary.java:[line 53]</Message>
+    </SourceLine>
+    <String value="java/io/File.&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V" role="Sink method">
+      <Message>Sink method java/io/File.&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V</Message>
+    </String>
+    <String value="0" role="Sink parameter">
+      <Message>Sink parameter 0</Message>
+    </String>
+    <String value="androidx/test/internal/util/ProcSummary.summarize(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary; parameter 0" role="Unknown source">
+      <Message>Unknown source androidx/test/internal/util/ProcSummary.summarize(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary; parameter 0</Message>
+    </String>
+    <String value="detected only with safe arguments" role="Method usage">
+      <Message>Method usage detected only with safe arguments</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="3" rank="15" abbrev="SECPTI" category="SECURITY" instanceHash="6593fde814df00f3f7994b16f701aad" instanceOccurrenceNum="1" instanceOccurrenceMax="2" cweid="22">
+    <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
+    <LongMessage>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input</LongMessage>
+    <Class classname="androidx.test.internal.util.ProcSummary" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary" start="27" end="215" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+        <Message>At ProcSummary.java:[lines 27-215]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.ProcSummary</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.ProcSummary" name="summarize" signature="(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary" start="53" end="64" startBytecode="0" endBytecode="213" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java"/>
+      <Message>In method androidx.test.internal.util.ProcSummary.summarize(String)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.ProcSummary" primary="true" start="57" end="57" startBytecode="36" endBytecode="36" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+      <Message>At ProcSummary.java:[line 57]</Message>
+    </SourceLine>
+    <String value="java/io/File.&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V" role="Sink method">
+      <Message>Sink method java/io/File.&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V</Message>
+    </String>
+    <String value="0" role="Sink parameter">
+      <Message>Sink parameter 0</Message>
+    </String>
+    <String value="androidx/test/internal/util/ProcSummary.summarize(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary; parameter 0" role="Unknown source">
+      <Message>Unknown source androidx/test/internal/util/ProcSummary.summarize(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary; parameter 0</Message>
+    </String>
+    <String value="detected only with safe arguments" role="Method usage">
+      <Message>Method usage detected only with safe arguments</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="3" rank="15" abbrev="SECPTI" category="SECURITY" instanceHash="6593fde814df00f3f7994b16f701aad" instanceOccurrenceNum="2" instanceOccurrenceMax="2" cweid="22">
+    <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
+    <LongMessage>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input</LongMessage>
+    <Class classname="androidx.test.internal.util.ProcSummary" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary" start="27" end="215" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+        <Message>At ProcSummary.java:[lines 27-215]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.ProcSummary</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.ProcSummary" name="summarize" signature="(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary" start="53" end="64" startBytecode="0" endBytecode="213" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java"/>
+      <Message>In method androidx.test.internal.util.ProcSummary.summarize(String)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.ProcSummary" primary="true" start="61" end="61" startBytecode="62" endBytecode="62" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+      <Message>At ProcSummary.java:[line 61]</Message>
+    </SourceLine>
+    <String value="java/io/File.&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V" role="Sink method">
+      <Message>Sink method java/io/File.&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V</Message>
+    </String>
+    <String value="0" role="Sink parameter">
+      <Message>Sink parameter 0</Message>
+    </String>
+    <String value="androidx/test/internal/util/ProcSummary.summarize(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary; parameter 0" role="Unknown source">
+      <Message>Unknown source androidx/test/internal/util/ProcSummary.summarize(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary; parameter 0</Message>
+    </String>
+    <String value="detected only with safe arguments" role="Method usage">
+      <Message>Method usage detected only with safe arguments</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="eb2fc6ae2d2b39e6f4c280a7226bd6dc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.internal.util.ProcSummary$Builder.withParent(String) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.internal.util.ProcSummary$Builder" primary="true" classAnnotationNames="androidx.annotation.VisibleForTesting">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary$Builder" start="126" end="180" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+        <Message>At ProcSummary.java:[lines 126-180]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.ProcSummary$Builder</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.ProcSummary$Builder" name="withParent" signature="(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary$Builder;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary$Builder" start="136" end="141" startBytecode="0" endBytecode="209" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java"/>
+      <Message>In method androidx.test.internal.util.ProcSummary$Builder.withParent(String)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.ProcSummary$Builder" primary="true" start="138" end="138" startBytecode="38" endBytecode="38" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+      <Message>At ProcSummary.java:[line 138]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="18db91183f4082ea7dd7b040690ec7b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.internal.util.ProcSummary$Builder.withPid(String) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.internal.util.ProcSummary$Builder" primary="true" classAnnotationNames="androidx.annotation.VisibleForTesting">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary$Builder" start="126" end="180" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+        <Message>At ProcSummary.java:[lines 126-180]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.ProcSummary$Builder</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.ProcSummary$Builder" name="withPid" signature="(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary$Builder;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary$Builder" start="156" end="161" startBytecode="0" endBytecode="209" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java"/>
+      <Message>In method androidx.test.internal.util.ProcSummary$Builder.withPid(String)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.ProcSummary$Builder" primary="true" start="158" end="158" startBytecode="38" endBytecode="38" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+      <Message>At ProcSummary.java:[line 158]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="1542f89248665693913cc21d92d52924" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.internal.util.ProcSummary$Builder.withRealUid(String) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.internal.util.ProcSummary$Builder" primary="true" classAnnotationNames="androidx.annotation.VisibleForTesting">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary$Builder" start="126" end="180" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+        <Message>At ProcSummary.java:[lines 126-180]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.ProcSummary$Builder</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.ProcSummary$Builder" name="withRealUid" signature="(Ljava/lang/String;)Landroidx/test/internal/util/ProcSummary$Builder;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ProcSummary$Builder" start="166" end="171" startBytecode="0" endBytecode="209" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java"/>
+      <Message>In method androidx.test.internal.util.ProcSummary$Builder.withRealUid(String)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.ProcSummary$Builder" primary="true" start="168" end="168" startBytecode="38" endBytecode="38" sourcefile="ProcSummary.java" sourcepath="androidx/test/internal/util/ProcSummary.java">
+      <Message>At ProcSummary.java:[line 168]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="6d998b2f3a042c4f7993ef9ec0b2e5b8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.internal.util.ReflectionUtil.reflectivelyInvokeRemoteMethod(String, String) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.internal.util.ReflectionUtil" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ReflectionUtil" start="23" end="50" sourcefile="ReflectionUtil.java" sourcepath="androidx/test/internal/util/ReflectionUtil.java">
+        <Message>At ReflectionUtil.java:[lines 23-50]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.ReflectionUtil</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.ReflectionUtil" name="reflectivelyInvokeRemoteMethod" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ReflectionUtil" start="36" end="50" startBytecode="0" endBytecode="313" sourcefile="ReflectionUtil.java" sourcepath="androidx/test/internal/util/ReflectionUtil.java"/>
+      <Message>In method androidx.test.internal.util.ReflectionUtil.reflectivelyInvokeRemoteMethod(String, String)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.ReflectionUtil" primary="true" start="38" end="38" startBytecode="37" endBytecode="37" sourcefile="ReflectionUtil.java" sourcepath="androidx/test/internal/util/ReflectionUtil.java">
+      <Message>At ReflectionUtil.java:[line 38]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE" instanceHash="bc88cac36de57a2f2bad9c7773d30541" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="266">
+    <ShortMessage>Method invoked that should be only be invoked inside a doPrivileged block</ShortMessage>
+    <LongMessage>Invocation of reflect.Method.setAccessible(boolean), which should be invoked from within a doPrivileged block, in androidx.test.internal.util.ReflectionUtil.reflectivelyInvokeRemoteMethod(String, String)</LongMessage>
+    <Class classname="androidx.test.internal.util.ReflectionUtil" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ReflectionUtil" start="23" end="50" sourcefile="ReflectionUtil.java" sourcepath="androidx/test/internal/util/ReflectionUtil.java">
+        <Message>At ReflectionUtil.java:[lines 23-50]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.internal.util.ReflectionUtil</Message>
+    </Class>
+    <Method classname="androidx.test.internal.util.ReflectionUtil" name="reflectivelyInvokeRemoteMethod" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.internal.util.ReflectionUtil" start="36" end="50" startBytecode="0" endBytecode="313" sourcefile="ReflectionUtil.java" sourcepath="androidx/test/internal/util/ReflectionUtil.java"/>
+      <Message>In method androidx.test.internal.util.ReflectionUtil.reflectivelyInvokeRemoteMethod(String, String)</Message>
+    </Method>
+    <Method classname="java.lang.reflect.Method" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED" classAnnotationNames="jdk.internal.reflect.CallerSensitive">
+      <SourceLine classname="java.lang.reflect.Method" start="176" end="178" startBytecode="0" endBytecode="86" sourcefile="Method.java" sourcepath="java/lang/reflect/Method.java"/>
+      <Message>Called method reflect.Method.setAccessible(boolean)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.internal.util.ReflectionUtil" primary="true" start="42" end="42" startBytecode="61" endBytecode="61" sourcefile="ReflectionUtil.java" sourcepath="androidx/test/internal/util/ReflectionUtil.java">
+      <Message>At ReflectionUtil.java:[line 42]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="a062b3ae5d69d66a7ce40b3f3ff62983" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="callActivityOnStart" signature="(Landroid/app/Activity;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="721" end="729" startBytecode="0" endBytecode="149" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.callActivityOnStart(Activity)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="727" end="727" startBytecode="37" endBytecode="37" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 727]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="7053ead6c61da92f2fee1eb0cc278c77" instanceOccurrenceNum="0" instanceOccurrenceMax="1" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="installMultidex" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="187" end="207" startBytecode="0" endBytecode="418" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.installMultidex()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="202" end="202" startBytecode="114" endBytecode="114" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 202]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="7053ead6c61da92f2fee1eb0cc278c77" instanceOccurrenceNum="1" instanceOccurrenceMax="1" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="installMultidex" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="187" end="207" startBytecode="0" endBytecode="418" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.installMultidex()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="204" end="204" startBytecode="127" endBytecode="127" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 204]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="96c589467bed2be0d208c9c8085dc2b4" instanceOccurrenceNum="0" instanceOccurrenceMax="1" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="runOnMainSync" signature="(Ljava/lang/Runnable;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="441" end="452" startBytecode="0" endBytecode="254" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.runOnMainSync(Runnable)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="447" end="447" startBytecode="42" endBytecode="42" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 447]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="96c589467bed2be0d208c9c8085dc2b4" instanceOccurrenceNum="1" instanceOccurrenceMax="1" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="runOnMainSync" signature="(Ljava/lang/Runnable;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="441" end="452" startBytecode="0" endBytecode="254" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.runOnMainSync(Runnable)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="450" end="450" startBytecode="65" endBytecode="65" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 450]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="897d614c954166e1dcc5adb03a1bf77" instanceOccurrenceNum="0" instanceOccurrenceMax="2" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="startActivitySync" signature="(Landroid/content/Intent;)Landroid/app/Activity;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="456" end="507" startBytecode="0" endBytecode="437" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.startActivitySync(Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="490" end="490" startBytecode="136" endBytecode="136" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 490]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="897d614c954166e1dcc5adb03a1bf77" instanceOccurrenceNum="1" instanceOccurrenceMax="2" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="startActivitySync" signature="(Landroid/content/Intent;)Landroid/app/Activity;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="456" end="507" startBytecode="0" endBytecode="437" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.startActivitySync(Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="504" end="504" startBytecode="154" endBytecode="154" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 504]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="897d614c954166e1dcc5adb03a1bf77" instanceOccurrenceNum="2" instanceOccurrenceMax="2" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="startActivitySync" signature="(Landroid/content/Intent;)Landroid/app/Activity;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="456" end="507" startBytecode="0" endBytecode="437" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.startActivitySync(Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="507" end="507" startBytecode="175" endBytecode="175" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 507]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="b1c15049349d11d0f2ef7a7aadc12cc9" instanceOccurrenceNum="0" instanceOccurrenceMax="1" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="stubResultFor" signature="(Landroid/content/Intent;)Landroid/app/Instrumentation$ActivityResult;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="638" end="658" startBytecode="0" endBytecode="294" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.stubResultFor(Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="649" end="649" startBytecode="67" endBytecode="67" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 649]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="b1c15049349d11d0f2ef7a7aadc12cc9" instanceOccurrenceNum="1" instanceOccurrenceMax="1" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="stubResultFor" signature="(Landroid/content/Intent;)Landroid/app/Instrumentation$ActivityResult;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="638" end="658" startBytecode="0" endBytecode="294" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.stubResultFor(Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="652" end="652" startBytecode="83" endBytecode="83" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 652]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE" instanceHash="f7a097c7dbff46d1ad3fd8a5569c2536" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="457">
+    <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+    <LongMessage>MonitoringInstrumentation.executorService not initialized in constructor and dereferenced in androidx.test.runner.MonitoringInstrumentation.startActivitySync(Intent)</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Field classname="androidx.test.runner.MonitoringInstrumentation" name="executorService" signature="Ljava/util/concurrent/ExecutorService;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>In MonitoringInstrumentation.java</Message>
+      </SourceLine>
+      <Message>Field androidx.test.runner.MonitoringInstrumentation.executorService</Message>
+    </Field>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="startActivitySync" signature="(Landroid/content/Intent;)Landroid/app/Activity;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="456" end="507" startBytecode="0" endBytecode="437" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.startActivitySync(Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="476" end="476" startBytecode="44" endBytecode="44" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 476]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE" instanceHash="aa4627ef6e00e69523a694102c79fc4b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="457">
+    <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+    <LongMessage>MonitoringInstrumentation.handlerForMainLooper not initialized in constructor and dereferenced in androidx.test.runner.MonitoringInstrumentation.finish(int, Bundle)</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Field classname="androidx.test.runner.MonitoringInstrumentation" name="handlerForMainLooper" signature="Landroid/os/Handler;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>In MonitoringInstrumentation.java</Message>
+      </SourceLine>
+      <Message>Field androidx.test.runner.MonitoringInstrumentation.handlerForMainLooper</Message>
+    </Field>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="finish" signature="(ILandroid/os/Bundle;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="351" end="368" startBytecode="0" endBytecode="244" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.finish(int, Bundle)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="359" end="359" startBytecode="41" endBytecode="41" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 359]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE" instanceHash="9b8fb26d2af651a844d89aac1c11f4b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="457">
+    <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+    <LongMessage>MonitoringInstrumentation.interceptingActivityFactory not initialized in constructor and dereferenced in androidx.test.runner.MonitoringInstrumentation.newActivity(ClassLoader, String, Intent)</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="100" end="1056" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 100-1056]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation</Message>
+    </Class>
+    <Field classname="androidx.test.runner.MonitoringInstrumentation" name="interceptingActivityFactory" signature="Landroidx/test/runner/intercepting/InterceptingActivityFactory;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>In MonitoringInstrumentation.java</Message>
+      </SourceLine>
+      <Message>Field androidx.test.runner.MonitoringInstrumentation.interceptingActivityFactory</Message>
+    </Field>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation" name="newActivity" signature="(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/app/Activity;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="796" end="796" startBytecode="0" endBytecode="134" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation.newActivity(ClassLoader, String, Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" primary="true" start="797" end="797" startBytecode="22" endBytecode="22" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 797]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation" start="796" end="796" startBytecode="7" endBytecode="7" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at MonitoringInstrumentation.java:[line 796]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" instanceHash="b931db504343ac8d1fc79633b52acef5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="382">
+    <ShortMessage>Method invokes System.exit(...)</ShortMessage>
+    <LongMessage>androidx.test.runner.MonitoringInstrumentation$3.uncaughtException(Thread, Throwable) invokes System.exit(...), which shuts down the entire virtual machine</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation$3" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation$3" start="268" end="292" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 268-292]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation$3</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation$3" name="uncaughtException" signature="(Ljava/lang/Thread;Ljava/lang/Throwable;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation$3" start="271" end="292" startBytecode="0" endBytecode="333" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation$3.uncaughtException(Thread, Throwable)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation$3" primary="true" start="290" end="290" startBytecode="156" endBytecode="156" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 290]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="c93ae505fed7865e8329790005338096" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.runner.MonitoringInstrumentation$3.uncaughtException(Thread, Throwable) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation$3" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation$3" start="268" end="292" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 268-292]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation$3</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation$3" name="uncaughtException" signature="(Ljava/lang/Thread;Ljava/lang/Throwable;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation$3" start="271" end="292" startBytecode="0" endBytecode="333" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation$3.uncaughtException(Thread, Throwable)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation$3" primary="true" start="280" end="280" startBytecode="106" endBytecode="106" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 280]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="b667216d65f5ab8d22e43dc486f097f3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.runner.MonitoringInstrumentation$5" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation$5" start="833" end="847" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+        <Message>At MonitoringInstrumentation.java:[lines 833-847]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.runner.MonitoringInstrumentation$5</Message>
+    </Class>
+    <Method classname="androidx.test.runner.MonitoringInstrumentation$5" name="run" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.runner.MonitoringInstrumentation$5" start="837" end="847" startBytecode="0" endBytecode="256" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java"/>
+      <Message>In method androidx.test.runner.MonitoringInstrumentation$5.run()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.runner.MonitoringInstrumentation$5" primary="true" start="844" end="844" startBytecode="66" endBytecode="66" sourcefile="MonitoringInstrumentation.java" sourcepath="androidx/test/runner/MonitoringInstrumentation.java">
+      <Message>At MonitoringInstrumentation.java:[line 844]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="SECURITY">
+    <Description>Security</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="MT_CORRECTNESS">
+    <Description>Multithreaded correctness</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" abbrev="UwF" category="STYLE" cweid="457">
+    <ShortDescription>Field not initialized in constructor but dereferenced without null check</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never initialized within any constructor, and is therefore could be null after
+the object is constructed. Elsewhere, it is loaded and dereferenced without a null check.
+This could be either an error or a questionable design, since
+it means a null pointer exception will be generated if that field is dereferenced
+before being initialized.
+</p>
+<p>See <a href="https://cwe.mitre.org/data/definitions/457.html">CWE-457: Use of Uninitialized Variable</a>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="ANDROID_BROADCAST" abbrev="SECBROAD" category="SECURITY" cweid="276">
+    <ShortDescription>Broadcast (Android)</ShortDescription>
+    <Details><![CDATA[
+            
+<p>
+    Broadcast intents can be listened by any application with the appropriate permission. It is suggested to avoid transmitting
+    sensitive information when possible.
+</p>
+<p>
+    <b>Code at risk:</b><br/>
+<pre>
+Intent i = new Intent();
+i.setAction("com.insecure.action.UserConnected");
+i.putExtra("username", user);
+i.putExtra("email", email);
+i.putExtra("session", newSessionId);
+
+this.sendBroadcast(v1);
+</pre>
+</p>
+<br/>
+<p>
+    <b>Solution (if possible):</b><br/>
+<pre>
+Intent i = new Intent();
+i.setAction("com.secure.action.UserConnected");
+
+sendBroadcast(v1);
+</pre>
+</p>
+<br/>
+<p>
+    <b>Configuration (receiver)<sup>[1] Source: StackOverflow</sup>:</b><br/>
+<pre>
+&lt;manifest ...&gt;
+
+    &lt;!-- Permission declaration --&gt;
+    &lt;permission android:name="my.app.PERMISSION" /&gt;
+
+    &lt;receiver
+        android:name="my.app.BroadcastReceiver"
+        android:permission="my.app.PERMISSION"&gt; &lt;!-- Permission enforcement --&gt;
+        &lt;intent-filter>
+            &lt;action android:name="com.secure.action.UserConnected" /&gt;
+        &lt;/intent-filter&gt;
+    &lt;/receiver&gt;
+
+    ...
+&lt;/manifest>
+</pre>
+</p>
+<p>
+    <b>Configuration (sender)<sup>[1] Source: StackOverflow</sup>:</b><br/>
+<pre>
+&lt;manifest&gt;
+    &lt;!-- We declare we own the permission to send broadcast to the above receiver --&gt;
+    &lt;uses-permission android:name="my.app.PERMISSION"/&gt;
+
+    &lt;!-- With the following configuration, both the sender and the receiver apps need to be signed by the same developer certificate. --&gt;
+    &lt;permission android:name="my.app.PERMISSION" android:protectionLevel="signature"/&gt;
+&lt;/manifest&gt;
+</pre>
+</p>
+<br/>
+<p>
+    <b>References</b><br/>
+    <a href="https://www.securecoding.cert.org/confluence/display/java/DRD03-J.+Do+not+broadcast+sensitive+information+using+an+implicit+intent">CERT: DRD03-J. Do not broadcast sensitive information using an implicit intent</a><br/>
+    <a href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#Security">Android Official Doc: BroadcastReceiver (Security)</a><br/>
+    <a href="https://developer.android.com/guide/topics/manifest/receiver-element.html">Android Official Doc: Receiver configuration (see <code>android:permission</code>)</a><br/>
+    <sup>[1]</sup> <a href="https://stackoverflow.com/a/21513368/89769">StackOverflow: How to set permissions in broadcast sender and receiver in android</a><br/>
+    <a href="https://cwe.mitre.org/data/definitions/276.html">CWE-276: Incorrect Default Permissions</a><br/>
+    <a href="https://cwe.mitre.org/data/definitions/925.html">CWE-925: Improper Verification of Intent by Broadcast Receiver</a><br/>
+    <a href="https://cwe.mitre.org/data/definitions/927.html">CWE-927: Use of Implicit Intent for Sensitive Communication</a>
+</p>
+
+        ]]></Details>
+  </BugPattern>
+  <BugPattern type="DP_DO_INSIDE_DO_PRIVILEGED" abbrev="DP" category="MALICIOUS_CODE" cweid="266">
+    <ShortDescription>Method invoked that should be only be invoked inside a doPrivileged block</ShortDescription>
+    <Details><![CDATA[
+      
+        <p> This code invokes a method that requires a security permission check.
+        If this code will be granted security permissions, but might be invoked by code that does not
+        have security permissions, then the invocation needs to occur inside a doPrivileged block.</p>
+        The <code>java.security.AccessController</code> class, which contains the <code>doPrivileged</code> methods,
+        got deprecated in Java 17 (see <a href="https://openjdk.org/jeps/411">JEP 411</a>), and removed in Java 24 (see <a href="https://openjdk.org/jeps/486">JEP 486</a>).
+        For this reason, this bug isn't reported in classes targeted Java 17 and above.
+        </p>
+        <p>See <a href="https://cwe.mitre.org/data/definitions/266.html">CWE-266: Incorrect Privilege Assignment</a>.
+        </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" abbrev="THROWS" category="BAD_PRACTICE" cweid="397">
+    <ShortDescription>Method intentionally throws RuntimeException.</ShortDescription>
+    <Details><![CDATA[
+      
+        <p>
+        Method intentionally throws RuntimeException.<br>
+
+        According to the <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable">SEI CERT ERR07-J rule</a>,
+        throwing a RuntimeException may cause errors, like the caller not being able to examine the exception and therefore cannot properly recover from it.<br>
+
+        Moreover, throwing a RuntimeException would force the caller to catch RuntimeException and therefore violate the
+        <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">SEI CERT ERR08-J rule</a>.<br>
+
+        Please note that you can derive from Exception or RuntimeException and may throw a new instance of that exception.
+        </p><p>
+        See <a href="https://cwe.mitre.org/data/definitions/397.html">CWE-397: Declaration of Throws for Generic Exception</a>.
+        </p>
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_STRING_CTOR" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient new String(String) constructor</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Using the <code>java.lang.String(String)</code> constructor wastes memory
+  because the object so constructed will be functionally indistinguishable
+  from the <code>String</code> passed as a parameter.&nbsp; Just use the
+  argument <code>String</code> directly.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="CT_CONSTRUCTOR_THROW" abbrev="CT" category="BAD_PRACTICE">
+    <ShortDescription>Be wary of letting constructors throw exceptions.</ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Classes that throw exceptions in their constructors are vulnerable to Finalizer attacks</p>
+
+            <p>A finalizer attack can be prevented, by declaring the class final, using an empty finalizer declared as final, or by a clever use of a private constructor.</p>
+
+            <p>See <a href="https://wiki.sei.cmu.edu/confluence/display/java/OBJ11-J.+Be+wary+of+letting+constructors+throw+exceptions"><code>SEI CERT Rule OBJ-11</code></a>
+            for more information.
+            </p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="FORMAT_STRING_MANIPULATION" abbrev="SECFSM" category="SECURITY" cweid="134">
+    <ShortDescription>Format String Manipulation</ShortDescription>
+    <Details><![CDATA[
+            
+<p>
+Allowing user input to control format parameters could enable an attacker to cause exceptions to be thrown or leak information.<br/>
+Attackers may be able to modify the format string argument, such that an exception is thrown. If this exception is left uncaught, it may crash the application. Alternatively, if sensitive information is used within the unused arguments, attackers may change the format string to reveal this information.<br/>
+The example code below lets the user specify the decimal points to which it shows the balance. The user can in fact specify anything causing an exception to be thrown which could lead to application failure. Even more critical within this example, if an attacker can specify the user input <code>"2f %3$s %4$.2"</code>, the format string would be <code>"The customer: %s %s has the balance %4$.2f %3$s %4$.2"</code>. This would then lead to the sensitive <code>accountNo</code> to be included within the resulting string.
+</p>
+<p>
+    <b>Vulnerable Code:</b><br/>
+<pre>Formatter formatter = new Formatter(Locale.US);
+String format = "The customer: %s %s has the balance %4$." + userInput + "f";
+formatter.format(format, firstName, lastName, accountNo, balance);</pre>
+</p>
+<p>
+    <b>Solution:</b><br/>
+Avoid using user controlled values in the format string argument.
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://cwe.mitre.org/data/definitions/134.html">CWE-134: Use of Externally-Controlled Format String</a><br/>
+</p>
+            
+        ]]></Details>
+  </BugPattern>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Write to static field from instance method</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This instance method writes to a static field. This is tricky to get
+correct if multiple instances are being manipulated,
+and generally bad practice.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="PATH_TRAVERSAL_IN" abbrev="SECPTI" category="SECURITY" cweid="22">
+    <ShortDescription>Potential Path Traversal (file read)</ShortDescription>
+    <Details><![CDATA[
+            
+<p>A file is opened to read its content. The filename comes from an <b>input</b> parameter.
+If an unfiltered parameter is passed to this file API, files from an arbitrary filesystem location could be read.</p>
+<p>This rule identifies <b>potential</b> path traversal vulnerabilities. In many cases, the constructed file path cannot be controlled
+by the user. If that is the case, the reported instance is a false positive.</p>
+<br/>
+
+<p>
+    <b>Vulnerable Code:</b><br/>
+<pre>@GET
+@Path("/images/{image}")
+@Produces("images/*")
+public Response getImage(@javax.ws.rs.PathParam("image") String image) {
+    File file = new File("resources/images/", image); //Weak point
+
+    if (!file.exists()) {
+        return Response.status(Status.NOT_FOUND).build();
+    }
+
+    return Response.ok().entity(new FileInputStream(file)).build();
+}</pre>
+</p>
+<br/>
+
+<p>
+    <b>Solution:</b><br/>
+<pre>import org.apache.commons.io.FilenameUtils;
+
+@GET
+@Path("/images/{image}")
+@Produces("images/*")
+public Response getImage(@javax.ws.rs.PathParam("image") String image) {
+    File file = new File("resources/images/", FilenameUtils.getName(image)); //Fix
+
+    if (!file.exists()) {
+        return Response.status(Status.NOT_FOUND).build();
+    }
+
+    return Response.ok().entity(new FileInputStream(file)).build();
+}</pre>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC: Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP: Path Traversal</a><br/>
+<a href="https://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="https://cwe.mitre.org/data/definitions/22.html">CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')</a>
+</p>
+
+        ]]></Details>
+  </BugPattern>
+  <BugPattern type="SING_SINGLETON_HAS_NONPRIVATE_CONSTRUCTOR" abbrev="SING" category="CORRECTNESS" cweid="543">
+    <ShortDescription>Class using singleton design pattern has non-private constructor.</ShortDescription>
+    <Details><![CDATA[
+      
+        <p>
+        This class is using singleton design pattern and has non-private constructor (please note that a default constructor might exist which is not private). Given that, it is possible to create a copy of the object, thus violating the singleton pattern.<br>
+        The easier solution would be making the constructor private.<br><br>
+
+        For more information, see: <a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects">SEI CERT MSC07-J</a>, and
+        <a href="https://cwe.mitre.org/data/definitions/543.html">CWE-543: Use of Singleton Pattern Without Synchronization in a Multithreaded Context</a>.
+        </p>
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N" cweid="173">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+<p>See <a href="https://cwe.mitre.org/data/definitions/173.html">CWE-173: Improper Handling of Alternate Encoding</a>.
+</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="IS2_INCONSISTENT_SYNC" abbrev="IS" category="MT_CORRECTNESS">
+    <ShortDescription>Inconsistent synchronization</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The fields of this class appear to be accessed inconsistently with respect
+  to synchronization.&nbsp; This bug report indicates that the bug pattern detector
+  judged that
+  </p>
+  <ul>
+  <li> The class contains a mix of locked and unlocked accesses,</li>
+  <li> The class is <b>not</b> annotated as javax.annotation.concurrent.NotThreadSafe,</li>
+  <li> At least one locked access was performed by one of the class's own methods, and</li>
+  <li> The number of unsynchronized field accesses (reads and writes) was no more than
+       one third of all accesses, with writes being weighed twice as high as reads</li>
+  </ul>
+
+  <p> A typical bug matching this bug pattern is forgetting to synchronize
+  one of the methods in a class that is intended to be thread-safe.</p>
+
+  <p> You can select the nodes labeled "Unsynchronized access" to show the
+  code locations where the detector believed that a field was accessed
+  without synchronization.</p>
+
+  <p> Note that there are various sources of inaccuracy in this detector;
+  for example, the detector cannot statically detect all situations in which
+  a lock is held.&nbsp; Also, even when the detector is accurate in
+  distinguishing locked vs. unlocked accesses, the code in question may still
+  be correct.</p>
+<p>See <a href="https://cwe.mitre.org/data/definitions/366.html">CWE-366: Race Condition within a Thread</a>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="UWF_NULL_FIELD" abbrev="UwF" category="CORRECTNESS">
+    <ShortDescription>Field only ever set to null</ShortDescription>
+    <Details><![CDATA[
+
+  <p> All writes to this field are of the constant value null, and thus
+all reads of the field will return null.
+Check for errors, or remove it if it is useless.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_EXIT" abbrev="Dm" category="BAD_PRACTICE" cweid="382">
+    <ShortDescription>Method invokes System.exit(...)</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Invoking System.exit shuts down the entire Java virtual machine. This
+   should only been done when it is appropriate. Such calls make it
+   hard or impossible for your code to be invoked by other code.
+   Consider throwing a RuntimeException instead.</p>
+   <p>See <a href="https://cwe.mitre.org/data/definitions/382.html">CWE-382: J2EE Bad Practices: Use of System.exit()</a>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SSD_DO_NOT_USE_INSTANCE_LOCK_ON_SHARED_STATIC_DATA" abbrev="SSD" category="MT_CORRECTNESS" cweid="667">
+    <ShortDescription>Instance level lock was used on a shared static data</ShortDescription>
+    <Details><![CDATA[
+      <p>
+        If the lock or the synchronized method is not static, that modifies the static field,
+        that could leave the shared static data unprotected against concurrent access.
+        This could occur in two ways, if a synchronization method uses a non-static lock object,
+        or a synchronized method is declared as non-static. Both ways are ineffective.
+        Best solution is to use a private static final lock object to secure the shared static data.</p>
+      <p>
+      See SEI CERT rule
+      <a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK06-J.+Do+not+use+an+instance+lock+to+protect+shared+static+data">
+      LCK06-J. Do not use an instance lock to protect shared static data</a>
+      and <a href="https://cwe.mitre.org/data/definitions/667.html">CWE-667: Improper Locking</a>.
+      </p>
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Misuse of static fields</Description>
+  </BugCode>
+  <BugCode abbrev="CT">
+    <Description>Constructor throws</Description>
+  </BugCode>
+  <BugCode abbrev="SECFSM">
+    <Description>Format String Manipulation</Description>
+  </BugCode>
+  <BugCode abbrev="SSD">
+    <Description>Do not use an instance lock to protect shared static data</Description>
+  </BugCode>
+  <BugCode abbrev="UwF">
+    <Description>Unwritten field</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="SING">
+    <Description>Singleton problems</Description>
+  </BugCode>
+  <BugCode abbrev="THROWS">
+    <Description>Exception throwing related problems</Description>
+  </BugCode>
+  <BugCode abbrev="IS" cweid="366">
+    <Description>Inconsistent synchronization</Description>
+  </BugCode>
+  <BugCode abbrev="SECPTI">
+    <Description>Potential Path Traversal (file read)</Description>
+  </BugCode>
+  <BugCode abbrev="DP">
+    <Description>Use doPrivileged</Description>
+  </BugCode>
+  <BugCode abbrev="SECBROAD">
+    <Description>Broadcast (Android)</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="43">
+    <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.app.Application</MissingClass>
+    <MissingClass>android.app.Fragment</MissingClass>
+    <MissingClass>android.app.Instrumentation</MissingClass>
+    <MissingClass>android.app.Instrumentation$ActivityResult</MissingClass>
+    <MissingClass>android.content.BroadcastReceiver</MissingClass>
+    <MissingClass>android.content.ComponentName</MissingClass>
+    <MissingClass>android.content.Context</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.content.IntentFilter</MissingClass>
+    <MissingClass>android.content.pm.ActivityInfo</MissingClass>
+    <MissingClass>android.content.pm.ApplicationInfo</MissingClass>
+    <MissingClass>android.content.pm.InstrumentationInfo</MissingClass>
+    <MissingClass>android.content.pm.PackageManager</MissingClass>
+    <MissingClass>android.content.pm.PackageManager$NameNotFoundException</MissingClass>
+    <MissingClass>android.content.pm.ResolveInfo</MissingClass>
+    <MissingClass>android.os.Build</MissingClass>
+    <MissingClass>android.os.Build$VERSION</MissingClass>
+    <MissingClass>android.os.Build$VERSION_CODES</MissingClass>
+    <MissingClass>android.os.Bundle</MissingClass>
+    <MissingClass>android.os.Handler</MissingClass>
+    <MissingClass>android.os.HandlerThread</MissingClass>
+    <MissingClass>android.os.IBinder</MissingClass>
+    <MissingClass>android.os.Looper</MissingClass>
+    <MissingClass>android.os.Message</MissingClass>
+    <MissingClass>android.os.MessageQueue</MissingClass>
+    <MissingClass>android.os.MessageQueue$IdleHandler</MissingClass>
+    <MissingClass>android.os.Messenger</MissingClass>
+    <MissingClass>android.os.Parcel</MissingClass>
+    <MissingClass>android.os.Parcelable</MissingClass>
+    <MissingClass>android.os.Parcelable$Creator</MissingClass>
+    <MissingClass>android.os.RemoteException</MissingClass>
+    <MissingClass>android.os.StrictMode</MissingClass>
+    <MissingClass>android.os.StrictMode$ThreadPolicy</MissingClass>
+    <MissingClass>android.os.UserHandle</MissingClass>
+    <MissingClass>android.util.Log</MissingClass>
+    <MissingClass>android.view.KeyEvent</MissingClass>
+    <MissingClass>android.view.MotionEvent</MissingClass>
+    <MissingClass>android.view.View</MissingClass>
+    <MissingClass>androidx.annotation.NonNull</MissingClass>
+    <MissingClass>androidx.annotation.Nullable</MissingClass>
+    <MissingClass>androidx.annotation.VisibleForTesting</MissingClass>
+    <MissingClass>androidx.test.internal.runner.hidden.ExposedInstrumentationApi</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 7 Jun 2026 17:31:24 -0300" total_classes="68" referenced_classes="203" total_bugs="39" total_size="1706" num_packages="20" java_version="25.0.3" vm_version="25.0.3+9-LTS" cpu_seconds="34.64" clock_seconds="7.66" peak_mbytes="246.85" alloc_mbytes="768.00" gc_seconds="0.13" priority_3="20" priority_2="18" priority_1="1">
+    <FileStats path="androidx/test/InstrumentationRegistry.java" bugCount="0" size="26"/>
+    <FileStats path="androidx/test/annotation/Beta.java" bugCount="0" size="1"/>
+    <FileStats path="androidx/test/internal/platform/ServiceLoaderWrapper.java" bugCount="1" size="21" bugHash="2f17859bd35ddc1887c3bc89dc068c38"/>
+    <FileStats path="androidx/test/internal/platform/ThreadChecker.java" bugCount="0" size="3"/>
+    <FileStats path="androidx/test/internal/platform/app/&lt;Unknown&gt;" bugCount="0" size="9"/>
+    <FileStats path="androidx/test/internal/platform/app/ActivityInvoker.java" bugCount="0" size="10"/>
+    <FileStats path="androidx/test/internal/platform/app/ActivityLifecycleTimeout.java" bugCount="0" size="7"/>
+    <FileStats path="androidx/test/internal/platform/content/PermissionGranter.java" bugCount="0" size="3"/>
+    <FileStats path="androidx/test/internal/platform/os/ControlledLooper.java" bugCount="0" size="13"/>
+    <FileStats path="androidx/test/internal/platform/util/&lt;Unknown&gt;" bugCount="0" size="7"/>
+    <FileStats path="androidx/test/internal/platform/util/InstrumentationParameterUtil.java" bugCount="0" size="11"/>
+    <FileStats path="androidx/test/internal/platform/util/TestOutputEmitter.java" bugCount="0" size="25"/>
+    <FileStats path="androidx/test/internal/platform/util/TestOutputHandler.java" bugCount="0" size="4"/>
+    <FileStats path="androidx/test/internal/runner/InstrumentationConnection.java" bugCount="11" size="364" bugHash="adf52b8ed907189a794a233ef920b6e8"/>
+    <FileStats path="androidx/test/internal/runner/hidden/ExposedInstrumentationApi.java" bugCount="0" size="3"/>
+    <FileStats path="androidx/test/internal/runner/intent/IntentMonitorImpl.java" bugCount="0" size="47"/>
+    <FileStats path="androidx/test/internal/runner/intercepting/DefaultInterceptingActivityFactory.java" bugCount="0" size="7"/>
+    <FileStats path="androidx/test/internal/runner/lifecycle/ActivityLifecycleMonitorImpl.java" bugCount="0" size="119"/>
+    <FileStats path="androidx/test/internal/runner/lifecycle/ApplicationLifecycleMonitorImpl.java" bugCount="0" size="52"/>
+    <FileStats path="androidx/test/internal/util/&lt;Unknown&gt;" bugCount="0" size="10"/>
+    <FileStats path="androidx/test/internal/util/Checks.java" bugCount="0" size="90"/>
+    <FileStats path="androidx/test/internal/util/LogUtil.java" bugCount="2" size="34" bugHash="38b17ab14d7a7013864847816009e8ed"/>
+    <FileStats path="androidx/test/internal/util/ParcelableIBinder.java" bugCount="0" size="29"/>
+    <FileStats path="androidx/test/internal/util/ProcSummary.java" bugCount="7" size="128" bugHash="a3988b7390ce3195c2fe9762aeebf55d"/>
+    <FileStats path="androidx/test/internal/util/ReflectionUtil.java" bugCount="2" size="16" bugHash="ab80a85a17aabc6d60365905d3e99eb4"/>
+    <FileStats path="androidx/test/platform/TestFrameworkException.java" bugCount="0" size="1"/>
+    <FileStats path="androidx/test/platform/app/InstrumentationRegistry.java" bugCount="0" size="22"/>
+    <FileStats path="androidx/test/platform/ui/InjectEventSecurityException.java" bugCount="0" size="10"/>
+    <FileStats path="androidx/test/platform/ui/UiController.java" bugCount="0" size="6"/>
+    <FileStats path="androidx/test/runner/MonitoringInstrumentation.java" bugCount="16" size="503" bugHash="c80df7cf152c9828ca7691f9b5dab3c7"/>
+    <FileStats path="androidx/test/runner/intent/IntentCallback.java" bugCount="0" size="2"/>
+    <FileStats path="androidx/test/runner/intent/IntentMonitor.java" bugCount="0" size="3"/>
+    <FileStats path="androidx/test/runner/intent/IntentMonitorRegistry.java" bugCount="0" size="15"/>
+    <FileStats path="androidx/test/runner/intent/IntentStubber.java" bugCount="0" size="2"/>
+    <FileStats path="androidx/test/runner/intent/IntentStubberRegistry.java" bugCount="0" size="26"/>
+    <FileStats path="androidx/test/runner/intercepting/InterceptingActivityFactory.java" bugCount="0" size="3"/>
+    <FileStats path="androidx/test/runner/lifecycle/ActivityLifecycleCallback.java" bugCount="0" size="2"/>
+    <FileStats path="androidx/test/runner/lifecycle/ActivityLifecycleMonitor.java" bugCount="0" size="5"/>
+    <FileStats path="androidx/test/runner/lifecycle/ActivityLifecycleMonitorRegistry.java" bugCount="0" size="14"/>
+    <FileStats path="androidx/test/runner/lifecycle/ApplicationLifecycleCallback.java" bugCount="0" size="2"/>
+    <FileStats path="androidx/test/runner/lifecycle/ApplicationLifecycleMonitor.java" bugCount="0" size="3"/>
+    <FileStats path="androidx/test/runner/lifecycle/ApplicationLifecycleMonitorRegistry.java" bugCount="0" size="14"/>
+    <FileStats path="androidx/test/runner/lifecycle/ApplicationStage.java" bugCount="0" size="11"/>
+    <FileStats path="androidx/test/runner/lifecycle/Stage.java" bugCount="0" size="23"/>
+    <PackageStats package="androidx.test" total_bugs="0" total_types="1" total_size="26">
+      <ClassStats class="androidx.test.InstrumentationRegistry" sourceFile="InstrumentationRegistry.java" interface="false" size="26" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.annotation" total_bugs="0" total_types="1" total_size="1">
+      <ClassStats class="androidx.test.annotation.Beta" sourceFile="Beta.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.platform" total_bugs="1" total_types="3" total_size="24" priority_2="1">
+      <ClassStats class="androidx.test.internal.platform.ServiceLoaderWrapper" sourceFile="ServiceLoaderWrapper.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="androidx.test.internal.platform.ServiceLoaderWrapper$Factory" sourceFile="ServiceLoaderWrapper.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="androidx.test.internal.platform.ThreadChecker" sourceFile="ThreadChecker.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.platform.app" total_bugs="0" total_types="3" total_size="26">
+      <ClassStats class="androidx.test.internal.platform.app.ActivityInvoker" sourceFile="ActivityInvoker.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="androidx.test.internal.platform.app.ActivityInvoker$$CC" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="androidx.test.internal.platform.app.ActivityLifecycleTimeout" sourceFile="ActivityLifecycleTimeout.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.platform.content" total_bugs="0" total_types="1" total_size="3">
+      <ClassStats class="androidx.test.internal.platform.content.PermissionGranter" sourceFile="PermissionGranter.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.platform.os" total_bugs="0" total_types="2" total_size="13">
+      <ClassStats class="androidx.test.internal.platform.os.ControlledLooper" sourceFile="ControlledLooper.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="androidx.test.internal.platform.os.ControlledLooper$1" sourceFile="ControlledLooper.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.platform.util" total_bugs="0" total_types="5" total_size="47">
+      <ClassStats class="androidx.test.internal.platform.util.InstrumentationParameterUtil" sourceFile="InstrumentationParameterUtil.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="androidx.test.internal.platform.util.TestOutputEmitter" sourceFile="TestOutputEmitter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="androidx.test.internal.platform.util.TestOutputEmitter$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.internal.platform.util.TestOutputEmitter$1" sourceFile="TestOutputEmitter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="androidx.test.internal.platform.util.TestOutputHandler" sourceFile="TestOutputHandler.java" interface="true" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.runner" total_bugs="11" total_types="7" total_size="364" priority_2="11">
+      <ClassStats class="androidx.test.internal.runner.InstrumentationConnection" sourceFile="InstrumentationConnection.java" interface="false" size="108" bugs="8" priority_2="8"/>
+      <ClassStats class="androidx.test.internal.runner.InstrumentationConnection$1" sourceFile="InstrumentationConnection.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler" sourceFile="InstrumentationConnection.java" interface="false" size="204" bugs="2" priority_2="2"/>
+      <ClassStats class="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler$1" sourceFile="InstrumentationConnection.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler$2" sourceFile="InstrumentationConnection.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="androidx.test.internal.runner.InstrumentationConnection$IncomingHandler$3" sourceFile="InstrumentationConnection.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="androidx.test.internal.runner.InstrumentationConnection$MessengerReceiver" sourceFile="InstrumentationConnection.java" interface="false" size="17" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.runner.hidden" total_bugs="0" total_types="1" total_size="3">
+      <ClassStats class="androidx.test.internal.runner.hidden.ExposedInstrumentationApi" sourceFile="ExposedInstrumentationApi.java" interface="false" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.runner.intent" total_bugs="0" total_types="1" total_size="47">
+      <ClassStats class="androidx.test.internal.runner.intent.IntentMonitorImpl" sourceFile="IntentMonitorImpl.java" interface="false" size="47" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.runner.intercepting" total_bugs="0" total_types="1" total_size="7">
+      <ClassStats class="androidx.test.internal.runner.intercepting.DefaultInterceptingActivityFactory" sourceFile="DefaultInterceptingActivityFactory.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.runner.lifecycle" total_bugs="0" total_types="3" total_size="171">
+      <ClassStats class="androidx.test.internal.runner.lifecycle.ActivityLifecycleMonitorImpl" sourceFile="ActivityLifecycleMonitorImpl.java" interface="false" size="107" bugs="0"/>
+      <ClassStats class="androidx.test.internal.runner.lifecycle.ActivityLifecycleMonitorImpl$ActivityStatus" sourceFile="ActivityLifecycleMonitorImpl.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="androidx.test.internal.runner.lifecycle.ApplicationLifecycleMonitorImpl" sourceFile="ApplicationLifecycleMonitorImpl.java" interface="false" size="52" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.internal.util" total_bugs="11" total_types="13" total_size="307" priority_3="6" priority_2="4" priority_1="1">
+      <ClassStats class="androidx.test.internal.util.Checks" sourceFile="Checks.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="androidx.test.internal.util.Checks$1" sourceFile="Checks.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="androidx.test.internal.util.LogUtil" sourceFile="LogUtil.java" interface="false" size="32" bugs="2" priority_3="2"/>
+      <ClassStats class="androidx.test.internal.util.LogUtil$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="androidx.test.internal.util.LogUtil$$Lambda$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="androidx.test.internal.util.LogUtil$Supplier" sourceFile="LogUtil.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="androidx.test.internal.util.ParcelableIBinder" sourceFile="ParcelableIBinder.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="androidx.test.internal.util.ParcelableIBinder$1" sourceFile="ParcelableIBinder.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="androidx.test.internal.util.ProcSummary" sourceFile="ProcSummary.java" interface="false" size="73" bugs="4" priority_3="3" priority_1="1"/>
+      <ClassStats class="androidx.test.internal.util.ProcSummary$1" sourceFile="ProcSummary.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="androidx.test.internal.util.ProcSummary$Builder" sourceFile="ProcSummary.java" interface="false" size="47" bugs="3" priority_2="3"/>
+      <ClassStats class="androidx.test.internal.util.ProcSummary$SummaryException" sourceFile="ProcSummary.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.internal.util.ReflectionUtil" sourceFile="ReflectionUtil.java" interface="false" size="16" bugs="2" priority_3="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.platform" total_bugs="0" total_types="1" total_size="1">
+      <ClassStats class="androidx.test.platform.TestFrameworkException" sourceFile="TestFrameworkException.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.platform.app" total_bugs="0" total_types="1" total_size="22">
+      <ClassStats class="androidx.test.platform.app.InstrumentationRegistry" sourceFile="InstrumentationRegistry.java" interface="false" size="22" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.platform.ui" total_bugs="0" total_types="2" total_size="16">
+      <ClassStats class="androidx.test.platform.ui.InjectEventSecurityException" sourceFile="InjectEventSecurityException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="androidx.test.platform.ui.UiController" sourceFile="UiController.java" interface="true" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.runner" total_bugs="16" total_types="8" total_size="503" priority_3="14" priority_2="2">
+      <ClassStats class="androidx.test.runner.MonitoringInstrumentation" sourceFile="MonitoringInstrumentation.java" interface="false" size="417" bugs="13" priority_3="13"/>
+      <ClassStats class="androidx.test.runner.MonitoringInstrumentation$1" sourceFile="MonitoringInstrumentation.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.runner.MonitoringInstrumentation$2" sourceFile="MonitoringInstrumentation.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.runner.MonitoringInstrumentation$3" sourceFile="MonitoringInstrumentation.java" interface="false" size="18" bugs="2" priority_2="2"/>
+      <ClassStats class="androidx.test.runner.MonitoringInstrumentation$4" sourceFile="MonitoringInstrumentation.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="androidx.test.runner.MonitoringInstrumentation$5" sourceFile="MonitoringInstrumentation.java" interface="false" size="16" bugs="1" priority_3="1"/>
+      <ClassStats class="androidx.test.runner.MonitoringInstrumentation$ActivityFinisher" sourceFile="MonitoringInstrumentation.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="androidx.test.runner.MonitoringInstrumentation$StubResultCallable" sourceFile="MonitoringInstrumentation.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.runner.intent" total_bugs="0" total_types="5" total_size="48">
+      <ClassStats class="androidx.test.runner.intent.IntentCallback" sourceFile="IntentCallback.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="androidx.test.runner.intent.IntentMonitor" sourceFile="IntentMonitor.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="androidx.test.runner.intent.IntentMonitorRegistry" sourceFile="IntentMonitorRegistry.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="androidx.test.runner.intent.IntentStubber" sourceFile="IntentStubber.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="androidx.test.runner.intent.IntentStubberRegistry" sourceFile="IntentStubberRegistry.java" interface="false" size="26" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.runner.intercepting" total_bugs="0" total_types="1" total_size="3">
+      <ClassStats class="androidx.test.runner.intercepting.InterceptingActivityFactory" sourceFile="InterceptingActivityFactory.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.runner.lifecycle" total_bugs="0" total_types="8" total_size="74">
+      <ClassStats class="androidx.test.runner.lifecycle.ActivityLifecycleCallback" sourceFile="ActivityLifecycleCallback.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="androidx.test.runner.lifecycle.ActivityLifecycleMonitor" sourceFile="ActivityLifecycleMonitor.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry" sourceFile="ActivityLifecycleMonitorRegistry.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="androidx.test.runner.lifecycle.ApplicationLifecycleCallback" sourceFile="ApplicationLifecycleCallback.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="androidx.test.runner.lifecycle.ApplicationLifecycleMonitor" sourceFile="ApplicationLifecycleMonitor.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="androidx.test.runner.lifecycle.ApplicationLifecycleMonitorRegistry" sourceFile="ApplicationLifecycleMonitorRegistry.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="androidx.test.runner.lifecycle.ApplicationStage" sourceFile="ApplicationStage.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="androidx.test.runner.lifecycle.Stage" sourceFile="Stage.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="670" invocations="961" avgMicrosecondsPerInvocation="697" maxMicrosecondsPerInvocation="25249" standardDeviationMicrosecondsPerInvocation="1685"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="253" invocations="203" avgMicrosecondsPerInvocation="1250" maxMicrosecondsPerInvocation="24116" standardDeviationMicrosecondsPerInvocation="3081"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="223" invocations="282" avgMicrosecondsPerInvocation="791" maxMicrosecondsPerInvocation="26854" standardDeviationMicrosecondsPerInvocation="2017"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="211" invocations="203" avgMicrosecondsPerInvocation="1041" maxMicrosecondsPerInvocation="16823" standardDeviationMicrosecondsPerInvocation="2132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="210" invocations="272" avgMicrosecondsPerInvocation="772" maxMicrosecondsPerInvocation="11752" standardDeviationMicrosecondsPerInvocation="1395"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="201" invocations="272" avgMicrosecondsPerInvocation="739" maxMicrosecondsPerInvocation="11202" standardDeviationMicrosecondsPerInvocation="1384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="195" invocations="286" avgMicrosecondsPerInvocation="684" maxMicrosecondsPerInvocation="19818" standardDeviationMicrosecondsPerInvocation="1601"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="166" invocations="311" avgMicrosecondsPerInvocation="535" maxMicrosecondsPerInvocation="16911" standardDeviationMicrosecondsPerInvocation="1259"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="166" invocations="264" avgMicrosecondsPerInvocation="629" maxMicrosecondsPerInvocation="8901" standardDeviationMicrosecondsPerInvocation="970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="158" invocations="265" avgMicrosecondsPerInvocation="597" maxMicrosecondsPerInvocation="8223" standardDeviationMicrosecondsPerInvocation="1006"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="157" invocations="597" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="3274" standardDeviationMicrosecondsPerInvocation="388"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="135" invocations="239" avgMicrosecondsPerInvocation="566" maxMicrosecondsPerInvocation="9029" standardDeviationMicrosecondsPerInvocation="1061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="129" invocations="327" avgMicrosecondsPerInvocation="395" maxMicrosecondsPerInvocation="36648" standardDeviationMicrosecondsPerInvocation="2141"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="108" invocations="973" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="6571" standardDeviationMicrosecondsPerInvocation="254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="91" invocations="68" avgMicrosecondsPerInvocation="1339" maxMicrosecondsPerInvocation="29353" standardDeviationMicrosecondsPerInvocation="5190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="85" invocations="203" avgMicrosecondsPerInvocation="423" maxMicrosecondsPerInvocation="32919" standardDeviationMicrosecondsPerInvocation="2824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SharedVariableAtomicityDetector" totalMilliseconds="83" invocations="68" avgMicrosecondsPerInvocation="1221" maxMicrosecondsPerInvocation="20794" standardDeviationMicrosecondsPerInvocation="3453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="82" invocations="311" avgMicrosecondsPerInvocation="266" maxMicrosecondsPerInvocation="25718" standardDeviationMicrosecondsPerInvocation="1463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="79" invocations="203" avgMicrosecondsPerInvocation="390" maxMicrosecondsPerInvocation="11449" standardDeviationMicrosecondsPerInvocation="966"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="59" invocations="203" avgMicrosecondsPerInvocation="293" maxMicrosecondsPerInvocation="9099" standardDeviationMicrosecondsPerInvocation="825"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="59" invocations="863" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="1777" standardDeviationMicrosecondsPerInvocation="135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="57" invocations="68" avgMicrosecondsPerInvocation="851" maxMicrosecondsPerInvocation="12920" standardDeviationMicrosecondsPerInvocation="2243"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="57" invocations="203" avgMicrosecondsPerInvocation="283" maxMicrosecondsPerInvocation="5414" standardDeviationMicrosecondsPerInvocation="562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="55" invocations="68" avgMicrosecondsPerInvocation="819" maxMicrosecondsPerInvocation="26254" standardDeviationMicrosecondsPerInvocation="3231"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="54" invocations="203" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="12621" standardDeviationMicrosecondsPerInvocation="957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="50" invocations="203" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="4008" standardDeviationMicrosecondsPerInvocation="545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ResourceInMultipleThreadsDetector" totalMilliseconds="50" invocations="68" avgMicrosecondsPerInvocation="735" maxMicrosecondsPerInvocation="6086" standardDeviationMicrosecondsPerInvocation="1208"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="46" invocations="68" avgMicrosecondsPerInvocation="680" maxMicrosecondsPerInvocation="7787" standardDeviationMicrosecondsPerInvocation="1150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="46" invocations="203" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="5165" standardDeviationMicrosecondsPerInvocation="679"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="45" invocations="68" avgMicrosecondsPerInvocation="670" maxMicrosecondsPerInvocation="11516" standardDeviationMicrosecondsPerInvocation="1737"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="45" invocations="68" avgMicrosecondsPerInvocation="670" maxMicrosecondsPerInvocation="7070" standardDeviationMicrosecondsPerInvocation="1479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="45" invocations="272" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="2967" standardDeviationMicrosecondsPerInvocation="291"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="42" invocations="68" avgMicrosecondsPerInvocation="620" maxMicrosecondsPerInvocation="5108" standardDeviationMicrosecondsPerInvocation="1110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildAccessMethodsDatabase" totalMilliseconds="40" invocations="203" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="7641" standardDeviationMicrosecondsPerInvocation="657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="38" invocations="3509" avgMicrosecondsPerInvocation="10" maxMicrosecondsPerInvocation="1656" standardDeviationMicrosecondsPerInvocation="55"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="37" invocations="68" avgMicrosecondsPerInvocation="557" maxMicrosecondsPerInvocation="5770" standardDeviationMicrosecondsPerInvocation="989"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="37" invocations="68" avgMicrosecondsPerInvocation="554" maxMicrosecondsPerInvocation="9191" standardDeviationMicrosecondsPerInvocation="1315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="37" invocations="18221" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="174" standardDeviationMicrosecondsPerInvocation="2"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="36" invocations="68" avgMicrosecondsPerInvocation="537" maxMicrosecondsPerInvocation="6051" standardDeviationMicrosecondsPerInvocation="1175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="35" invocations="311" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="5704" standardDeviationMicrosecondsPerInvocation="558"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="34" invocations="68" avgMicrosecondsPerInvocation="511" maxMicrosecondsPerInvocation="5910" standardDeviationMicrosecondsPerInvocation="1032"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="32" invocations="68" avgMicrosecondsPerInvocation="470" maxMicrosecondsPerInvocation="19900" standardDeviationMicrosecondsPerInvocation="2395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="29" invocations="203" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="11933" standardDeviationMicrosecondsPerInvocation="968"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="28" invocations="68" avgMicrosecondsPerInvocation="420" maxMicrosecondsPerInvocation="4813" standardDeviationMicrosecondsPerInvocation="1034"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="28" invocations="203" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="2327" standardDeviationMicrosecondsPerInvocation="299"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="27" invocations="236" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="1695" standardDeviationMicrosecondsPerInvocation="210"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.file.PathTraversalDetector" totalMilliseconds="25" invocations="68" avgMicrosecondsPerInvocation="382" maxMicrosecondsPerInvocation="3963" standardDeviationMicrosecondsPerInvocation="721"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="25" invocations="68" avgMicrosecondsPerInvocation="381" maxMicrosecondsPerInvocation="5111" standardDeviationMicrosecondsPerInvocation="764"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="25" invocations="264" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="2495" standardDeviationMicrosecondsPerInvocation="202"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.password.ConstantPasswordDetector" totalMilliseconds="23" invocations="68" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="3384" standardDeviationMicrosecondsPerInvocation="597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="21" invocations="68" avgMicrosecondsPerInvocation="320" maxMicrosecondsPerInvocation="3481" standardDeviationMicrosecondsPerInvocation="731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="21" invocations="68" avgMicrosecondsPerInvocation="316" maxMicrosecondsPerInvocation="3507" standardDeviationMicrosecondsPerInvocation="544"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantPoolGenFactory" totalMilliseconds="21" invocations="68" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="4894" standardDeviationMicrosecondsPerInvocation="838"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="20" invocations="68" avgMicrosecondsPerInvocation="306" maxMicrosecondsPerInvocation="3445" standardDeviationMicrosecondsPerInvocation="630"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MultipleInstantiationsOfSingletons" totalMilliseconds="20" invocations="68" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="2396" standardDeviationMicrosecondsPerInvocation="428"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="19" invocations="68" avgMicrosecondsPerInvocation="289" maxMicrosecondsPerInvocation="3032" standardDeviationMicrosecondsPerInvocation="512"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPublicAttributes" totalMilliseconds="19" invocations="68" avgMicrosecondsPerInvocation="286" maxMicrosecondsPerInvocation="2988" standardDeviationMicrosecondsPerInvocation="545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="19" invocations="68" avgMicrosecondsPerInvocation="281" maxMicrosecondsPerInvocation="3259" standardDeviationMicrosecondsPerInvocation="560"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="18" invocations="930" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="6811" standardDeviationMicrosecondsPerInvocation="223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="17" invocations="68" avgMicrosecondsPerInvocation="260" maxMicrosecondsPerInvocation="2653" standardDeviationMicrosecondsPerInvocation="533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue" totalMilliseconds="16" invocations="68" avgMicrosecondsPerInvocation="247" maxMicrosecondsPerInvocation="3213" standardDeviationMicrosecondsPerInvocation="440"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteSuppressedWarnings" totalMilliseconds="16" invocations="203" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="2212" standardDeviationMicrosecondsPerInvocation="203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LockDataflowFactory" totalMilliseconds="16" invocations="124" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="2245" standardDeviationMicrosecondsPerInvocation="253"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="16" invocations="68" avgMicrosecondsPerInvocation="243" maxMicrosecondsPerInvocation="2437" standardDeviationMicrosecondsPerInvocation="420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInstanceLockOnSharedStaticData" totalMilliseconds="16" invocations="68" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="3235" standardDeviationMicrosecondsPerInvocation="529"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.redirect.UnvalidatedRedirectDetector" totalMilliseconds="15" invocations="68" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="2118" standardDeviationMicrosecondsPerInvocation="428"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="15" invocations="68" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="2420" standardDeviationMicrosecondsPerInvocation="451"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.PredictableRandomDetector" totalMilliseconds="14" invocations="68" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="1900" standardDeviationMicrosecondsPerInvocation="332"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ThrowingExceptions" totalMilliseconds="14" invocations="68" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="4553" standardDeviationMicrosecondsPerInvocation="592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectionIncreaseAccessibility" totalMilliseconds="14" invocations="68" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="3759" standardDeviationMicrosecondsPerInvocation="508"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

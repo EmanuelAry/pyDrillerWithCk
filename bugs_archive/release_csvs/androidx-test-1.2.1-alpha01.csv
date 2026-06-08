@@ -1,0 +1,15 @@
+release_tag,release_date,artifact,version,type,category,priority,message
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,RV_RETURN_VALUE_IGNORED_BAD_PRACTICE,BAD_PRACTICE,2,Method ignores exceptional return value
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.2.1-alpha01,2019-06-14-22,core,1.2.1-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)

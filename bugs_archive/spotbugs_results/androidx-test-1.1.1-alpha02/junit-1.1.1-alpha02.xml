@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.9.8" sequence="0" timestamp="1780863963958" analysisTimestamp="1780863965736" release="">
+  <Project projectName="">
+    <Jar>C:\Users\Emanuel\Documents\pt-BR\pyDriller\bugs_archive\downloads\junit-1.1.1-alpha02.jar</Jar>
+    <Plugin id="com.h3xstream.findsecbugs" enabled="true"/>
+  </Project>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="6be10a8d3ef04c61644de06fb91d1bd1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference</ShortMessage>
+    <LongMessage>Possible null pointer dereference of ActivityScenarioRule.scenario in androidx.test.ext.junit.rules.ActivityScenarioRule.after()</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="67" end="97" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>At ActivityScenarioRule.java:[lines 67-97]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.ActivityScenarioRule</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="after" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="87" end="88" startBytecode="0" endBytecode="71" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.ActivityScenarioRule.after()</Message>
+    </Method>
+    <Field classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="scenario" signature="Landroidx/test/core/app/ActivityScenario;" sourceSignature="Landroidx/test/core/app/ActivityScenario&lt;TA;&gt;;" isStatic="false" primary="true" role="FIELD_CONTAINS_VALUE" classAnnotationNames="androidx.annotation.Nullable">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>In ActivityScenarioRule.java</Message>
+      </SourceLine>
+      <Message>Value contained in androidx.test.ext.junit.rules.ActivityScenarioRule.scenario</Message>
+    </Field>
+    <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true" start="87" end="87" startBytecode="4" endBytecode="4" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at ActivityScenarioRule.java:[line 87]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="87" end="87" startBytecode="1" endBytecode="1" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at ActivityScenarioRule.java:[line 87]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_CLAUSE_THROWABLE" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="858dbbc091ba59c967835c7db520ac7e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="397">
+    <ShortMessage>Method lists Throwable in its throws clause, but it could be more specific.</ShortMessage>
+    <LongMessage>Method lists Throwable in its throws clause, but it could be more specific.</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="67" end="97" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>At ActivityScenarioRule.java:[lines 67-97]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.ActivityScenarioRule</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="before" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="82" end="83" startBytecode="0" endBytecode="80" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.ActivityScenarioRule.before()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="82" end="83" startBytecode="0" endBytecode="80" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java" synthetic="true">
+      <Message>At ActivityScenarioRule.java:[lines 82-83]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE" instanceHash="b417df26358a6e5ff24b4397f7c7dfc9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="457">
+    <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+    <LongMessage>ActivityScenarioRule.scenario not initialized in constructor and dereferenced in androidx.test.ext.junit.rules.ActivityScenarioRule.after()</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="67" end="97" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>At ActivityScenarioRule.java:[lines 67-97]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.ActivityScenarioRule</Message>
+    </Class>
+    <Field classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="scenario" signature="Landroidx/test/core/app/ActivityScenario;" isStatic="false" primary="true" classAnnotationNames="androidx.annotation.Nullable">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>In ActivityScenarioRule.java</Message>
+      </SourceLine>
+      <Message>Field androidx.test.ext.junit.rules.ActivityScenarioRule.scenario</Message>
+    </Field>
+    <Method classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="after" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="87" end="88" startBytecode="0" endBytecode="71" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.ActivityScenarioRule.after()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true" start="87" end="87" startBytecode="4" endBytecode="4" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+      <Message>At ActivityScenarioRule.java:[line 87]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N" instanceHash="443d19eca31e72fd46fe05a9bfd25ec1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Consider using Locale parameterized version of invoked method</ShortMessage>
+    <LongMessage>Use of non-localized String.toUpperCase() or String.toLowerCase() in androidx.test.ext.junit.runners.AndroidJUnit4.getRunnerClassName()</LongMessage>
+    <Class classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="45" end="115" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+        <Message>At AndroidJUnit4.java:[lines 45-115]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.runners.AndroidJUnit4</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.runners.AndroidJUnit4" name="getRunnerClassName" signature="()Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="55" end="64" startBytecode="0" endBytecode="111" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java"/>
+      <Message>In method androidx.test.ext.junit.runners.AndroidJUnit4.getRunnerClassName()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true" start="58" end="58" startBytecode="16" endBytecode="16" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+      <Message>At AndroidJUnit4.java:[line 58]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" abbrev="UwF" category="STYLE" cweid="457">
+    <ShortDescription>Field not initialized in constructor but dereferenced without null check</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never initialized within any constructor, and is therefore could be null after
+the object is constructed. Elsewhere, it is loaded and dereferenced without a null check.
+This could be either an error or a questionable design, since
+it means a null pointer exception will be generated if that field is dereferenced
+before being initialized.
+</p>
+<p>See <a href="https://cwe.mitre.org/data/definitions/457.html">CWE-457: Use of Uninitialized Variable</a>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_NULL_ON_SOME_PATH" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Possible null pointer dereference</ShortDescription>
+    <Details><![CDATA[
+
+<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
+a null value will be dereferenced, which
+would generate a <code>NullPointerException</code> when the code is executed.
+Of course, the problem might be that the branch or statement is infeasible and that
+the null pointer exception cannot ever be executed; deciding that is beyond the ability of SpotBugs.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="THROWS_METHOD_THROWS_CLAUSE_THROWABLE" abbrev="THROWS" category="BAD_PRACTICE" cweid="397">
+    <ShortDescription>Method lists Throwable in its throws clause, but it could be more specific.</ShortDescription>
+    <Details><![CDATA[
+      
+        <p>
+        Method lists Throwable in its throws clause.<br>
+
+        When declaring a method, the types of exceptions in the throws clause should be the most specific.
+        Therefore, using Throwable in the throws clause would force the caller to either use it in its own throws clause, or use it in a try-catch block (when it does not necessarily
+        contain any meaningful information about the thrown exception).<br>
+
+        Furthermore, using Throwable like that is semantically a bad practice, considered that Throwables include Errors as well, but by definition they occur in unrecoverable scenarios.<br><br>
+
+        For more information, see the <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable">SEI CERT ERR07-J rule</a>.
+        </p><p>
+        See <a href="https://cwe.mitre.org/data/definitions/397.html">CWE-397: Declaration of Throws for Generic Exception</a>.
+        </p>
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_CONVERT_CASE" abbrev="Dm" category="I18N">
+    <ShortDescription>Consider using Locale parameterized version of invoked method</ShortDescription>
+    <Details><![CDATA[
+
+  <p> A String is being converted to upper or lowercase, using the platform's default encoding. This may
+      result in improper conversions when used with international characters. Use the </p>
+      <ul>
+    <li>String.toUpperCase( Locale l )</li>
+    <li>String.toLowerCase( Locale l )</li>
+    </ul>
+      <p>versions instead.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="UwF">
+    <Description>Unwritten field</Description>
+  </BugCode>
+  <BugCode abbrev="THROWS">
+    <Description>Exception throwing related problems</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="14">
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>androidx.annotation.Nullable</MissingClass>
+    <MissingClass>androidx.test.core.app.ActivityScenario</MissingClass>
+    <MissingClass>androidx.test.internal.util.Checks</MissingClass>
+    <MissingClass>org.junit.rules.ExternalResource</MissingClass>
+    <MissingClass>org.junit.runner.Description</MissingClass>
+    <MissingClass>org.junit.runner.Runner</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.Filter</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.Filterable</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.NoTestsRemainException</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.Sortable</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.Sorter</MissingClass>
+    <MissingClass>org.junit.runner.notification.RunNotifier</MissingClass>
+    <MissingClass>org.junit.runners.model.InitializationError</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 7 Jun 2026 17:26:03 -0300" total_classes="5" referenced_classes="29" total_bugs="4" total_size="79" num_packages="2" java_version="25.0.3" vm_version="25.0.3+9-LTS" cpu_seconds="9.89" clock_seconds="2.29" peak_mbytes="215.83" alloc_mbytes="768.00" gc_seconds="0.04" priority_3="3" priority_2="1">
+    <FileStats path="androidx/test/ext/junit/rules/&lt;Unknown&gt;" bugCount="0" size="10"/>
+    <FileStats path="androidx/test/ext/junit/rules/ActivityScenarioRule.java" bugCount="3" size="23" bugHash="89b3e38598603b1c969d0f50e046888f"/>
+    <FileStats path="androidx/test/ext/junit/runners/AndroidJUnit4.java" bugCount="1" size="46" bugHash="ccde9b3d5420ad54364c1d451bc05faa"/>
+    <PackageStats package="androidx.test.ext.junit.rules" total_bugs="3" total_types="4" total_size="33" priority_3="2" priority_2="1">
+      <ClassStats class="androidx.test.ext.junit.rules.ActivityScenarioRule" sourceFile="ActivityScenarioRule.java" interface="false" size="21" bugs="3" priority_3="2" priority_2="1"/>
+      <ClassStats class="androidx.test.ext.junit.rules.ActivityScenarioRule$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="androidx.test.ext.junit.rules.ActivityScenarioRule$$Lambda$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="androidx.test.ext.junit.rules.ActivityScenarioRule$Supplier" sourceFile="ActivityScenarioRule.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.ext.junit.runners" total_bugs="1" total_types="1" total_size="46" priority_3="1">
+      <ClassStats class="androidx.test.ext.junit.runners.AndroidJUnit4" sourceFile="AndroidJUnit4.java" interface="false" size="46" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="455" invocations="493" avgMicrosecondsPerInvocation="923" maxMicrosecondsPerInvocation="18657" standardDeviationMicrosecondsPerInvocation="1997"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="112" invocations="29" avgMicrosecondsPerInvocation="3872" maxMicrosecondsPerInvocation="29464" standardDeviationMicrosecondsPerInvocation="7047"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="72" invocations="101" avgMicrosecondsPerInvocation="721" maxMicrosecondsPerInvocation="6193" standardDeviationMicrosecondsPerInvocation="1101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="63" invocations="498" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="4370" standardDeviationMicrosecondsPerInvocation="240"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="62" invocations="75" avgMicrosecondsPerInvocation="838" maxMicrosecondsPerInvocation="30616" standardDeviationMicrosecondsPerInvocation="3656"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="56" invocations="29" avgMicrosecondsPerInvocation="1961" maxMicrosecondsPerInvocation="12024" standardDeviationMicrosecondsPerInvocation="3146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="45" invocations="22" avgMicrosecondsPerInvocation="2084" maxMicrosecondsPerInvocation="22366" standardDeviationMicrosecondsPerInvocation="5021"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="43" invocations="21" avgMicrosecondsPerInvocation="2070" maxMicrosecondsPerInvocation="16570" standardDeviationMicrosecondsPerInvocation="4094"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="42" invocations="439" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="1707" standardDeviationMicrosecondsPerInvocation="175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="37" invocations="29" avgMicrosecondsPerInvocation="1302" maxMicrosecondsPerInvocation="10948" standardDeviationMicrosecondsPerInvocation="2562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="21" avgMicrosecondsPerInvocation="1767" maxMicrosecondsPerInvocation="31382" standardDeviationMicrosecondsPerInvocation="6632"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="36" invocations="29" avgMicrosecondsPerInvocation="1267" maxMicrosecondsPerInvocation="13142" standardDeviationMicrosecondsPerInvocation="2683"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="30" invocations="29" avgMicrosecondsPerInvocation="1038" maxMicrosecondsPerInvocation="10559" standardDeviationMicrosecondsPerInvocation="2244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="27" invocations="20" avgMicrosecondsPerInvocation="1364" maxMicrosecondsPerInvocation="7870" standardDeviationMicrosecondsPerInvocation="1897"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="26" invocations="20" avgMicrosecondsPerInvocation="1317" maxMicrosecondsPerInvocation="12325" standardDeviationMicrosecondsPerInvocation="2620"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="25" invocations="21" avgMicrosecondsPerInvocation="1194" maxMicrosecondsPerInvocation="12460" standardDeviationMicrosecondsPerInvocation="2612"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="21" invocations="20" avgMicrosecondsPerInvocation="1096" maxMicrosecondsPerInvocation="5222" standardDeviationMicrosecondsPerInvocation="1287"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="20" invocations="29" avgMicrosecondsPerInvocation="690" maxMicrosecondsPerInvocation="3951" standardDeviationMicrosecondsPerInvocation="995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="19" invocations="29" avgMicrosecondsPerInvocation="670" maxMicrosecondsPerInvocation="5666" standardDeviationMicrosecondsPerInvocation="1218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="17" invocations="29" avgMicrosecondsPerInvocation="611" maxMicrosecondsPerInvocation="6505" standardDeviationMicrosecondsPerInvocation="1289"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

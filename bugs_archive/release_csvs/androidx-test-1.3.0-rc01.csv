@@ -1,0 +1,171 @@
+release_tag,release_date,artifact,version,type,category,priority,message
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,CT_CONSTRUCTOR_THROW,BAD_PRACTICE,2,Be wary of letting constructors throw exceptions.
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,CT_CONSTRUCTOR_THROW,BAD_PRACTICE,2,Be wary of letting constructors throw exceptions.
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,CT_CONSTRUCTOR_THROW,BAD_PRACTICE,2,Be wary of letting constructors throw exceptions.
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD,STYLE,3,Unread public/protected field
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_DEFAULT_ENCODING,I18N,1,Reliance on default encoding
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_DEFAULT_ENCODING,I18N,1,Reliance on default encoding
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,PATH_TRAVERSAL_IN,SECURITY,2,Potential Path Traversal (file read)
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_DEFAULT_ENCODING,I18N,1,Reliance on default encoding
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_DEFAULT_ENCODING,I18N,1,Reliance on default encoding
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,RV_ABSOLUTE_VALUE_OF_HASHCODE,CORRECTNESS,1,Bad attempt to compute absolute value of signed 32-bit hashcode
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,URF_UNREAD_FIELD,PERFORMANCE,3,Unread field
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,EI_EXPOSE_REP2,MALICIOUS_CODE,2,May expose internal representation by incorporating reference to mutable object
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,EI_EXPOSE_REP2,MALICIOUS_CODE,2,May expose internal representation by incorporating reference to mutable object
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,PATH_TRAVERSAL_IN,SECURITY,2,Potential Path Traversal (file read)
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_DEFAULT_ENCODING,I18N,1,Reliance on default encoding
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,URLCONNECTION_SSRF_FD,SECURITY,2,URLConnection Server-Side Request Forgery (SSRF) and File Disclosure
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,CT_CONSTRUCTOR_THROW,BAD_PRACTICE,2,Be wary of letting constructors throw exceptions.
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,EI_EXPOSE_REP,MALICIOUS_CODE,2,May expose internal representation by returning reference to mutable object
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DB_DUPLICATE_SWITCH_CLAUSES,STYLE,3,Method uses the same code for two switch clauses
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,CT_CONSTRUCTOR_THROW,BAD_PRACTICE,2,Be wary of letting constructors throw exceptions.
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,EI_EXPOSE_REP,MALICIOUS_CODE,2,May expose internal representation by returning reference to mutable object
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,EI_EXPOSE_REP2,MALICIOUS_CODE,2,May expose internal representation by incorporating reference to mutable object
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_CONVERT_CASE,I18N,3,Consider using Locale parameterized version of invoked method
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,EI_EXPOSE_REP,MALICIOUS_CODE,2,May expose internal representation by returning reference to mutable object
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,EI_EXPOSE_REP,MALICIOUS_CODE,2,May expose internal representation by returning reference to mutable object
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,STYLE,3,Field not initialized in constructor but dereferenced without null check
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,STYLE,3,Field not initialized in constructor but dereferenced without null check
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,STYLE,3,Field not initialized in constructor but dereferenced without null check
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION,BAD_PRACTICE,3,"Method lists Exception in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_DEFAULT_ENCODING,I18N,1,Reliance on default encoding
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,ANDROID_EXTERNAL_FILE_ACCESS,SECURITY,2,External file access (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DM_CONVERT_CASE,I18N,3,Consider using Locale parameterized version of invoked method
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,PATH_TRAVERSAL_IN,SECURITY,2,Potential Path Traversal (file read)
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,RV_RETURN_VALUE_IGNORED_BAD_PRACTICE,BAD_PRACTICE,2,Method ignores exceptional return value
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,DCN_NULLPOINTER_EXCEPTION,STYLE,2,NullPointerException caught
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,EI_EXPOSE_STATIC_REP2,MALICIOUS_CODE,2,May expose internal static state by storing a mutable object into a static field
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,NP_NULL_PARAM_DEREF,CORRECTNESS,2,Method call passes null for non-null parameter
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE,STYLE,2,Possible null pointer dereference due to return value of called method
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE,STYLE,2,Possible null pointer dereference due to return value of called method
+androidx-test-1.3.0-rc01,2020-05-27-18,runner,1.3.0-rc01,NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE,STYLE,2,Possible null pointer dereference due to return value of called method
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,RV_RETURN_VALUE_IGNORED_BAD_PRACTICE,BAD_PRACTICE,2,Method ignores exceptional return value
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,core,1.3.0-rc01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,IS2_INCONSISTENT_SYNC,MT_CORRECTNESS,2,Inconsistent synchronization
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,SING_SINGLETON_HAS_NONPRIVATE_CONSTRUCTOR,CORRECTNESS,2,Class using singleton design pattern has non-private constructor.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,SSD_DO_NOT_USE_INSTANCE_LOCK_ON_SHARED_STATIC_DATA,MT_CORRECTNESS,2,Instance level lock was used on a shared static data
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,SSD_DO_NOT_USE_INSTANCE_LOCK_ON_SHARED_STATIC_DATA,MT_CORRECTNESS,2,Instance level lock was used on a shared static data
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD,STYLE,2,Write to static field from instance method
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD,STYLE,2,Write to static field from instance method
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,CT_CONSTRUCTOR_THROW,BAD_PRACTICE,2,Be wary of letting constructors throw exceptions.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,FORMAT_STRING_MANIPULATION,SECURITY,3,Format String Manipulation
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,UWF_NULL_FIELD,CORRECTNESS,3,Field only ever set to null
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_DEFAULT_ENCODING,I18N,1,Reliance on default encoding
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,PATH_TRAVERSAL_IN,SECURITY,3,Potential Path Traversal (file read)
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,PATH_TRAVERSAL_IN,SECURITY,3,Potential Path Traversal (file read)
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,PATH_TRAVERSAL_IN,SECURITY,3,Potential Path Traversal (file read)
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DP_DO_INSIDE_DO_PRIVILEGED,MALICIOUS_CODE,3,Method invoked that should be only be invoked inside a doPrivileged block
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,STYLE,3,Field not initialized in constructor but dereferenced without null check
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,STYLE,3,Field not initialized in constructor but dereferenced without null check
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,STYLE,3,Field not initialized in constructor but dereferenced without null check
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_EXIT,BAD_PRACTICE,2,Method invokes System.exit(...)
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,monitor,1.3.0-rc01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,NP_NULL_ON_SOME_PATH,CORRECTNESS,2,Possible null pointer dereference
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,STYLE,3,Field not initialized in constructor but dereferenced without null check
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,NP_NULL_ON_SOME_PATH,CORRECTNESS,2,Possible null pointer dereference
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,SIC_INNER_SHOULD_BE_STATIC_ANON,PERFORMANCE,3,Could be refactored into a named static inner class
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,ANDROID_EXTERNAL_FILE_ACCESS,SECURITY,2,External file access (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,ANDROID_EXTERNAL_FILE_ACCESS,SECURITY,2,External file access (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,ANDROID_EXTERNAL_FILE_ACCESS,SECURITY,2,External file access (Android)
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,PATH_TRAVERSAL_IN,SECURITY,2,Potential Path Traversal (file read)
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,PATH_TRAVERSAL_IN,SECURITY,2,Potential Path Traversal (file read)
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,DM_CONVERT_CASE,I18N,3,Consider using Locale parameterized version of invoked method
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE,STYLE,2,Redundant nullcheck of value known to be non-null
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,junit,1.3.0-rc01,VA_FORMAT_STRING_USES_NEWLINE,BAD_PRACTICE,2,Format string should use %n rather than \n
+androidx-test-1.3.0-rc01,2020-05-27-18,truth,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.3.0-rc01,2020-05-27-18,truth,1.3.0-rc01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor

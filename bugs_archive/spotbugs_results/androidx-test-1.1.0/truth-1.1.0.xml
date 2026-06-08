@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.9.8" sequence="0" timestamp="1780863910737" analysisTimestamp="1780863912586" release="">
+  <Project projectName="">
+    <Jar>C:\Users\Emanuel\Documents\pt-BR\pyDriller\bugs_archive\downloads\truth-1.1.0.jar</Jar>
+    <Plugin id="com.h3xstream.findsecbugs" enabled="true"/>
+  </Project>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="86e327e219d2bf11ba62c44c0cde327d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.ext.truth.os.BundleSubject.containsKey(String) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.ext.truth.os.BundleSubject" primary="true">
+      <SourceLine classname="androidx.test.ext.truth.os.BundleSubject" start="33" end="95" sourcefile="BundleSubject.java" sourcepath="androidx/test/ext/truth/os/BundleSubject.java">
+        <Message>At BundleSubject.java:[lines 33-95]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.truth.os.BundleSubject</Message>
+    </Class>
+    <Method classname="androidx.test.ext.truth.os.BundleSubject" name="containsKey" signature="(Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.truth.os.BundleSubject" start="86" end="89" startBytecode="0" endBytecode="163" sourcefile="BundleSubject.java" sourcepath="androidx/test/ext/truth/os/BundleSubject.java"/>
+      <Message>In method androidx.test.ext.truth.os.BundleSubject.containsKey(String)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.truth.os.BundleSubject" primary="true" start="87" end="87" startBytecode="40" endBytecode="40" sourcefile="BundleSubject.java" sourcepath="androidx/test/ext/truth/os/BundleSubject.java">
+      <Message>At BundleSubject.java:[line 87]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="7acaecd362caa212d9ee47e44e360929" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>androidx.test.ext.truth.os.BundleSubject.doesNotContainKey(String) invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="androidx.test.ext.truth.os.BundleSubject" primary="true">
+      <SourceLine classname="androidx.test.ext.truth.os.BundleSubject" start="33" end="95" sourcefile="BundleSubject.java" sourcepath="androidx/test/ext/truth/os/BundleSubject.java">
+        <Message>At BundleSubject.java:[lines 33-95]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.truth.os.BundleSubject</Message>
+    </Class>
+    <Method classname="androidx.test.ext.truth.os.BundleSubject" name="doesNotContainKey" signature="(Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.truth.os.BundleSubject" start="92" end="95" startBytecode="0" endBytecode="163" sourcefile="BundleSubject.java" sourcepath="androidx/test/ext/truth/os/BundleSubject.java"/>
+      <Message>In method androidx.test.ext.truth.os.BundleSubject.doesNotContainKey(String)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.truth.os.BundleSubject" primary="true" start="93" end="93" startBytecode="40" endBytecode="40" sourcefile="BundleSubject.java" sourcepath="androidx/test/ext/truth/os/BundleSubject.java">
+      <Message>At BundleSubject.java:[line 93]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_STRING_CTOR" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient new String(String) constructor</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Using the <code>java.lang.String(String)</code> constructor wastes memory
+  because the object so constructed will be functionally indistinguishable
+  from the <code>String</code> passed as a parameter.&nbsp; Just use the
+  argument <code>String</code> directly.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="35">
+    <MissingClass>android.app.Notification</MissingClass>
+    <MissingClass>android.app.Notification$Action</MissingClass>
+    <MissingClass>android.app.PendingIntent</MissingClass>
+    <MissingClass>android.content.ComponentName</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.net.Uri</MissingClass>
+    <MissingClass>android.os.Build</MissingClass>
+    <MissingClass>android.os.Build$VERSION</MissingClass>
+    <MissingClass>android.os.Build$VERSION_CODES</MissingClass>
+    <MissingClass>android.os.Bundle</MissingClass>
+    <MissingClass>android.os.Parcelable</MissingClass>
+    <MissingClass>android.os.Parcelable$Creator</MissingClass>
+    <MissingClass>android.view.MotionEvent</MissingClass>
+    <MissingClass>android.view.MotionEvent$PointerCoords</MissingClass>
+    <MissingClass>android.view.MotionEvent$PointerProperties</MissingClass>
+    <MissingClass>androidx.annotation.Nullable</MissingClass>
+    <MissingClass>androidx.test.core.os.Parcelables</MissingClass>
+    <MissingClass>com.google.common.annotations.Beta</MissingClass>
+    <MissingClass>com.google.common.base.Objects</MissingClass>
+    <MissingClass>com.google.common.truth.BooleanSubject</MissingClass>
+    <MissingClass>com.google.common.truth.ComparableSubject</MissingClass>
+    <MissingClass>com.google.common.truth.Correspondence</MissingClass>
+    <MissingClass>com.google.common.truth.Fact</MissingClass>
+    <MissingClass>com.google.common.truth.FailureMetadata</MissingClass>
+    <MissingClass>com.google.common.truth.FloatSubject</MissingClass>
+    <MissingClass>com.google.common.truth.IntegerSubject</MissingClass>
+    <MissingClass>com.google.common.truth.IterableSubject</MissingClass>
+    <MissingClass>com.google.common.truth.LongSubject</MissingClass>
+    <MissingClass>com.google.common.truth.Ordered</MissingClass>
+    <MissingClass>com.google.common.truth.SimpleSubjectBuilder</MissingClass>
+    <MissingClass>com.google.common.truth.StandardSubjectBuilder</MissingClass>
+    <MissingClass>com.google.common.truth.StringSubject</MissingClass>
+    <MissingClass>com.google.common.truth.Subject</MissingClass>
+    <MissingClass>com.google.common.truth.Subject$Factory</MissingClass>
+    <MissingClass>com.google.common.truth.Truth</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 7 Jun 2026 17:25:10 -0300" total_classes="23" referenced_classes="46" total_bugs="2" total_size="448" num_packages="5" java_version="25.0.3" vm_version="25.0.3+9-LTS" cpu_seconds="16.69" clock_seconds="3.77" peak_mbytes="230.26" alloc_mbytes="768.00" gc_seconds="0.07" priority_2="2">
+    <FileStats path="androidx/test/ext/truth/app/&lt;Unknown&gt;" bugCount="0" size="23"/>
+    <FileStats path="androidx/test/ext/truth/app/NotificationActionSubject.java" bugCount="0" size="10"/>
+    <FileStats path="androidx/test/ext/truth/app/NotificationSubject.java" bugCount="0" size="31"/>
+    <FileStats path="androidx/test/ext/truth/app/PendingIntentSubject.java" bugCount="0" size="9"/>
+    <FileStats path="androidx/test/ext/truth/content/&lt;Unknown&gt;" bugCount="0" size="7"/>
+    <FileStats path="androidx/test/ext/truth/content/IntentCorrespondences.java" bugCount="0" size="42"/>
+    <FileStats path="androidx/test/ext/truth/content/IntentSubject.java" bugCount="0" size="50"/>
+    <FileStats path="androidx/test/ext/truth/internal/FlagUtil.java" bugCount="0" size="10"/>
+    <FileStats path="androidx/test/ext/truth/os/&lt;Unknown&gt;" bugCount="0" size="16"/>
+    <FileStats path="androidx/test/ext/truth/os/BundleSubject.java" bugCount="2" size="41" bugHash="c8461dc6f34f40d5fd6c433c25a6616d"/>
+    <FileStats path="androidx/test/ext/truth/os/ParcelableSubject.java" bugCount="0" size="12"/>
+    <FileStats path="androidx/test/ext/truth/view/&lt;Unknown&gt;" bugCount="0" size="21"/>
+    <FileStats path="androidx/test/ext/truth/view/MotionEventSubject.java" bugCount="0" size="128"/>
+    <FileStats path="androidx/test/ext/truth/view/PointerCoordsSubject.java" bugCount="0" size="29"/>
+    <FileStats path="androidx/test/ext/truth/view/PointerPropertiesSubject.java" bugCount="0" size="19"/>
+    <PackageStats package="androidx.test.ext.truth.app" total_bugs="0" total_types="6" total_size="73">
+      <ClassStats class="androidx.test.ext.truth.app.NotificationActionSubject" sourceFile="NotificationActionSubject.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.app.NotificationActionSubject$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.app.NotificationSubject" sourceFile="NotificationSubject.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.app.NotificationSubject$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.app.PendingIntentSubject" sourceFile="PendingIntentSubject.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.app.PendingIntentSubject$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.ext.truth.content" total_bugs="0" total_types="6" total_size="99">
+      <ClassStats class="androidx.test.ext.truth.content.IntentCorrespondences" sourceFile="IntentCorrespondences.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.content.IntentCorrespondences$1" sourceFile="IntentCorrespondences.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.content.IntentCorrespondences$2" sourceFile="IntentCorrespondences.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.content.IntentCorrespondences$3" sourceFile="IntentCorrespondences.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.content.IntentSubject" sourceFile="IntentSubject.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.content.IntentSubject$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.ext.truth.internal" total_bugs="0" total_types="1" total_size="10">
+      <ClassStats class="androidx.test.ext.truth.internal.FlagUtil" sourceFile="FlagUtil.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.ext.truth.os" total_bugs="2" total_types="4" total_size="69" priority_2="2">
+      <ClassStats class="androidx.test.ext.truth.os.BundleSubject" sourceFile="BundleSubject.java" interface="false" size="41" bugs="2" priority_2="2"/>
+      <ClassStats class="androidx.test.ext.truth.os.BundleSubject$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.os.ParcelableSubject" sourceFile="ParcelableSubject.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.os.ParcelableSubject$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.ext.truth.view" total_bugs="0" total_types="6" total_size="197">
+      <ClassStats class="androidx.test.ext.truth.view.MotionEventSubject" sourceFile="MotionEventSubject.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.view.MotionEventSubject$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.view.PointerCoordsSubject" sourceFile="PointerCoordsSubject.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.view.PointerCoordsSubject$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.view.PointerPropertiesSubject" sourceFile="PointerPropertiesSubject.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="androidx.test.ext.truth.view.PointerPropertiesSubject$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="412" invocations="525" avgMicrosecondsPerInvocation="785" maxMicrosecondsPerInvocation="23932" standardDeviationMicrosecondsPerInvocation="2020"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="100" invocations="46" avgMicrosecondsPerInvocation="2178" maxMicrosecondsPerInvocation="19349" standardDeviationMicrosecondsPerInvocation="4042"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="93" invocations="159" avgMicrosecondsPerInvocation="589" maxMicrosecondsPerInvocation="15283" standardDeviationMicrosecondsPerInvocation="1500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="87" invocations="167" avgMicrosecondsPerInvocation="524" maxMicrosecondsPerInvocation="6012" standardDeviationMicrosecondsPerInvocation="725"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="83" invocations="167" avgMicrosecondsPerInvocation="502" maxMicrosecondsPerInvocation="9955" standardDeviationMicrosecondsPerInvocation="819"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="77" invocations="167" avgMicrosecondsPerInvocation="463" maxMicrosecondsPerInvocation="10885" standardDeviationMicrosecondsPerInvocation="946"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="76" invocations="265" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="4624" standardDeviationMicrosecondsPerInvocation="556"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="66" invocations="112" avgMicrosecondsPerInvocation="595" maxMicrosecondsPerInvocation="29850" standardDeviationMicrosecondsPerInvocation="2942"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="66" invocations="167" avgMicrosecondsPerInvocation="397" maxMicrosecondsPerInvocation="8976" standardDeviationMicrosecondsPerInvocation="698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="66" invocations="167" avgMicrosecondsPerInvocation="397" maxMicrosecondsPerInvocation="3583" standardDeviationMicrosecondsPerInvocation="420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="64" invocations="46" avgMicrosecondsPerInvocation="1391" maxMicrosecondsPerInvocation="7556" standardDeviationMicrosecondsPerInvocation="1978"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="59" invocations="167" avgMicrosecondsPerInvocation="356" maxMicrosecondsPerInvocation="35963" standardDeviationMicrosecondsPerInvocation="2780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="58" invocations="186" avgMicrosecondsPerInvocation="312" maxMicrosecondsPerInvocation="10901" standardDeviationMicrosecondsPerInvocation="845"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="56" invocations="531" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="3046" standardDeviationMicrosecondsPerInvocation="176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="41" invocations="156" avgMicrosecondsPerInvocation="269" maxMicrosecondsPerInvocation="1680" standardDeviationMicrosecondsPerInvocation="220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="38" invocations="450" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="1661" standardDeviationMicrosecondsPerInvocation="166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="38" invocations="46" avgMicrosecondsPerInvocation="830" maxMicrosecondsPerInvocation="10065" standardDeviationMicrosecondsPerInvocation="2020"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="36" invocations="23" avgMicrosecondsPerInvocation="1591" maxMicrosecondsPerInvocation="24793" standardDeviationMicrosecondsPerInvocation="5007"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="34" invocations="46" avgMicrosecondsPerInvocation="760" maxMicrosecondsPerInvocation="8125" standardDeviationMicrosecondsPerInvocation="1466"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="33" invocations="46" avgMicrosecondsPerInvocation="726" maxMicrosecondsPerInvocation="10206" standardDeviationMicrosecondsPerInvocation="1599"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="29" invocations="46" avgMicrosecondsPerInvocation="642" maxMicrosecondsPerInvocation="13228" standardDeviationMicrosecondsPerInvocation="1995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="28" invocations="1357" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="2438" standardDeviationMicrosecondsPerInvocation="87"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ResourceInMultipleThreadsDetector" totalMilliseconds="22" invocations="23" avgMicrosecondsPerInvocation="999" maxMicrosecondsPerInvocation="8360" standardDeviationMicrosecondsPerInvocation="1781"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.trust.TrustBoundaryViolationAttributeDetector" totalMilliseconds="21" invocations="23" avgMicrosecondsPerInvocation="930" maxMicrosecondsPerInvocation="17285" standardDeviationMicrosecondsPerInvocation="3492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="21" invocations="46" avgMicrosecondsPerInvocation="459" maxMicrosecondsPerInvocation="7303" standardDeviationMicrosecondsPerInvocation="1225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="20" invocations="46" avgMicrosecondsPerInvocation="445" maxMicrosecondsPerInvocation="2144" standardDeviationMicrosecondsPerInvocation="601"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="18" invocations="23" avgMicrosecondsPerInvocation="824" maxMicrosecondsPerInvocation="5712" standardDeviationMicrosecondsPerInvocation="1250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="18" invocations="23" avgMicrosecondsPerInvocation="784" maxMicrosecondsPerInvocation="3953" standardDeviationMicrosecondsPerInvocation="846"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.fileDisclosure.FileDisclosureDetector" totalMilliseconds="17" invocations="23" avgMicrosecondsPerInvocation="772" maxMicrosecondsPerInvocation="10505" standardDeviationMicrosecondsPerInvocation="2171"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.spring.CorsRegistryCORSDetector" totalMilliseconds="17" invocations="23" avgMicrosecondsPerInvocation="770" maxMicrosecondsPerInvocation="10677" standardDeviationMicrosecondsPerInvocation="2165"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.formatter.FormatStringManipulationDetector" totalMilliseconds="17" invocations="23" avgMicrosecondsPerInvocation="764" maxMicrosecondsPerInvocation="10169" standardDeviationMicrosecondsPerInvocation="2106"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="17" invocations="167" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="1704" standardDeviationMicrosecondsPerInvocation="182"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.file.PathTraversalDetector" totalMilliseconds="16" invocations="23" avgMicrosecondsPerInvocation="732" maxMicrosecondsPerInvocation="4582" standardDeviationMicrosecondsPerInvocation="1217"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="15" invocations="46" avgMicrosecondsPerInvocation="333" maxMicrosecondsPerInvocation="3916" standardDeviationMicrosecondsPerInvocation="758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="15" invocations="167" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="9947" standardDeviationMicrosecondsPerInvocation="773"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.password.HashUnsafeEqualsDetector" totalMilliseconds="15" invocations="23" avgMicrosecondsPerInvocation="658" maxMicrosecondsPerInvocation="10393" standardDeviationMicrosecondsPerInvocation="2148"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPotentialSecurityCheckBasedOnUntrustedSource" totalMilliseconds="14" invocations="23" avgMicrosecondsPerInvocation="640" maxMicrosecondsPerInvocation="7985" standardDeviationMicrosecondsPerInvocation="1681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="14" invocations="23" avgMicrosecondsPerInvocation="635" maxMicrosecondsPerInvocation="3913" standardDeviationMicrosecondsPerInvocation="1012"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="14" invocations="6095" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="167" standardDeviationMicrosecondsPerInvocation="3"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="14" invocations="23" avgMicrosecondsPerInvocation="609" maxMicrosecondsPerInvocation="4274" standardDeviationMicrosecondsPerInvocation="954"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="13" invocations="46" avgMicrosecondsPerInvocation="293" maxMicrosecondsPerInvocation="3071" standardDeviationMicrosecondsPerInvocation="557"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildAccessMethodsDatabase" totalMilliseconds="13" invocations="46" avgMicrosecondsPerInvocation="284" maxMicrosecondsPerInvocation="2699" standardDeviationMicrosecondsPerInvocation="512"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="13" invocations="23" avgMicrosecondsPerInvocation="565" maxMicrosecondsPerInvocation="3115" standardDeviationMicrosecondsPerInvocation="911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="12" invocations="23" avgMicrosecondsPerInvocation="555" maxMicrosecondsPerInvocation="4753" standardDeviationMicrosecondsPerInvocation="1092"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="12" invocations="23" avgMicrosecondsPerInvocation="533" maxMicrosecondsPerInvocation="6364" standardDeviationMicrosecondsPerInvocation="1289"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="11" invocations="159" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="1882" standardDeviationMicrosecondsPerInvocation="162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="11" invocations="472" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="5768" standardDeviationMicrosecondsPerInvocation="265"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.serial.ObjectDeserializationDetector" totalMilliseconds="11" invocations="23" avgMicrosecondsPerInvocation="505" maxMicrosecondsPerInvocation="4566" standardDeviationMicrosecondsPerInvocation="948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="11" invocations="23" avgMicrosecondsPerInvocation="504" maxMicrosecondsPerInvocation="3257" standardDeviationMicrosecondsPerInvocation="703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="11" invocations="23" avgMicrosecondsPerInvocation="501" maxMicrosecondsPerInvocation="2985" standardDeviationMicrosecondsPerInvocation="720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="11" invocations="23" avgMicrosecondsPerInvocation="497" maxMicrosecondsPerInvocation="3444" standardDeviationMicrosecondsPerInvocation="720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="11" invocations="23" avgMicrosecondsPerInvocation="486" maxMicrosecondsPerInvocation="2585" standardDeviationMicrosecondsPerInvocation="697"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.password.ConstantPasswordDetector" totalMilliseconds="11" invocations="23" avgMicrosecondsPerInvocation="482" maxMicrosecondsPerInvocation="3019" standardDeviationMicrosecondsPerInvocation="656"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

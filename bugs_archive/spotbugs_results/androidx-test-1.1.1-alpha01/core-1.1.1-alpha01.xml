@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.9.8" sequence="0" timestamp="1780863929093" analysisTimestamp="1780863930839" release="">
+  <Project projectName="">
+    <Jar>C:\Users\Emanuel\Documents\pt-BR\pyDriller\bugs_archive\downloads\core-1.1.1-alpha01.jar</Jar>
+    <Plugin id="com.h3xstream.findsecbugs" enabled="true"/>
+  </Project>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" instanceHash="8d90b4998425986b81b023dd395998e6" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="253">
+    <ShortMessage>Method ignores exceptional return value</ShortMessage>
+    <LongMessage>Exceptional return value of java.util.concurrent.locks.Condition.await(long, TimeUnit) ignored in androidx.test.core.app.ActivityScenario.waitForActivityToBecomeAnyOf(Lifecycle$State[])</LongMessage>
+    <Class classname="androidx.test.core.app.ActivityScenario" primary="true">
+      <SourceLine classname="androidx.test.core.app.ActivityScenario" start="108" end="559" sourcefile="ActivityScenario.java" sourcepath="androidx/test/core/app/ActivityScenario.java">
+        <Message>At ActivityScenario.java:[lines 108-559]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.ActivityScenario</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.ActivityScenario" name="waitForActivityToBecomeAnyOf" signature="([Landroidx/lifecycle/Lifecycle$State;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.ActivityScenario" start="260" end="292" startBytecode="0" endBytecode="495" sourcefile="ActivityScenario.java" sourcepath="androidx/test/core/app/ActivityScenario.java"/>
+      <Message>In method androidx.test.core.app.ActivityScenario.waitForActivityToBecomeAnyOf(Lifecycle$State[])</Message>
+    </Method>
+    <Method classname="java.util.concurrent.locks.Condition" name="await" signature="(JLjava/util/concurrent/TimeUnit;)Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.concurrent.locks.Condition" sourcefile="Condition.java" sourcepath="java/util/concurrent/locks/Condition.java"/>
+      <Message>Called method java.util.concurrent.locks.Condition.await(long, TimeUnit)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.ActivityScenario" primary="true" start="273" end="273" startBytecode="104" endBytecode="104" sourcefile="ActivityScenario.java" sourcepath="androidx/test/core/app/ActivityScenario.java">
+      <Message>At ActivityScenario.java:[line 273]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_BROADCAST" priority="2" rank="12" abbrev="SECBROAD" category="SECURITY" instanceHash="a3d9e30b84d9b21b761d88b5c6189ba0" instanceOccurrenceNum="0" instanceOccurrenceMax="1" cweid="276">
+    <ShortMessage>Broadcast (Android)</ShortMessage>
+    <LongMessage>Broadcast intents could be received by a malicious application</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="52" end="498" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 52-498]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker" name="finishActivity" signature="(Landroid/app/Activity;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="474" end="480" startBytecode="0" endBytecode="142" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker.finishActivity(Activity)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true" start="476" end="476" startBytecode="30" endBytecode="30" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 476]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_BROADCAST" priority="2" rank="12" abbrev="SECBROAD" category="SECURITY" instanceHash="a3d9e30b84d9b21b761d88b5c6189ba0" instanceOccurrenceNum="1" instanceOccurrenceMax="1" cweid="276">
+    <ShortMessage>Broadcast (Android)</ShortMessage>
+    <LongMessage>Broadcast intents could be received by a malicious application</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="52" end="498" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 52-498]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker" name="finishActivity" signature="(Landroid/app/Activity;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="474" end="480" startBytecode="0" endBytecode="142" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker.finishActivity(Activity)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true" start="479" end="479" startBytecode="63" endBytecode="63" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 479]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_BROADCAST" priority="2" rank="12" abbrev="SECBROAD" category="SECURITY" instanceHash="4ceee17647b29cbe418fd818256201d7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="276">
+    <ShortMessage>Broadcast (Android)</ShortMessage>
+    <LongMessage>Broadcast intents could be received by a malicious application</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="52" end="498" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 52-498]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker" name="resumeActivity" signature="(Landroid/app/Activity;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="372" end="374" startBytecode="0" endBytecode="101" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker.resumeActivity(Activity)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true" start="373" end="373" startBytecode="38" endBytecode="38" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 373]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_BROADCAST" priority="2" rank="12" abbrev="SECBROAD" category="SECURITY" instanceHash="5f0a4e41b2e23030b4a9920fc6951755" instanceOccurrenceNum="0" instanceOccurrenceMax="1" cweid="276">
+    <ShortMessage>Broadcast (Android)</ShortMessage>
+    <LongMessage>Broadcast intents could be received by a malicious application</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="52" end="498" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 52-498]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker" name="startActivity" signature="(Landroid/content/Intent;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="342" end="362" startBytecode="0" endBytecode="168" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker.startActivity(Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true" start="342" end="342" startBytecode="12" endBytecode="12" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 342]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_BROADCAST" priority="2" rank="12" abbrev="SECBROAD" category="SECURITY" instanceHash="5f0a4e41b2e23030b4a9920fc6951755" instanceOccurrenceNum="1" instanceOccurrenceMax="1" cweid="276">
+    <ShortMessage>Broadcast (Android)</ShortMessage>
+    <LongMessage>Broadcast intents could be received by a malicious application</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="52" end="498" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 52-498]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker" name="startActivity" signature="(Landroid/content/Intent;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="342" end="362" startBytecode="0" endBytecode="168" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker.startActivity(Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true" start="343" end="343" startBytecode="27" endBytecode="27" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 343]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="3" rank="8" abbrev="RV" category="CORRECTNESS" instanceHash="98a512bfab1af10988f20d1fc5d65885" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="252">
+    <ShortMessage>Method ignores return value</ShortMessage>
+    <LongMessage>Return value of java.util.concurrent.CountDownLatch.await(long, TimeUnit) ignored in androidx.test.core.app.InstrumentationActivityInvoker.startEmptyActivitySync()</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="52" end="498" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 52-498]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker" name="startEmptyActivitySync" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="422" end="445" startBytecode="0" endBytecode="274" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker.startEmptyActivitySync()</Message>
+    </Method>
+    <Method classname="java.util.concurrent.CountDownLatch" name="await" signature="(JLjava/util/concurrent/TimeUnit;)Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.concurrent.CountDownLatch" start="276" end="276" startBytecode="0" endBytecode="75" sourcefile="CountDownLatch.java" sourcepath="java/util/concurrent/CountDownLatch.java"/>
+      <Message>Called method java.util.concurrent.CountDownLatch.await(long, TimeUnit)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true" start="439" end="439" startBytecode="60" endBytecode="60" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 439]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="3" rank="8" abbrev="RV" category="CORRECTNESS" instanceHash="500c4ef7cc002dbdad0fb84d87d75af5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="252">
+    <ShortMessage>Method ignores return value</ShortMessage>
+    <LongMessage>Return value of java.util.concurrent.CountDownLatch.await(long, TimeUnit) ignored in androidx.test.core.app.InstrumentationActivityInvoker.startFloatingEmptyActivitySync()</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="52" end="498" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 52-498]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker" name="startFloatingEmptyActivitySync" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" start="387" end="412" startBytecode="0" endBytecode="282" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker.startFloatingEmptyActivitySync()</Message>
+    </Method>
+    <Method classname="java.util.concurrent.CountDownLatch" name="await" signature="(JLjava/util/concurrent/TimeUnit;)Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.concurrent.CountDownLatch" start="276" end="276" startBytecode="0" endBytecode="75" sourcefile="CountDownLatch.java" sourcepath="java/util/concurrent/CountDownLatch.java"/>
+      <Message>Called method java.util.concurrent.CountDownLatch.await(long, TimeUnit)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker" primary="true" start="406" end="406" startBytecode="60" endBytecode="60" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 406]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="3" rank="8" abbrev="RV" category="CORRECTNESS" instanceHash="d86db67a06a840f654dda999a54ec454" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="252">
+    <ShortMessage>Method ignores return value</ShortMessage>
+    <LongMessage>Return value of java.util.concurrent.CountDownLatch.await(long, TimeUnit) ignored in androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter.getActivityResult()</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter" start="205" end="252" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 205-252]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter" name="getActivityResult" signature="()Landroid/app/Instrumentation$ActivityResult;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter" start="246" end="252" startBytecode="0" endBytecode="156" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter.getActivityResult()</Message>
+    </Method>
+    <Method classname="java.util.concurrent.CountDownLatch" name="await" signature="(JLjava/util/concurrent/TimeUnit;)Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.concurrent.CountDownLatch" start="276" end="276" startBytecode="0" endBytecode="75" sourcefile="CountDownLatch.java" sourcepath="java/util/concurrent/CountDownLatch.java"/>
+      <Message>Called method java.util.concurrent.CountDownLatch.await(long, TimeUnit)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter" primary="true" start="246" end="246" startBytecode="10" endBytecode="10" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 246]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_BROADCAST" priority="2" rank="12" abbrev="SECBROAD" category="SECURITY" instanceHash="654e1aa75d70bb7e39b508718bd5ef5d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="276">
+    <ShortMessage>Broadcast (Android)</ShortMessage>
+    <LongMessage>Broadcast intents could be received by a malicious application</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" start="118" end="196" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 118-196]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" name="onActivityResult" signature="(IILandroid/content/Intent;)V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" start="187" end="196" startBytecode="0" endBytecode="174" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity.onActivityResult(int, int, Intent)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" primary="true" start="193" end="193" startBytecode="40" endBytecode="40" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 193]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="547c0ada5a100e90de2411069e330466" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="397">
+    <ShortMessage>Method intentionally throws RuntimeException.</ShortMessage>
+    <LongMessage>Method intentionally throws RuntimeException.</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" start="118" end="196" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 118-196]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" name="onResume" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" start="144" end="171" startBytecode="0" endBytecode="217" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity.onResume()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" primary="true" start="168" end="168" startBytecode="71" endBytecode="71" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 168]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_BROADCAST" priority="2" rank="12" abbrev="SECBROAD" category="SECURITY" instanceHash="a38543800b274dd1cb6765ff6359cc0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="276">
+    <ShortMessage>Broadcast (Android)</ShortMessage>
+    <LongMessage>Broadcast intents could be received by a malicious application</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" start="267" end="292" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 267-292]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" name="onResume" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" start="284" end="286" startBytecode="0" endBytecode="67" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity.onResume()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" primary="true" start="285" end="285" startBytecode="14" endBytecode="14" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 285]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_BROADCAST" priority="2" rank="12" abbrev="SECBROAD" category="SECURITY" instanceHash="3ef6d3650a86b23867f20b24ee0ec624" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="276">
+    <ShortMessage>Broadcast (Android)</ShortMessage>
+    <LongMessage>Broadcast intents could be received by a malicious application</LongMessage>
+    <Class classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" start="306" end="331" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+        <Message>At InstrumentationActivityInvoker.java:[lines 306-331]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity</Message>
+    </Class>
+    <Method classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" name="onResume" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" start="323" end="325" startBytecode="0" endBytecode="67" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java"/>
+      <Message>In method androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity.onResume()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" primary="true" start="324" end="324" startBytecode="14" endBytecode="14" sourcefile="InstrumentationActivityInvoker.java" sourcepath="androidx/test/core/app/InstrumentationActivityInvoker.java">
+      <Message>At InstrumentationActivityInvoker.java:[line 324]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="SECURITY">
+    <Description>Security</Description>
+  </BugCategory>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED" abbrev="RV" category="CORRECTNESS" cweid="252">
+    <ShortDescription>Method ignores return value</ShortDescription>
+    <Details><![CDATA[
+
+   <p> The return value of this method should be checked. One common
+cause of this warning is to invoke a method on an immutable object,
+thinking that it updates the object. For example, in the following code
+fragment,</p>
+<pre><code>String dateString = getHeaderField(name);
+dateString.trim();
+</code></pre>
+<p>the programmer seems to be thinking that the trim() method will update
+the String referenced by dateString. But since Strings are immutable, the trim()
+function returns a new String value, which is being ignored here. The code
+should be corrected to: </p>
+<pre><code>String dateString = getHeaderField(name);
+dateString = dateString.trim();
+</code></pre>
+</p>
+<p>See <a href="https://cwe.mitre.org/data/definitions/252.html">CWE-252: Unchecked Return Value</a>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="ANDROID_BROADCAST" abbrev="SECBROAD" category="SECURITY" cweid="276">
+    <ShortDescription>Broadcast (Android)</ShortDescription>
+    <Details><![CDATA[
+            
+<p>
+    Broadcast intents can be listened by any application with the appropriate permission. It is suggested to avoid transmitting
+    sensitive information when possible.
+</p>
+<p>
+    <b>Code at risk:</b><br/>
+<pre>
+Intent i = new Intent();
+i.setAction("com.insecure.action.UserConnected");
+i.putExtra("username", user);
+i.putExtra("email", email);
+i.putExtra("session", newSessionId);
+
+this.sendBroadcast(v1);
+</pre>
+</p>
+<br/>
+<p>
+    <b>Solution (if possible):</b><br/>
+<pre>
+Intent i = new Intent();
+i.setAction("com.secure.action.UserConnected");
+
+sendBroadcast(v1);
+</pre>
+</p>
+<br/>
+<p>
+    <b>Configuration (receiver)<sup>[1] Source: StackOverflow</sup>:</b><br/>
+<pre>
+&lt;manifest ...&gt;
+
+    &lt;!-- Permission declaration --&gt;
+    &lt;permission android:name="my.app.PERMISSION" /&gt;
+
+    &lt;receiver
+        android:name="my.app.BroadcastReceiver"
+        android:permission="my.app.PERMISSION"&gt; &lt;!-- Permission enforcement --&gt;
+        &lt;intent-filter>
+            &lt;action android:name="com.secure.action.UserConnected" /&gt;
+        &lt;/intent-filter&gt;
+    &lt;/receiver&gt;
+
+    ...
+&lt;/manifest>
+</pre>
+</p>
+<p>
+    <b>Configuration (sender)<sup>[1] Source: StackOverflow</sup>:</b><br/>
+<pre>
+&lt;manifest&gt;
+    &lt;!-- We declare we own the permission to send broadcast to the above receiver --&gt;
+    &lt;uses-permission android:name="my.app.PERMISSION"/&gt;
+
+    &lt;!-- With the following configuration, both the sender and the receiver apps need to be signed by the same developer certificate. --&gt;
+    &lt;permission android:name="my.app.PERMISSION" android:protectionLevel="signature"/&gt;
+&lt;/manifest&gt;
+</pre>
+</p>
+<br/>
+<p>
+    <b>References</b><br/>
+    <a href="https://www.securecoding.cert.org/confluence/display/java/DRD03-J.+Do+not+broadcast+sensitive+information+using+an+implicit+intent">CERT: DRD03-J. Do not broadcast sensitive information using an implicit intent</a><br/>
+    <a href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#Security">Android Official Doc: BroadcastReceiver (Security)</a><br/>
+    <a href="https://developer.android.com/guide/topics/manifest/receiver-element.html">Android Official Doc: Receiver configuration (see <code>android:permission</code>)</a><br/>
+    <sup>[1]</sup> <a href="https://stackoverflow.com/a/21513368/89769">StackOverflow: How to set permissions in broadcast sender and receiver in android</a><br/>
+    <a href="https://cwe.mitre.org/data/definitions/276.html">CWE-276: Incorrect Default Permissions</a><br/>
+    <a href="https://cwe.mitre.org/data/definitions/925.html">CWE-925: Improper Verification of Intent by Broadcast Receiver</a><br/>
+    <a href="https://cwe.mitre.org/data/definitions/927.html">CWE-927: Use of Implicit Intent for Sensitive Communication</a>
+</p>
+
+        ]]></Details>
+  </BugPattern>
+  <BugPattern type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION" abbrev="THROWS" category="BAD_PRACTICE" cweid="397">
+    <ShortDescription>Method intentionally throws RuntimeException.</ShortDescription>
+    <Details><![CDATA[
+      
+        <p>
+        Method intentionally throws RuntimeException.<br>
+
+        According to the <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable">SEI CERT ERR07-J rule</a>,
+        throwing a RuntimeException may cause errors, like the caller not being able to examine the exception and therefore cannot properly recover from it.<br>
+
+        Moreover, throwing a RuntimeException would force the caller to catch RuntimeException and therefore violate the
+        <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">SEI CERT ERR08-J rule</a>.<br>
+
+        Please note that you can derive from Exception or RuntimeException and may throw a new instance of that exception.
+        </p><p>
+        See <a href="https://cwe.mitre.org/data/definitions/397.html">CWE-397: Declaration of Throws for Generic Exception</a>.
+        </p>
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" abbrev="RV" category="BAD_PRACTICE" cweid="253">
+    <ShortDescription>Method ignores exceptional return value</ShortDescription>
+    <Details><![CDATA[
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+<p>See <a href="https://cwe.mitre.org/data/definitions/253.html">CWE-253: Incorrect Check of Function Return Value</a>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Bad use of return value from method</Description>
+  </BugCode>
+  <BugCode abbrev="THROWS">
+    <Description>Exception throwing related problems</Description>
+  </BugCode>
+  <BugCode abbrev="SECBROAD">
+    <Description>Broadcast (Android)</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="40">
+    <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.app.Instrumentation</MissingClass>
+    <MissingClass>android.app.Instrumentation$ActivityResult</MissingClass>
+    <MissingClass>android.app.PendingIntent</MissingClass>
+    <MissingClass>android.content.BroadcastReceiver</MissingClass>
+    <MissingClass>android.content.ContentResolver</MissingClass>
+    <MissingClass>android.content.Context</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.content.IntentFilter</MissingClass>
+    <MissingClass>android.content.IntentSender</MissingClass>
+    <MissingClass>android.content.IntentSender$SendIntentException</MissingClass>
+    <MissingClass>android.content.pm.ApplicationInfo</MissingClass>
+    <MissingClass>android.content.pm.PackageInfo</MissingClass>
+    <MissingClass>android.os.Bundle</MissingClass>
+    <MissingClass>android.os.Parcel</MissingClass>
+    <MissingClass>android.os.Parcelable</MissingClass>
+    <MissingClass>android.os.Parcelable$Creator</MissingClass>
+    <MissingClass>android.os.SystemClock</MissingClass>
+    <MissingClass>android.provider.Settings</MissingClass>
+    <MissingClass>android.provider.Settings$Global</MissingClass>
+    <MissingClass>android.provider.Settings$System</MissingClass>
+    <MissingClass>android.util.Log</MissingClass>
+    <MissingClass>android.view.MotionEvent</MissingClass>
+    <MissingClass>android.view.MotionEvent$PointerCoords</MissingClass>
+    <MissingClass>android.view.MotionEvent$PointerProperties</MissingClass>
+    <MissingClass>androidx.annotation.GuardedBy</MissingClass>
+    <MissingClass>androidx.annotation.Nullable</MissingClass>
+    <MissingClass>androidx.lifecycle.Lifecycle</MissingClass>
+    <MissingClass>androidx.lifecycle.Lifecycle$State</MissingClass>
+    <MissingClass>androidx.test.InstrumentationRegistry</MissingClass>
+    <MissingClass>androidx.test.internal.platform.ServiceLoaderWrapper</MissingClass>
+    <MissingClass>androidx.test.internal.platform.ServiceLoaderWrapper$Factory</MissingClass>
+    <MissingClass>androidx.test.internal.platform.app.ActivityInvoker</MissingClass>
+    <MissingClass>androidx.test.internal.platform.app.ActivityInvoker$$CC</MissingClass>
+    <MissingClass>androidx.test.internal.util.Checks</MissingClass>
+    <MissingClass>androidx.test.platform.app.InstrumentationRegistry</MissingClass>
+    <MissingClass>androidx.test.runner.lifecycle.ActivityLifecycleCallback</MissingClass>
+    <MissingClass>androidx.test.runner.lifecycle.ActivityLifecycleMonitor</MissingClass>
+    <MissingClass>androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry</MissingClass>
+    <MissingClass>androidx.test.runner.lifecycle.Stage</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 7 Jun 2026 17:25:29 -0300" total_classes="29" referenced_classes="66" total_bugs="13" total_size="681" num_packages="4" java_version="25.0.3" vm_version="25.0.3+9-LTS" cpu_seconds="17.41" clock_seconds="3.86" peak_mbytes="225.86" alloc_mbytes="768.00" gc_seconds="0.06" priority_3="4" priority_2="9">
+    <FileStats path="androidx/test/core/app/&lt;Unknown&gt;" bugCount="0" size="36"/>
+    <FileStats path="androidx/test/core/app/ActivityScenario.java" bugCount="1" size="177" bugHash="908c130fd75e17fbb3c71604c40c3bae"/>
+    <FileStats path="androidx/test/core/app/ApplicationProvider.java" bugCount="0" size="6"/>
+    <FileStats path="androidx/test/core/app/InstrumentationActivityInvoker.java" bugCount="12" size="248" bugHash="3f5f7d6db08e87086cd08d7dad4d33e2"/>
+    <FileStats path="androidx/test/core/content/pm/ApplicationInfoBuilder.java" bugCount="0" size="19"/>
+    <FileStats path="androidx/test/core/content/pm/PackageInfoBuilder.java" bugCount="0" size="23"/>
+    <FileStats path="androidx/test/core/os/Parcelables.java" bugCount="0" size="9"/>
+    <FileStats path="androidx/test/core/view/MotionEventBuilder.java" bugCount="0" size="94"/>
+    <FileStats path="androidx/test/core/view/PointerCoordsBuilder.java" bugCount="0" size="51"/>
+    <FileStats path="androidx/test/core/view/PointerPropertiesBuilder.java" bugCount="0" size="18"/>
+    <PackageStats package="androidx.test.core.app" total_bugs="13" total_types="23" total_size="467" priority_3="4" priority_2="9">
+      <ClassStats class="androidx.test.core.app.ActivityScenario" sourceFile="ActivityScenario.java" interface="false" size="140" bugs="1" priority_2="1"/>
+      <ClassStats class="androidx.test.core.app.ActivityScenario$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.ActivityScenario$$Lambda$1" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.ActivityScenario$1" sourceFile="ActivityScenario.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.ActivityScenario$2" sourceFile="ActivityScenario.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.ActivityScenario$ActivityAction" sourceFile="ActivityScenario.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.ActivityScenario$ActivityState" sourceFile="ActivityScenario.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.ApplicationProvider" sourceFile="ApplicationProvider.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="95" bugs="7" priority_3="2" priority_2="5"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$$Lambda$0" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$$Lambda$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$$Lambda$2" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$$Lambda$3" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$1" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$2" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="23" bugs="1" priority_3="1"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$ActivityResultWaiter$1" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="46" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity$1" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="17" bugs="1" priority_2="1"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity$1" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="17" bugs="1" priority_2="1"/>
+      <ClassStats class="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity$1" sourceFile="InstrumentationActivityInvoker.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.core.content.pm" total_bugs="0" total_types="2" total_size="42">
+      <ClassStats class="androidx.test.core.content.pm.ApplicationInfoBuilder" sourceFile="ApplicationInfoBuilder.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="androidx.test.core.content.pm.PackageInfoBuilder" sourceFile="PackageInfoBuilder.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.core.os" total_bugs="0" total_types="1" total_size="9">
+      <ClassStats class="androidx.test.core.os.Parcelables" sourceFile="Parcelables.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.core.view" total_bugs="0" total_types="3" total_size="163">
+      <ClassStats class="androidx.test.core.view.MotionEventBuilder" sourceFile="MotionEventBuilder.java" interface="false" size="94" bugs="0"/>
+      <ClassStats class="androidx.test.core.view.PointerCoordsBuilder" sourceFile="PointerCoordsBuilder.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="androidx.test.core.view.PointerPropertiesBuilder" sourceFile="PointerPropertiesBuilder.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="399" invocations="606" avgMicrosecondsPerInvocation="658" maxMicrosecondsPerInvocation="18613" standardDeviationMicrosecondsPerInvocation="1440"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="125" invocations="66" avgMicrosecondsPerInvocation="1901" maxMicrosecondsPerInvocation="24596" standardDeviationMicrosecondsPerInvocation="3913"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="93" invocations="66" avgMicrosecondsPerInvocation="1409" maxMicrosecondsPerInvocation="17395" standardDeviationMicrosecondsPerInvocation="2899"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="90" invocations="302" avgMicrosecondsPerInvocation="298" maxMicrosecondsPerInvocation="5720" standardDeviationMicrosecondsPerInvocation="605"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="82" invocations="132" avgMicrosecondsPerInvocation="623" maxMicrosecondsPerInvocation="8622" standardDeviationMicrosecondsPerInvocation="1117"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="71" invocations="132" avgMicrosecondsPerInvocation="539" maxMicrosecondsPerInvocation="9643" standardDeviationMicrosecondsPerInvocation="990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="67" invocations="133" avgMicrosecondsPerInvocation="506" maxMicrosecondsPerInvocation="10019" standardDeviationMicrosecondsPerInvocation="1195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="65" invocations="132" avgMicrosecondsPerInvocation="497" maxMicrosecondsPerInvocation="5742" standardDeviationMicrosecondsPerInvocation="832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="65" invocations="614" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="4878" standardDeviationMicrosecondsPerInvocation="231"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="64" invocations="135" avgMicrosecondsPerInvocation="475" maxMicrosecondsPerInvocation="8437" standardDeviationMicrosecondsPerInvocation="1132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="63" invocations="150" avgMicrosecondsPerInvocation="424" maxMicrosecondsPerInvocation="23447" standardDeviationMicrosecondsPerInvocation="2020"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="56" invocations="132" avgMicrosecondsPerInvocation="424" maxMicrosecondsPerInvocation="5926" standardDeviationMicrosecondsPerInvocation="712"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="55" invocations="100" avgMicrosecondsPerInvocation="556" maxMicrosecondsPerInvocation="16447" standardDeviationMicrosecondsPerInvocation="1700"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="55" invocations="133" avgMicrosecondsPerInvocation="417" maxMicrosecondsPerInvocation="8887" standardDeviationMicrosecondsPerInvocation="862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="54" invocations="66" avgMicrosecondsPerInvocation="820" maxMicrosecondsPerInvocation="12202" standardDeviationMicrosecondsPerInvocation="2003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="53" invocations="66" avgMicrosecondsPerInvocation="807" maxMicrosecondsPerInvocation="20043" standardDeviationMicrosecondsPerInvocation="2642"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="42" invocations="518" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="2238" standardDeviationMicrosecondsPerInvocation="183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="42" invocations="133" avgMicrosecondsPerInvocation="316" maxMicrosecondsPerInvocation="21999" standardDeviationMicrosecondsPerInvocation="1895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="37" invocations="66" avgMicrosecondsPerInvocation="573" maxMicrosecondsPerInvocation="6656" standardDeviationMicrosecondsPerInvocation="1100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="34" invocations="29" avgMicrosecondsPerInvocation="1192" maxMicrosecondsPerInvocation="21450" standardDeviationMicrosecondsPerInvocation="3957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="32" invocations="66" avgMicrosecondsPerInvocation="485" maxMicrosecondsPerInvocation="14102" standardDeviationMicrosecondsPerInvocation="1784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="30" invocations="66" avgMicrosecondsPerInvocation="454" maxMicrosecondsPerInvocation="6179" standardDeviationMicrosecondsPerInvocation="932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="26" invocations="29" avgMicrosecondsPerInvocation="929" maxMicrosecondsPerInvocation="6823" standardDeviationMicrosecondsPerInvocation="1300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SharedVariableAtomicityDetector" totalMilliseconds="25" invocations="29" avgMicrosecondsPerInvocation="881" maxMicrosecondsPerInvocation="10633" standardDeviationMicrosecondsPerInvocation="2062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ResourceInMultipleThreadsDetector" totalMilliseconds="25" invocations="29" avgMicrosecondsPerInvocation="871" maxMicrosecondsPerInvocation="8058" standardDeviationMicrosecondsPerInvocation="1553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="25" invocations="29" avgMicrosecondsPerInvocation="870" maxMicrosecondsPerInvocation="14800" standardDeviationMicrosecondsPerInvocation="2671"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="25" invocations="29" avgMicrosecondsPerInvocation="862" maxMicrosecondsPerInvocation="6925" standardDeviationMicrosecondsPerInvocation="1473"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildAccessMethodsDatabase" totalMilliseconds="24" invocations="66" avgMicrosecondsPerInvocation="365" maxMicrosecondsPerInvocation="6182" standardDeviationMicrosecondsPerInvocation="911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="21" invocations="29" avgMicrosecondsPerInvocation="757" maxMicrosecondsPerInvocation="7935" standardDeviationMicrosecondsPerInvocation="1776"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="20" invocations="29" avgMicrosecondsPerInvocation="721" maxMicrosecondsPerInvocation="8035" standardDeviationMicrosecondsPerInvocation="1676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="20" invocations="66" avgMicrosecondsPerInvocation="310" maxMicrosecondsPerInvocation="4598" standardDeviationMicrosecondsPerInvocation="744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="19" invocations="66" avgMicrosecondsPerInvocation="301" maxMicrosecondsPerInvocation="3370" standardDeviationMicrosecondsPerInvocation="657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="19" invocations="29" avgMicrosecondsPerInvocation="656" maxMicrosecondsPerInvocation="7119" standardDeviationMicrosecondsPerInvocation="1286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="16" invocations="132" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="2244" standardDeviationMicrosecondsPerInvocation="230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="16" invocations="133" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="6991" standardDeviationMicrosecondsPerInvocation="668"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.beans.BeanInjectionDetector" totalMilliseconds="16" invocations="29" avgMicrosecondsPerInvocation="562" maxMicrosecondsPerInvocation="12556" standardDeviationMicrosecondsPerInvocation="2284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="16" invocations="29" avgMicrosecondsPerInvocation="552" maxMicrosecondsPerInvocation="3416" standardDeviationMicrosecondsPerInvocation="838"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="15" invocations="66" avgMicrosecondsPerInvocation="232" maxMicrosecondsPerInvocation="3769" standardDeviationMicrosecondsPerInvocation="562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="14" invocations="7709" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="108" standardDeviationMicrosecondsPerInvocation="2"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="14" invocations="1367" avgMicrosecondsPerInvocation="10" maxMicrosecondsPerInvocation="820" standardDeviationMicrosecondsPerInvocation="35"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="14" invocations="29" avgMicrosecondsPerInvocation="485" maxMicrosecondsPerInvocation="4117" standardDeviationMicrosecondsPerInvocation="898"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="13" invocations="132" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="2278" standardDeviationMicrosecondsPerInvocation="267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="12" invocations="29" avgMicrosecondsPerInvocation="444" maxMicrosecondsPerInvocation="4288" standardDeviationMicrosecondsPerInvocation="1029"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="12" invocations="29" avgMicrosecondsPerInvocation="442" maxMicrosecondsPerInvocation="2057" standardDeviationMicrosecondsPerInvocation="478"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.password.ConstantPasswordDetector" totalMilliseconds="12" invocations="29" avgMicrosecondsPerInvocation="432" maxMicrosecondsPerInvocation="3133" standardDeviationMicrosecondsPerInvocation="631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="11" invocations="66" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="5142" standardDeviationMicrosecondsPerInvocation="770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="11" invocations="546" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="5374" standardDeviationMicrosecondsPerInvocation="229"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

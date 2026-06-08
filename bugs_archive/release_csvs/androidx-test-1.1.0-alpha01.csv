@@ -1,0 +1,20 @@
+release_tag,release_date,artifact,version,type,category,priority,message
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,RV_RETURN_VALUE_IGNORED_BAD_PRACTICE,BAD_PRACTICE,2,Method ignores exceptional return value
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.0-alpha01,2018-11-28-20,core,1.1.0-alpha01,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.0-alpha01,2018-11-28-20,junit,1.1.0-alpha01,NP_NULL_ON_SOME_PATH,CORRECTNESS,2,Possible null pointer dereference
+androidx-test-1.1.0-alpha01,2018-11-28-20,junit,1.1.0-alpha01,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.1.0-alpha01,2018-11-28-20,junit,1.1.0-alpha01,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,STYLE,3,Field not initialized in constructor but dereferenced without null check
+androidx-test-1.1.0-alpha01,2018-11-28-20,junit,1.1.0-alpha01,DM_CONVERT_CASE,I18N,3,Consider using Locale parameterized version of invoked method
+androidx-test-1.1.0-alpha01,2018-11-28-20,truth,1.1.0-alpha01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor
+androidx-test-1.1.0-alpha01,2018-11-28-20,truth,1.1.0-alpha01,DM_STRING_CTOR,PERFORMANCE,2,Method invokes inefficient new String(String) constructor

@@ -1,0 +1,19 @@
+release_tag,release_date,artifact,version,type,category,priority,message
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,RV_RETURN_VALUE_IGNORED_BAD_PRACTICE,BAD_PRACTICE,2,Method ignores exceptional return value
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,RV_RETURN_VALUE_IGNORED,CORRECTNESS,3,Method ignores return value
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,THROWS_METHOD_THROWS_RUNTIMEEXCEPTION,BAD_PRACTICE,3,Method intentionally throws RuntimeException.
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.1-alpha02,2019-03-07-18,core,1.1.1-alpha02,ANDROID_BROADCAST,SECURITY,2,Broadcast (Android)
+androidx-test-1.1.1-alpha02,2019-03-07-18,junit,1.1.1-alpha02,NP_NULL_ON_SOME_PATH,CORRECTNESS,2,Possible null pointer dereference
+androidx-test-1.1.1-alpha02,2019-03-07-18,junit,1.1.1-alpha02,THROWS_METHOD_THROWS_CLAUSE_THROWABLE,BAD_PRACTICE,3,"Method lists Throwable in its throws clause, but it could be more specific."
+androidx-test-1.1.1-alpha02,2019-03-07-18,junit,1.1.1-alpha02,UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR,STYLE,3,Field not initialized in constructor but dereferenced without null check
+androidx-test-1.1.1-alpha02,2019-03-07-18,junit,1.1.1-alpha02,DM_CONVERT_CASE,I18N,3,Consider using Locale parameterized version of invoked method

@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.9.8" sequence="0" timestamp="1780864131966" analysisTimestamp="1780864133727" release="">
+  <Project projectName="">
+    <Jar>C:\Users\Emanuel\Documents\pt-BR\pyDriller\bugs_archive\downloads\junit-1.2.0-beta01.jar</Jar>
+    <Plugin id="com.h3xstream.findsecbugs" enabled="true"/>
+  </Project>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="6be10a8d3ef04c61644de06fb91d1bd1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference</ShortMessage>
+    <LongMessage>Possible null pointer dereference of ActivityScenarioRule.scenario in androidx.test.ext.junit.rules.ActivityScenarioRule.after()</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="76" end="127" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>At ActivityScenarioRule.java:[lines 76-127]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.ActivityScenarioRule</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="after" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="117" end="118" startBytecode="0" endBytecode="71" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.ActivityScenarioRule.after()</Message>
+    </Method>
+    <Field classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="scenario" signature="Landroidx/test/core/app/ActivityScenario;" sourceSignature="Landroidx/test/core/app/ActivityScenario&lt;TA;&gt;;" isStatic="false" primary="true" role="FIELD_CONTAINS_VALUE" classAnnotationNames="androidx.annotation.Nullable">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>In ActivityScenarioRule.java</Message>
+      </SourceLine>
+      <Message>Value contained in androidx.test.ext.junit.rules.ActivityScenarioRule.scenario</Message>
+    </Field>
+    <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true" start="117" end="117" startBytecode="4" endBytecode="4" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at ActivityScenarioRule.java:[line 117]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="117" end="117" startBytecode="1" endBytecode="1" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at ActivityScenarioRule.java:[line 117]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_CLAUSE_THROWABLE" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="858dbbc091ba59c967835c7db520ac7e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="397">
+    <ShortMessage>Method lists Throwable in its throws clause, but it could be more specific.</ShortMessage>
+    <LongMessage>Method lists Throwable in its throws clause, but it could be more specific.</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="76" end="127" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>At ActivityScenarioRule.java:[lines 76-127]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.ActivityScenarioRule</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="before" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="112" end="113" startBytecode="0" endBytecode="80" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.ActivityScenarioRule.before()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="112" end="113" startBytecode="0" endBytecode="80" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java" synthetic="true">
+      <Message>At ActivityScenarioRule.java:[lines 112-113]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE" instanceHash="b417df26358a6e5ff24b4397f7c7dfc9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="457">
+    <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+    <LongMessage>ActivityScenarioRule.scenario not initialized in constructor and dereferenced in androidx.test.ext.junit.rules.ActivityScenarioRule.after()</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="76" end="127" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>At ActivityScenarioRule.java:[lines 76-127]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.ActivityScenarioRule</Message>
+    </Class>
+    <Field classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="scenario" signature="Landroidx/test/core/app/ActivityScenario;" isStatic="false" primary="true" classAnnotationNames="androidx.annotation.Nullable">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+        <Message>In ActivityScenarioRule.java</Message>
+      </SourceLine>
+      <Message>Field androidx.test.ext.junit.rules.ActivityScenarioRule.scenario</Message>
+    </Field>
+    <Method classname="androidx.test.ext.junit.rules.ActivityScenarioRule" name="after" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" start="117" end="118" startBytecode="0" endBytecode="71" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.ActivityScenarioRule.after()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.ActivityScenarioRule" primary="true" start="117" end="117" startBytecode="4" endBytecode="4" sourcefile="ActivityScenarioRule.java" sourcepath="androidx/test/ext/junit/rules/ActivityScenarioRule.java">
+      <Message>At ActivityScenarioRule.java:[line 117]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="e79380624069958542df113783c97c46" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference</ShortMessage>
+    <LongMessage>Possible null pointer dereference of filesInDirectory in androidx.test.ext.junit.rules.DeleteFilesRule.deleteFilesRecursively(Set, File)</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.DeleteFilesRule" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule" start="51" end="132" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+        <Message>At DeleteFilesRule.java:[lines 51-132]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.DeleteFilesRule</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.DeleteFilesRule" name="deleteFilesRecursively" signature="(Ljava/util/Set;Ljava/io/File;)V" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule" start="106" end="132" startBytecode="0" endBytecode="465" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.DeleteFilesRule.deleteFilesRecursively(Set, File)</Message>
+    </Method>
+    <LocalVariable name="filesInDirectory" register="7" pc="132" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from filesInDirectory</Message>
+    </LocalVariable>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule" primary="true" start="119" end="119" startBytecode="134" endBytecode="134" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at DeleteFilesRule.java:[line 119]</Message>
+    </SourceLine>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule" start="116" end="116" startBytecode="100" endBytecode="100" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at DeleteFilesRule.java:[line 116]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE" instanceHash="1d9ad880defc3ae646a54789b27ca9a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Could be refactored into a named static inner class</ShortMessage>
+    <LongMessage>The class androidx.test.ext.junit.rules.DeleteFilesRule$1 could be refactored into a named _static_ inner class</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" role="CLASS_ANONYMOUS">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="55" end="85" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+        <Message>At DeleteFilesRule.java:[lines 55-85]</Message>
+      </SourceLine>
+      <Message>Anonymous class androidx.test.ext.junit.rules.DeleteFilesRule$1</Message>
+    </Class>
+    <Class classname="androidx.test.ext.junit.rules.DeleteFilesRule" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule" start="51" end="132" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+        <Message>At DeleteFilesRule.java:[lines 51-132]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.DeleteFilesRule</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.DeleteFilesRule" name="apply" signature="(Lorg/junit/runners/model/Statement;Lorg/junit/runner/Description;)Lorg/junit/runners/model/Statement;" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule" start="55" end="55" startBytecode="0" endBytecode="71" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.DeleteFilesRule.apply(Statement, Description)</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule" primary="true" start="55" end="55" startBytecode="6" endBytecode="6" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+      <Message>At DeleteFilesRule.java:[line 55]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_EXTERNAL_FILE_ACCESS" priority="2" rank="12" abbrev="SECEFA" category="SECURITY" instanceHash="2f7883e0a0960c6b6172b8b1efa0aee8" instanceOccurrenceNum="0" instanceOccurrenceMax="2" cweid="276">
+    <ShortMessage>External file access (Android)</ShortMessage>
+    <LongMessage>Files could be saved to external storage</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="55" end="85" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+        <Message>At DeleteFilesRule.java:[lines 55-85]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.DeleteFilesRule$1</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" name="evaluate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="58" end="85" startBytecode="0" endBytecode="578" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.DeleteFilesRule$1.evaluate()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true" start="62" end="62" startBytecode="34" endBytecode="34" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+      <Message>At DeleteFilesRule.java:[line 62]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_EXTERNAL_FILE_ACCESS" priority="2" rank="12" abbrev="SECEFA" category="SECURITY" instanceHash="2f7883e0a0960c6b6172b8b1efa0aee8" instanceOccurrenceNum="1" instanceOccurrenceMax="2" cweid="276">
+    <ShortMessage>External file access (Android)</ShortMessage>
+    <LongMessage>Files could be saved to external storage</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="55" end="85" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+        <Message>At DeleteFilesRule.java:[lines 55-85]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.DeleteFilesRule$1</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" name="evaluate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="58" end="85" startBytecode="0" endBytecode="578" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.DeleteFilesRule$1.evaluate()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true" start="64" end="64" startBytecode="54" endBytecode="54" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+      <Message>At DeleteFilesRule.java:[line 64]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ANDROID_EXTERNAL_FILE_ACCESS" priority="2" rank="12" abbrev="SECEFA" category="SECURITY" instanceHash="2f7883e0a0960c6b6172b8b1efa0aee8" instanceOccurrenceNum="2" instanceOccurrenceMax="2" cweid="276">
+    <ShortMessage>External file access (Android)</ShortMessage>
+    <LongMessage>Files could be saved to external storage</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="55" end="85" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+        <Message>At DeleteFilesRule.java:[lines 55-85]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.DeleteFilesRule$1</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" name="evaluate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="58" end="85" startBytecode="0" endBytecode="578" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.DeleteFilesRule$1.evaluate()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true" start="65" end="65" startBytecode="62" endBytecode="62" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+      <Message>At DeleteFilesRule.java:[line 65]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="1051ba7f0b1642cf5f647f6a739e94ef" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="22">
+    <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
+    <LongMessage>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="55" end="85" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+        <Message>At DeleteFilesRule.java:[lines 55-85]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.DeleteFilesRule$1</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" name="evaluate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="58" end="85" startBytecode="0" endBytecode="578" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.DeleteFilesRule$1.evaluate()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true" start="61" end="61" startBytecode="24" endBytecode="24" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+      <Message>At DeleteFilesRule.java:[line 61]</Message>
+    </SourceLine>
+    <String value="java/io/File.&lt;init&gt;(Ljava/lang/String;)V" role="Sink method">
+      <Message>Sink method java/io/File.&lt;init&gt;(Ljava/lang/String;)V</Message>
+    </String>
+    <String value="0" role="Sink parameter">
+      <Message>Sink parameter 0</Message>
+    </String>
+    <String value="android/content/pm/ApplicationInfo.dataDir" role="Unknown source">
+      <Message>Unknown source android/content/pm/ApplicationInfo.dataDir</Message>
+    </String>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="61" end="61" startBytecode="21" endBytecode="21" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+      <Message>At DeleteFilesRule.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="9e624dfb02311ccf6766743d4a46147d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="22">
+    <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
+    <LongMessage>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="55" end="85" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+        <Message>At DeleteFilesRule.java:[lines 55-85]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.DeleteFilesRule$1</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" name="evaluate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="58" end="85" startBytecode="0" endBytecode="578" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.DeleteFilesRule$1.evaluate()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true" start="71" end="71" startBytecode="110" endBytecode="110" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+      <Message>At DeleteFilesRule.java:[line 71]</Message>
+    </SourceLine>
+    <String value="java/io/File.&lt;init&gt;(Ljava/lang/String;)V" role="Sink method">
+      <Message>Sink method java/io/File.&lt;init&gt;(Ljava/lang/String;)V</Message>
+    </String>
+    <String value="0" role="Sink parameter">
+      <Message>Sink parameter 0</Message>
+    </String>
+    <String value="android/content/pm/ApplicationInfo.deviceProtectedDataDir" role="Unknown source">
+      <Message>Unknown source android/content/pm/ApplicationInfo.deviceProtectedDataDir</Message>
+    </String>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="71" end="71" startBytecode="107" endBytecode="107" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+      <Message>At DeleteFilesRule.java:[line 71]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="THROWS_METHOD_THROWS_CLAUSE_THROWABLE" priority="3" rank="19" abbrev="THROWS" category="BAD_PRACTICE" instanceHash="1f37485de953e76ac68e9313d7cd9d21" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="397">
+    <ShortMessage>Method lists Throwable in its throws clause, but it could be more specific.</ShortMessage>
+    <LongMessage>Method lists Throwable in its throws clause, but it could be more specific.</LongMessage>
+    <Class classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="55" end="85" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java">
+        <Message>At DeleteFilesRule.java:[lines 55-85]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.rules.DeleteFilesRule$1</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" name="evaluate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="58" end="85" startBytecode="0" endBytecode="578" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java"/>
+      <Message>In method androidx.test.ext.junit.rules.DeleteFilesRule$1.evaluate()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.rules.DeleteFilesRule$1" start="58" end="85" startBytecode="0" endBytecode="578" sourcefile="DeleteFilesRule.java" sourcepath="androidx/test/ext/junit/rules/DeleteFilesRule.java" synthetic="true">
+      <Message>At DeleteFilesRule.java:[lines 58-85]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N" instanceHash="443d19eca31e72fd46fe05a9bfd25ec1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Consider using Locale parameterized version of invoked method</ShortMessage>
+    <LongMessage>Use of non-localized String.toUpperCase() or String.toLowerCase() in androidx.test.ext.junit.runners.AndroidJUnit4.getRunnerClassName()</LongMessage>
+    <Class classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="55" end="173" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+        <Message>At AndroidJUnit4.java:[lines 55-173]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.runners.AndroidJUnit4</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.runners.AndroidJUnit4" name="getRunnerClassName" signature="()Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="60" end="69" startBytecode="0" endBytecode="123" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java"/>
+      <Message>In method androidx.test.ext.junit.runners.AndroidJUnit4.getRunnerClassName()</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true" start="62" end="62" startBytecode="16" endBytecode="16" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+      <Message>At AndroidJUnit4.java:[line 62]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE" instanceHash="4d368c914cb6bdd235665e5d7ac24523" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Redundant nullcheck of value known to be non-null</ShortMessage>
+    <LongMessage>Redundant nullcheck of Class.forName(String), which is known to be non-null in androidx.test.ext.junit.runners.AndroidJUnit4.hasClass(String)</LongMessage>
+    <Class classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="55" end="173" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+        <Message>At AndroidJUnit4.java:[lines 55-173]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.runners.AndroidJUnit4</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.runners.AndroidJUnit4" name="hasClass" signature="(Ljava/lang/String;)Z" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="74" end="76" startBytecode="0" endBytecode="98" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java"/>
+      <Message>In method androidx.test.ext.junit.runners.AndroidJUnit4.hasClass(String)</Message>
+    </Method>
+    <Method classname="java.lang.Class" name="forName" signature="(Ljava/lang/String;)Ljava/lang/Class;" isStatic="true" role="METHOD_RETURN_VALUE_OF" classAnnotationNames="jdk.internal.reflect.CallerSensitive">
+      <SourceLine classname="java.lang.Class" start="457" end="458" startBytecode="0" endBytecode="83" sourcefile="Class.java" sourcepath="java/lang/Class.java"/>
+      <Message>Return value of Class.forName(String) of type Class</Message>
+    </Method>
+    <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true" start="74" end="74" startBytecode="4" endBytecode="4" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java" role="SOURCE_REDUNDANT_NULL_CHECK">
+      <Message>Redundant null check at AndroidJUnit4.java:[line 74]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" instanceHash="d76672ed7ce4e9e889e592404a4b58c5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Format string should use %n rather than \n</ShortMessage>
+    <LongMessage>Format string should use %n rather than \n in androidx.test.ext.junit.runners.AndroidJUnit4.getInitializationErrorDetails(Throwable, Class)</LongMessage>
+    <Class classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="55" end="173" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+        <Message>At AndroidJUnit4.java:[lines 55-173]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.runners.AndroidJUnit4</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.runners.AndroidJUnit4" name="getInitializationErrorDetails" signature="(Ljava/lang/Throwable;Ljava/lang/Class;)Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="133" end="152" startBytecode="0" endBytecode="388" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java"/>
+      <Message>In method androidx.test.ext.junit.runners.AndroidJUnit4.getInitializationErrorDetails(Throwable, Class)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="4455" end="4455" startBytecode="0" endBytecode="67" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.format(String, Object[])</Message>
+    </Method>
+    <String value="Test class %s is malformed. (%s problems):\n" role="STRING_FORMAT_STRING">
+      <Message>Format string &quot;Test class %s is malformed. (%s problems):\n&quot;</Message>
+    </String>
+    <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true" start="145" end="145" startBytecode="70" endBytecode="70" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+      <Message>At AndroidJUnit4.java:[line 145]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" instanceHash="ab1a54b8e8670c3f249a989ffe02af55" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Format string should use %n rather than \n</ShortMessage>
+    <LongMessage>Format string should use %n rather than \n in androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</LongMessage>
+    <Class classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="55" end="173" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+        <Message>At AndroidJUnit4.java:[lines 55-173]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.runners.AndroidJUnit4</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.runners.AndroidJUnit4" name="loadRunner" signature="(Ljava/lang/Class;Ljava/lang/String;)Lorg/junit/runner/Runner;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="89" end="124" startBytecode="0" endBytecode="565" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java"/>
+      <Message>In method androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="4455" end="4455" startBytecode="0" endBytecode="67" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.format(String, Object[])</Message>
+    </Method>
+    <String value="Delegate runner %s for AndroidJUnit4 could not be found.\n" role="STRING_FORMAT_STRING">
+      <Message>Format string &quot;Delegate runner %s for AndroidJUnit4 could not be found.\n&quot;</Message>
+    </String>
+    <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true" start="94" end="94" startBytecode="21" endBytecode="21" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+      <Message>At AndroidJUnit4.java:[line 94]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" instanceHash="4953536b55b7124b07f7d2f39ea19ab7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Format string should use %n rather than \n</ShortMessage>
+    <LongMessage>Format string should use %n rather than \n in androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</LongMessage>
+    <Class classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="55" end="173" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+        <Message>At AndroidJUnit4.java:[lines 55-173]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.runners.AndroidJUnit4</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.runners.AndroidJUnit4" name="loadRunner" signature="(Ljava/lang/Class;Ljava/lang/String;)Lorg/junit/runner/Runner;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="89" end="124" startBytecode="0" endBytecode="565" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java"/>
+      <Message>In method androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="4455" end="4455" startBytecode="0" endBytecode="67" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.format(String, Object[])</Message>
+    </Method>
+    <String value="Delegate runner %s for AndroidJUnit4 requires a public constructor that takes a Class&lt;?&gt;.\n" role="STRING_FORMAT_STRING">
+      <Message>Format string &quot;Delegate runner %s for AndroidJUnit4 requires a public constructor that takes a Class&lt;?&gt;.\n&quot;</Message>
+    </String>
+    <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true" start="104" end="104" startBytecode="59" endBytecode="59" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+      <Message>At AndroidJUnit4.java:[line 104]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" instanceHash="6e6349cf9746a184a9f448cca3fb419c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Format string should use %n rather than \n</ShortMessage>
+    <LongMessage>Format string should use %n rather than \n in androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</LongMessage>
+    <Class classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="55" end="173" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+        <Message>At AndroidJUnit4.java:[lines 55-173]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.runners.AndroidJUnit4</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.runners.AndroidJUnit4" name="loadRunner" signature="(Ljava/lang/Class;Ljava/lang/String;)Lorg/junit/runner/Runner;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="89" end="124" startBytecode="0" endBytecode="565" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java"/>
+      <Message>In method androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="4455" end="4455" startBytecode="0" endBytecode="67" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.format(String, Object[])</Message>
+    </Method>
+    <String value="Failed to instantiate test runner %s\n" role="STRING_FORMAT_STRING">
+      <Message>Format string &quot;Failed to instantiate test runner %s\n&quot;</Message>
+    </String>
+    <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true" start="118" end="118" startBytecode="118" endBytecode="118" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+      <Message>At AndroidJUnit4.java:[line 118]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" instanceHash="63574ecd68066c07b7dcbc0a7f5e1866" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Format string should use %n rather than \n</ShortMessage>
+    <LongMessage>Format string should use %n rather than \n in androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</LongMessage>
+    <Class classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="55" end="173" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+        <Message>At AndroidJUnit4.java:[lines 55-173]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.runners.AndroidJUnit4</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.runners.AndroidJUnit4" name="loadRunner" signature="(Ljava/lang/Class;Ljava/lang/String;)Lorg/junit/runner/Runner;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="89" end="124" startBytecode="0" endBytecode="565" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java"/>
+      <Message>In method androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="4455" end="4455" startBytecode="0" endBytecode="67" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.format(String, Object[])</Message>
+    </Method>
+    <String value="Failed to instantiate test runner %s\n%s\n" role="STRING_FORMAT_STRING">
+      <Message>Format string &quot;Failed to instantiate test runner %s\n%s\n&quot;</Message>
+    </String>
+    <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true" start="122" end="122" startBytecode="154" endBytecode="154" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+      <Message>At AndroidJUnit4.java:[line 122]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" instanceHash="7387c6b95b8631eaa52d61e7a187fcb7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Format string should use %n rather than \n</ShortMessage>
+    <LongMessage>Format string should use %n rather than \n in androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</LongMessage>
+    <Class classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="55" end="173" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+        <Message>At AndroidJUnit4.java:[lines 55-173]</Message>
+      </SourceLine>
+      <Message>In class androidx.test.ext.junit.runners.AndroidJUnit4</Message>
+    </Class>
+    <Method classname="androidx.test.ext.junit.runners.AndroidJUnit4" name="loadRunner" signature="(Ljava/lang/Class;Ljava/lang/String;)Lorg/junit/runner/Runner;" isStatic="true" primary="true">
+      <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" start="89" end="124" startBytecode="0" endBytecode="565" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java"/>
+      <Message>In method androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(Class, String)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="4455" end="4455" startBytecode="0" endBytecode="67" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.format(String, Object[])</Message>
+    </Method>
+    <String value="Illegal constructor access for test runner %s\n" role="STRING_FORMAT_STRING">
+      <Message>Format string &quot;Illegal constructor access for test runner %s\n&quot;</Message>
+    </String>
+    <SourceLine classname="androidx.test.ext.junit.runners.AndroidJUnit4" primary="true" start="115" end="115" startBytecode="95" endBytecode="95" sourcefile="AndroidJUnit4.java" sourcepath="androidx/test/ext/junit/runners/AndroidJUnit4.java">
+      <Message>At AndroidJUnit4.java:[line 115]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="SECURITY">
+    <Description>Security</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" abbrev="UwF" category="STYLE" cweid="457">
+    <ShortDescription>Field not initialized in constructor but dereferenced without null check</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never initialized within any constructor, and is therefore could be null after
+the object is constructed. Elsewhere, it is loaded and dereferenced without a null check.
+This could be either an error or a questionable design, since
+it means a null pointer exception will be generated if that field is dereferenced
+before being initialized.
+</p>
+<p>See <a href="https://cwe.mitre.org/data/definitions/457.html">CWE-457: Use of Uninitialized Variable</a>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="VA_FORMAT_STRING_USES_NEWLINE" abbrev="FS" category="BAD_PRACTICE">
+    <ShortDescription>Format string should use %n rather than \n</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This format string includes a newline character (\n). In format strings, it is generally
+ preferable to use %n, which will produce the platform-specific line separator.
+
+ When using text blocks introduced in Java 15, use the <code>\</code> escape sequence:
+
+<code>String value = """
+                first line%n\
+                second line%n\
+                """;</code>
+</p>
+
+     ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_NULL_ON_SOME_PATH" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Possible null pointer dereference</ShortDescription>
+    <Details><![CDATA[
+
+<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
+a null value will be dereferenced, which
+would generate a <code>NullPointerException</code> when the code is executed.
+Of course, the problem might be that the branch or statement is infeasible and that
+the null pointer exception cannot ever be executed; deciding that is beyond the ability of SpotBugs.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SIC_INNER_SHOULD_BE_STATIC_ANON" abbrev="SIC" category="PERFORMANCE">
+    <ShortDescription>Could be refactored into a named static inner class</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class is an inner class, but does not use its embedded reference
+  to the object which created it.&nbsp; This reference makes the instances
+  of the class larger, and may keep the reference to the creator object
+  alive longer than necessary.&nbsp; If possible, the class should be
+  made into a <em>static</em> inner class. Since anonymous inner
+classes cannot be marked as static, doing this will require refactoring
+the inner class so that it is a named inner class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="ANDROID_EXTERNAL_FILE_ACCESS" abbrev="SECEFA" category="SECURITY" cweid="276">
+    <ShortDescription>External file access (Android)</ShortDescription>
+    <Details><![CDATA[
+            
+<p>
+    The application write data to external storage (potentially SD card). There are multiple security implication to this
+    action. First, file store on SD card will be accessible to the application having the
+    <a href="https://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE"><code>READ_EXTERNAL_STORAGE</code></a> permission.
+    Also, if the data persisted contains confidential information about the user, encryption would be needed.
+</p>
+<p>
+    <b>Code at risk:</b><br/>
+<pre>
+file file = new File(getExternalFilesDir(TARGET_TYPE), filename);
+fos = new FileOutputStream(file);
+fos.write(confidentialData.getBytes());
+fos.flush();
+</pre>
+</p>
+<p>
+    <b>Better alternative:</b><br/>
+<pre>
+fos = openFileOutput(filename, Context.MODE_PRIVATE);
+fos.write(string.getBytes());
+</pre>
+</p>
+<br/>
+<p>
+    <b>References</b><br/>
+    <a href="http://developer.android.com/training/articles/security-tips.html#ExternalStorage">Android Official Doc: Security Tips</a><br/>
+    <a href="https://www.securecoding.cert.org/confluence/display/java/DRD00-J.+Do+not+store+sensitive+information+on+external+storage+%28SD+card%29+unless+encrypted+first">CERT: DRD00-J: Do not store sensitive information on external storage [...]</a><br/>
+    <a href="https://developer.android.com/guide/topics/data/data-storage.html#filesExternal">Android Official Doc: Using the External Storage</a><br/>
+    <a href="https://www.owasp.org/index.php/Mobile_Top_10_2014-M2">OWASP Mobile Top 10 2014-M2: Insecure Data Storage</a><br/>
+    <a href="https://cwe.mitre.org/data/definitions/276.html">CWE-276: Incorrect Default Permissions</a>
+    <a href="https://cwe.mitre.org/data/definitions/312.html">CWE-312: Cleartext Storage of Sensitive Information</a>
+</p>
+
+        ]]></Details>
+  </BugPattern>
+  <BugPattern type="PATH_TRAVERSAL_IN" abbrev="SECPTI" category="SECURITY" cweid="22">
+    <ShortDescription>Potential Path Traversal (file read)</ShortDescription>
+    <Details><![CDATA[
+            
+<p>A file is opened to read its content. The filename comes from an <b>input</b> parameter.
+If an unfiltered parameter is passed to this file API, files from an arbitrary filesystem location could be read.</p>
+<p>This rule identifies <b>potential</b> path traversal vulnerabilities. In many cases, the constructed file path cannot be controlled
+by the user. If that is the case, the reported instance is a false positive.</p>
+<br/>
+
+<p>
+    <b>Vulnerable Code:</b><br/>
+<pre>@GET
+@Path("/images/{image}")
+@Produces("images/*")
+public Response getImage(@javax.ws.rs.PathParam("image") String image) {
+    File file = new File("resources/images/", image); //Weak point
+
+    if (!file.exists()) {
+        return Response.status(Status.NOT_FOUND).build();
+    }
+
+    return Response.ok().entity(new FileInputStream(file)).build();
+}</pre>
+</p>
+<br/>
+
+<p>
+    <b>Solution:</b><br/>
+<pre>import org.apache.commons.io.FilenameUtils;
+
+@GET
+@Path("/images/{image}")
+@Produces("images/*")
+public Response getImage(@javax.ws.rs.PathParam("image") String image) {
+    File file = new File("resources/images/", FilenameUtils.getName(image)); //Fix
+
+    if (!file.exists()) {
+        return Response.status(Status.NOT_FOUND).build();
+    }
+
+    return Response.ok().entity(new FileInputStream(file)).build();
+}</pre>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC: Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP: Path Traversal</a><br/>
+<a href="https://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="https://cwe.mitre.org/data/definitions/22.html">CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')</a>
+</p>
+
+        ]]></Details>
+  </BugPattern>
+  <BugPattern type="THROWS_METHOD_THROWS_CLAUSE_THROWABLE" abbrev="THROWS" category="BAD_PRACTICE" cweid="397">
+    <ShortDescription>Method lists Throwable in its throws clause, but it could be more specific.</ShortDescription>
+    <Details><![CDATA[
+      
+        <p>
+        Method lists Throwable in its throws clause.<br>
+
+        When declaring a method, the types of exceptions in the throws clause should be the most specific.
+        Therefore, using Throwable in the throws clause would force the caller to either use it in its own throws clause, or use it in a try-catch block (when it does not necessarily
+        contain any meaningful information about the thrown exception).<br>
+
+        Furthermore, using Throwable like that is semantically a bad practice, considered that Throwables include Errors as well, but by definition they occur in unrecoverable scenarios.<br><br>
+
+        For more information, see the <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable">SEI CERT ERR07-J rule</a>.
+        </p><p>
+        See <a href="https://cwe.mitre.org/data/definitions/397.html">CWE-397: Declaration of Throws for Generic Exception</a>.
+        </p>
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" abbrev="RCN" category="STYLE">
+    <ShortDescription>Redundant nullcheck of value known to be non-null</ShortDescription>
+    <Details><![CDATA[
+
+<p> This method contains a redundant check of a known non-null value against
+the constant null.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_CONVERT_CASE" abbrev="Dm" category="I18N">
+    <ShortDescription>Consider using Locale parameterized version of invoked method</ShortDescription>
+    <Details><![CDATA[
+
+  <p> A String is being converted to upper or lowercase, using the platform's default encoding. This may
+      result in improper conversions when used with international characters. Use the </p>
+      <ul>
+    <li>String.toUpperCase( Locale l )</li>
+    <li>String.toLowerCase( Locale l )</li>
+    </ul>
+      <p>versions instead.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SECEFA">
+    <Description>External File Access (Android)</Description>
+  </BugCode>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="UwF">
+    <Description>Unwritten field</Description>
+  </BugCode>
+  <BugCode abbrev="THROWS">
+    <Description>Exception throwing related problems</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="SECPTI">
+    <Description>Potential Path Traversal (file read)</Description>
+  </BugCode>
+  <BugCode abbrev="SIC">
+    <Description>Inner class could be made static</Description>
+  </BugCode>
+  <BugCode abbrev="RCN" cweid="476">
+    <Description>Redundant comparison to null</Description>
+  </BugCode>
+  <BugCode abbrev="FS">
+    <Description>Format string problem</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="32">
+    <MissingClass>android.app.AppComponentFactory</MissingClass>
+    <MissingClass>android.content.Context</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.content.pm.ApplicationInfo</MissingClass>
+    <MissingClass>android.os.Build</MissingClass>
+    <MissingClass>android.os.Build$VERSION</MissingClass>
+    <MissingClass>android.os.Bundle</MissingClass>
+    <MissingClass>android.os.Environment</MissingClass>
+    <MissingClass>androidx.annotation.Nullable</MissingClass>
+    <MissingClass>androidx.annotation.RestrictTo</MissingClass>
+    <MissingClass>androidx.annotation.RestrictTo$Scope</MissingClass>
+    <MissingClass>androidx.test.core.app.ActivityScenario</MissingClass>
+    <MissingClass>androidx.test.core.app.ApplicationProvider</MissingClass>
+    <MissingClass>androidx.test.internal.util.Checks</MissingClass>
+    <MissingClass>androidx.test.platform.app.AppComponentFactoryRegistry</MissingClass>
+    <MissingClass>androidx.test.platform.io.PlatformTestStorage</MissingClass>
+    <MissingClass>androidx.test.platform.io.PlatformTestStorageRegistry</MissingClass>
+    <MissingClass>kotlin.Metadata</MissingClass>
+    <MissingClass>kotlin.jvm.internal.Intrinsics</MissingClass>
+    <MissingClass>org.jetbrains.annotations.NotNull</MissingClass>
+    <MissingClass>org.junit.rules.ExternalResource</MissingClass>
+    <MissingClass>org.junit.rules.TestRule</MissingClass>
+    <MissingClass>org.junit.runner.Description</MissingClass>
+    <MissingClass>org.junit.runner.Runner</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.Filter</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.Filterable</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.NoTestsRemainException</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.Sortable</MissingClass>
+    <MissingClass>org.junit.runner.manipulation.Sorter</MissingClass>
+    <MissingClass>org.junit.runner.notification.RunNotifier</MissingClass>
+    <MissingClass>org.junit.runners.model.InitializationError</MissingClass>
+    <MissingClass>org.junit.runners.model.Statement</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 7 Jun 2026 17:28:51 -0300" total_classes="6" referenced_classes="43" total_bugs="19" total_size="186" num_packages="2" java_version="25.0.3" vm_version="25.0.3+9-LTS" cpu_seconds="16.03" clock_seconds="3.53" peak_mbytes="219.10" alloc_mbytes="768.00" gc_seconds="0.05" priority_3="5" priority_2="14">
+    <FileStats path="androidx/test/ext/junit/rules/ActivityScenarioRule.java" bugCount="3" size="34" bugHash="ce8b6aa24268baebd14ff8e298087f27"/>
+    <FileStats path="androidx/test/ext/junit/rules/AppComponentFactoryRule.kt" bugCount="0" size="12"/>
+    <FileStats path="androidx/test/ext/junit/rules/DeleteFilesRule.java" bugCount="8" size="63" bugHash="9059cf117a2a9de438d2441bb3980665"/>
+    <FileStats path="androidx/test/ext/junit/runners/AndroidJUnit4.java" bugCount="8" size="77" bugHash="ccf03fe356292df70fbb593b3049621a"/>
+    <PackageStats package="androidx.test.ext.junit.rules" total_bugs="11" total_types="5" total_size="109" priority_3="4" priority_2="7">
+      <ClassStats class="androidx.test.ext.junit.rules.ActivityScenarioRule" sourceFile="ActivityScenarioRule.java" interface="false" size="32" bugs="3" priority_3="2" priority_2="1"/>
+      <ClassStats class="androidx.test.ext.junit.rules.ActivityScenarioRule$Supplier" sourceFile="ActivityScenarioRule.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="androidx.test.ext.junit.rules.AppComponentFactoryRule" sourceFile="AppComponentFactoryRule.kt" interface="false" size="12" bugs="0"/>
+      <ClassStats class="androidx.test.ext.junit.rules.DeleteFilesRule" sourceFile="DeleteFilesRule.java" interface="false" size="36" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="androidx.test.ext.junit.rules.DeleteFilesRule$1" sourceFile="DeleteFilesRule.java" interface="false" size="27" bugs="6" priority_3="1" priority_2="5"/>
+    </PackageStats>
+    <PackageStats package="androidx.test.ext.junit.runners" total_bugs="8" total_types="1" total_size="77" priority_3="1" priority_2="7">
+      <ClassStats class="androidx.test.ext.junit.runners.AndroidJUnit4" sourceFile="AndroidJUnit4.java" interface="false" size="77" bugs="8" priority_3="1" priority_2="7"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="500" invocations="622" avgMicrosecondsPerInvocation="805" maxMicrosecondsPerInvocation="25015" standardDeviationMicrosecondsPerInvocation="1745"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="146" invocations="43" avgMicrosecondsPerInvocation="3417" maxMicrosecondsPerInvocation="21524" standardDeviationMicrosecondsPerInvocation="4684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="118" invocations="43" avgMicrosecondsPerInvocation="2760" maxMicrosecondsPerInvocation="16171" standardDeviationMicrosecondsPerInvocation="3738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="88" invocations="35" avgMicrosecondsPerInvocation="2528" maxMicrosecondsPerInvocation="25217" standardDeviationMicrosecondsPerInvocation="4898"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="87" invocations="177" avgMicrosecondsPerInvocation="492" maxMicrosecondsPerInvocation="4506" standardDeviationMicrosecondsPerInvocation="650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="79" invocations="627" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="6134" standardDeviationMicrosecondsPerInvocation="280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="75" invocations="127" avgMicrosecondsPerInvocation="592" maxMicrosecondsPerInvocation="24392" standardDeviationMicrosecondsPerInvocation="2296"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="70" invocations="43" avgMicrosecondsPerInvocation="1639" maxMicrosecondsPerInvocation="21749" standardDeviationMicrosecondsPerInvocation="3510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="66" invocations="34" avgMicrosecondsPerInvocation="1956" maxMicrosecondsPerInvocation="24679" standardDeviationMicrosecondsPerInvocation="4288"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="63" invocations="34" avgMicrosecondsPerInvocation="1861" maxMicrosecondsPerInvocation="13653" standardDeviationMicrosecondsPerInvocation="3399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="63" invocations="34" avgMicrosecondsPerInvocation="1853" maxMicrosecondsPerInvocation="18162" standardDeviationMicrosecondsPerInvocation="3429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="61" invocations="37" avgMicrosecondsPerInvocation="1659" maxMicrosecondsPerInvocation="13980" standardDeviationMicrosecondsPerInvocation="3161"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="58" invocations="35" avgMicrosecondsPerInvocation="1675" maxMicrosecondsPerInvocation="42342" standardDeviationMicrosecondsPerInvocation="7047"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="48" invocations="548" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="1946" standardDeviationMicrosecondsPerInvocation="159"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="47" invocations="43" avgMicrosecondsPerInvocation="1101" maxMicrosecondsPerInvocation="10021" standardDeviationMicrosecondsPerInvocation="1834"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="44" invocations="35" avgMicrosecondsPerInvocation="1282" maxMicrosecondsPerInvocation="16786" standardDeviationMicrosecondsPerInvocation="2786"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="42" invocations="34" avgMicrosecondsPerInvocation="1240" maxMicrosecondsPerInvocation="11099" standardDeviationMicrosecondsPerInvocation="2142"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="33" invocations="43" avgMicrosecondsPerInvocation="785" maxMicrosecondsPerInvocation="10768" standardDeviationMicrosecondsPerInvocation="1725"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="32" invocations="43" avgMicrosecondsPerInvocation="756" maxMicrosecondsPerInvocation="3418" standardDeviationMicrosecondsPerInvocation="969"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="30" invocations="43" avgMicrosecondsPerInvocation="711" maxMicrosecondsPerInvocation="9305" standardDeviationMicrosecondsPerInvocation="2185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="28" invocations="43" avgMicrosecondsPerInvocation="665" maxMicrosecondsPerInvocation="9153" standardDeviationMicrosecondsPerInvocation="1467"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="28" invocations="43" avgMicrosecondsPerInvocation="664" maxMicrosecondsPerInvocation="3374" standardDeviationMicrosecondsPerInvocation="784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildAccessMethodsDatabase" totalMilliseconds="25" invocations="43" avgMicrosecondsPerInvocation="595" maxMicrosecondsPerInvocation="5718" standardDeviationMicrosecondsPerInvocation="1035"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="25" invocations="34" avgMicrosecondsPerInvocation="739" maxMicrosecondsPerInvocation="5681" standardDeviationMicrosecondsPerInvocation="1205"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="20" invocations="43" avgMicrosecondsPerInvocation="468" maxMicrosecondsPerInvocation="2751" standardDeviationMicrosecondsPerInvocation="689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="19" invocations="6" avgMicrosecondsPerInvocation="3302" maxMicrosecondsPerInvocation="16731" standardDeviationMicrosecondsPerInvocation="6027"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ResourceInMultipleThreadsDetector" totalMilliseconds="18" invocations="6" avgMicrosecondsPerInvocation="3084" maxMicrosecondsPerInvocation="8303" standardDeviationMicrosecondsPerInvocation="2640"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="17" invocations="6" avgMicrosecondsPerInvocation="2907" maxMicrosecondsPerInvocation="11678" standardDeviationMicrosecondsPerInvocation="4410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="15" invocations="43" avgMicrosecondsPerInvocation="363" maxMicrosecondsPerInvocation="2328" standardDeviationMicrosecondsPerInvocation="496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="15" invocations="35" avgMicrosecondsPerInvocation="441" maxMicrosecondsPerInvocation="9848" standardDeviationMicrosecondsPerInvocation="1684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="13" invocations="6" avgMicrosecondsPerInvocation="2285" maxMicrosecondsPerInvocation="5331" standardDeviationMicrosecondsPerInvocation="2017"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantPoolGenFactory" totalMilliseconds="13" invocations="6" avgMicrosecondsPerInvocation="2258" maxMicrosecondsPerInvocation="11706" standardDeviationMicrosecondsPerInvocation="4232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="13" invocations="553" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="5834" standardDeviationMicrosecondsPerInvocation="247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="13" invocations="34" avgMicrosecondsPerInvocation="390" maxMicrosecondsPerInvocation="2558" standardDeviationMicrosecondsPerInvocation="592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="12" invocations="396" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="2306" standardDeviationMicrosecondsPerInvocation="140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="11" invocations="6" avgMicrosecondsPerInvocation="1901" maxMicrosecondsPerInvocation="4989" standardDeviationMicrosecondsPerInvocation="1911"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
