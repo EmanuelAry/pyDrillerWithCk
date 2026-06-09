@@ -1,0 +1,534 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "a5da3e998abe42bd6f9ebad19b09517c14aacead",
+	"url": "https://github.com/android/android-test/commit/a5da3e998abe42bd6f9ebad19b09517c14aacead",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class androidx.test.ext.truth.os.ParcelableSubject",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/os/ParcelableSubject.java",
+		"startLine": 26,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.ext.truth.os.ParcelableSubject"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/os/ParcelableSubject.java",
+		"startLine": 26,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "androidx.test.ext.truth.os.ParcelableSubject"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "63f4d418dc91b98908bd05e3a395a2feca632053",
+	"url": "https://github.com/android/android-test/commit/63f4d418dc91b98908bd05e3a395a2feca632053",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected restoreUncaughtExceptionHandler() : void from class androidx.test.runner.MonitoringInstrumentation",
+	"leftSideLocations": [{
+		"filePath": "runner/monitor/java/androidx/test/runner/MonitoringInstrumentation.java",
+		"startLine": 294,
+		"endLine": 296,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private restoreUncaughtExceptionHandler() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/monitor/java/androidx/test/runner/MonitoringInstrumentation.java",
+		"startLine": 294,
+		"endLine": 296,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected restoreUncaughtExceptionHandler() : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d5745c8e525ee4e1e0d3ad7f5d6e88570c13a97d",
+	"url": "https://github.com/android/android-test/commit/d5745c8e525ee4e1e0d3ad7f5d6e88570c13a97d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "7f6bdd8d2789c4ced70a75c952457cb65706a96b",
+	"url": "https://github.com/android/android-test/commit/7f6bdd8d2789c4ced70a75c952457cb65706a96b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "fe9dda6016e58467039da344dd3743ac7f6ee79e",
+	"url": "https://github.com/android/android-test/commit/fe9dda6016e58467039da344dd3743ac7f6ee79e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "66e4740af2b27dedf30a145fc60653bf19586424",
+	"url": "https://github.com/android/android-test/commit/66e4740af2b27dedf30a145fc60653bf19586424",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b38d7e2542273da6019aee5e314e7f1fb367484f",
+	"url": "https://github.com/android/android-test/commit/b38d7e2542273da6019aee5e314e7f1fb367484f",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type objectMatcher : Matcher<Object> to objectMatcher : Matcher<?> in method public withTagKey(key int, objectMatcher Matcher<?>) : Matcher<View> from class androidx.test.espresso.matcher.ViewMatchers",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 57,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "objectMatcher : Matcher<Object>"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 57,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "objectMatcher : Matcher<?>"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type objectMatcher : Matcher<Object> to objectMatcher : Matcher<?> in class androidx.test.espresso.matcher.ViewMatchers.WithTagKeyMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 715,
+		"endLine": 715,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "objectMatcher : Matcher<Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 715,
+		"endLine": 715,
+		"startColumn": 30,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "objectMatcher : Matcher<?>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type objectMatcher : Matcher<Object> to objectMatcher : Matcher<?> in method private WithTagKeyMatcher(key int, objectMatcher Matcher<?>) from class androidx.test.espresso.matcher.ViewMatchers.WithTagKeyMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 718,
+		"endLine": 718,
+		"startColumn": 40,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "objectMatcher : Matcher<Object>"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 720,
+		"endLine": 720,
+		"startColumn": 7,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 718,
+		"endLine": 718,
+		"startColumn": 40,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "objectMatcher : Matcher<?>"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 720,
+		"endLine": 720,
+		"startColumn": 7,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "53c1fb01e3a9453683f9b910e23fa3d7193fc4af",
+	"url": "https://github.com/android/android-test/commit/53c1fb01e3a9453683f9b910e23fa3d7193fc4af",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "10b2af528548631d616b6fba30f79578323b4639",
+	"url": "https://github.com/android/android-test/commit/10b2af528548631d616b6fba30f79578323b4639",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.TestRequestBuilder.ParentFilter moved to androidx.test.internal.runner.filters.ParentFilter",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestRequestBuilder.java",
+		"startLine": 131,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilder.ParentFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/filters/ParentFilter.java",
+		"startLine": 21,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.internal.runner.filters.ParentFilter"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier private to public in class androidx.test.internal.runner.filters.ParentFilter",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestRequestBuilder.java",
+		"startLine": 131,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilder.ParentFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/filters/ParentFilter.java",
+		"startLine": 21,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "androidx.test.internal.runner.filters.ParentFilter"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.TestRequestBuilder.ParentFilter",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestRequestBuilder.java",
+		"startLine": 131,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilder.ParentFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/filters/ParentFilter.java",
+		"startLine": 21,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.internal.runner.filters.ParentFilter"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "83a200e741729882b9a97c7af7684d6726e9dfde",
+	"url": "https://github.com/android/android-test/commit/83a200e741729882b9a97c7af7684d6726e9dfde",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c71339cce96b8abb71c70fa8ae1b7bc4718ea2df",
+	"url": "https://github.com/android/android-test/commit/c71339cce96b8abb71c70fa8ae1b7bc4718ea2df",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "e4c3a2984a6f2085dd6f64e576fbdda56cffc568",
+	"url": "https://github.com/android/android-test/commit/e4c3a2984a6f2085dd6f64e576fbdda56cffc568",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f3e17e94f197cc94d1708826e8c5f63f81c4db36",
+	"url": "https://github.com/android/android-test/commit/f3e17e94f197cc94d1708826e8c5f63f81c4db36",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "71a895b45b928b926ce46721f866a19b248cd22b",
+	"url": "https://github.com/android/android-test/commit/71a895b45b928b926ce46721f866a19b248cd22b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "6b2b15e5c87429b92e8d4725c96a98d70045f9d6",
+	"url": "https://github.com/android/android-test/commit/6b2b15e5c87429b92e8d4725c96a98d70045f9d6",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "dd392cd868d60495a4e3108b7fdb5e4e36275024",
+	"url": "https://github.com/android/android-test/commit/dd392cd868d60495a4e3108b7fdb5e4e36275024",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type intent : Object to intent : Intent in method public matches(intent Intent) : boolean from class androidx.test.internal.runner.intent.IntentMonitorImplTest.withAction.argThat.new ArgumentMatcher<Intent>",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/intent/IntentMonitorImplTest.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 34,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "intent : Object"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/intent/IntentMonitorImplTest.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/intent/IntentMonitorImplTest.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 34,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "intent : Intent"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/intent/IntentMonitorImplTest.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "bdf06111b761c67cfac28fd7f9ca4711b67c451d",
+	"url": "https://github.com/android/android-test/commit/bdf06111b761c67cfac28fd7f9ca4711b67c451d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "3d62ac5ff0f863c9601e67053ef3c41fd3b79917",
+	"url": "https://github.com/android/android-test/commit/3d62ac5ff0f863c9601e67053ef3c41fd3b79917",
+	"refactorings": [{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SdkSuppress(minSdkVersion = 16) in method public hasTitle() : void from class androidx.test.ext.truth.app.NotificationActionSubjectTest",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/javatests/androidx/test/ext/truth/app/NotificationActionSubjectTest.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SdkSuppress(minSdkVersion = 16)"
+}, {
+		"filePath": "ext/truth/javatests/androidx/test/ext/truth/app/NotificationActionSubjectTest.java",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public hasTitle() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/javatests/androidx/test/ext/truth/app/NotificationActionSubjectTest.java",
+		"startLine": 31,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public hasTitle() : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type activityTestRule : ActivityTestRule<Activity> to activityTestRule : ActivityTestRule<RecreationRecordingActivity> in class androidx.test.ext.truth.app.NotificationSubjectTest",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/javatests/androidx/test/ext/truth/app/NotificationSubjectTest.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 43,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "activityTestRule : ActivityTestRule<Activity>"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/javatests/androidx/test/ext/truth/app/NotificationSubjectTest.java",
+		"startLine": 35,
+		"endLine": 36,
+		"startColumn": 56,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "activityTestRule : ActivityTestRule<RecreationRecordingActivity>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "a09505bc6f9ffddc64fcc3006b60cdb48be35bca",
+	"url": "https://github.com/android/android-test/commit/a09505bc6f9ffddc64fcc3006b60cdb48be35bca",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2f65faca60b4bc0b2679f565aec371726cf011ef",
+	"url": "https://github.com/android/android-test/commit/2f65faca60b4bc0b2679f565aec371726cf011ef",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "8bdb613ae087662427f72c5be8da346045f74735",
+	"url": "https://github.com/android/android-test/commit/8bdb613ae087662427f72c5be8da346045f74735",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "94f02813b064ef5da292b3f2e1fb11c501097afb",
+	"url": "https://github.com/android/android-test/commit/94f02813b064ef5da292b3f2e1fb11c501097afb",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5320ea622a4802497eea3aafdc337c4aa080dc8a",
+	"url": "https://github.com/android/android-test/commit/5320ea622a4802497eea3aafdc337c4aa080dc8a",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier final in class androidx.test.espresso.remote.ConstructorInvocation.ConstructorKey",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/remote/ConstructorInvocation.java",
+		"startLine": 158,
+		"endLine": 190,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.espresso.remote.ConstructorInvocation.ConstructorKey"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/remote/ConstructorInvocation.java",
+		"startLine": 158,
+		"endLine": 190,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "androidx.test.espresso.remote.ConstructorInvocation.ConstructorKey"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier final in class androidx.test.espresso.remote.MethodInvocation.MethodKey",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/remote/MethodInvocation.java",
+		"startLine": 185,
+		"endLine": 223,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.espresso.remote.MethodInvocation.MethodKey"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/remote/MethodInvocation.java",
+		"startLine": 185,
+		"endLine": 223,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "androidx.test.espresso.remote.MethodInvocation.MethodKey"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "db6b588962256de47c6321da87d4bf1919acca73",
+	"url": "https://github.com/android/android-test/commit/db6b588962256de47c6321da87d4bf1919acca73",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "aa3af5c3ee3b5d6a8980b941ef6e571188411af9",
+	"url": "https://github.com/android/android-test/commit/aa3af5c3ee3b5d6a8980b941ef6e571188411af9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "152dd273b0e2d51a24dec9977f2acc001e0c836a",
+	"url": "https://github.com/android/android-test/commit/152dd273b0e2d51a24dec9977f2acc001e0c836a",
+	"refactorings": []
+}]
+}

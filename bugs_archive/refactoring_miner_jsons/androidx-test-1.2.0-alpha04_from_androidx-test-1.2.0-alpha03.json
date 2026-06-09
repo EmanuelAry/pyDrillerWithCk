@@ -1,0 +1,654 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "7efd6a9918d785f7cc6d1ccea062ec3a53fc8459",
+	"url": "https://github.com/android/android-test/commit/7efd6a9918d785f7cc6d1ccea062ec3a53fc8459",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5644ccab708be1591cc7c3e600ebbfabf201225d",
+	"url": "https://github.com/android/android-test/commit/5644ccab708be1591cc7c3e600ebbfabf201225d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "9814727fb0b6249ff8e7d7dc45a27e818f8843ea",
+	"url": "https://github.com/android/android-test/commit/9814727fb0b6249ff8e7d7dc45a27e818f8843ea",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @Config(sdk = Config.ALL_SDKS) in class androidx.test.internal.runner.TestRequestBuilderLocalTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderLocalTest.java",
+		"startLine": 40,
+		"endLine": 112,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderLocalTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderLocalTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 31,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Config(sdk = Config.ALL_SDKS)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderLocalTest.java",
+		"startLine": 42,
+		"endLine": 126,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderLocalTest"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private hasAnnotation(testClass Class<?>, annotationClass Class<? extends Annotation>) : boolean extracted from public testClassIsAnnotatedWithTestSize(description Description) : boolean in class androidx.test.internal.runner.TestSize",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 108,
+		"endLine": 124,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public testClassIsAnnotatedWithTestSize(description Description) : boolean"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 118,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 139,
+		"endLine": 142,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private hasAnnotation(testClass Class<?>, annotationClass Class<? extends Annotation>) : boolean"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 121,
+		"endLine": 137,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public testClassIsAnnotatedWithTestSize(description Description) : boolean"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasAnnotation(testClass,runnerFilterAnnotationClass)"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 12,
+		"endColumn": 61,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasAnnotation(testClass,platformAnnotationClass)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter legacyPlatformAnnotationClassName : String in method public TestSize(sizeQualifierName String, runnerFilterAnnotationClass Class<? extends Annotation>, legacyPlatformAnnotationClassName String, testSizeRuntimeThreshold float) from class androidx.test.internal.runner.TestSize",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 77,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TestSize(sizeQualifierName String, platformAnnotationClass Class<? extends Annotation>, runnerFilterAnnotationClass Class<? extends Annotation>, testSizeRuntimeThreshold float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 7,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "legacyPlatformAnnotationClassName : String"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 77,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TestSize(sizeQualifierName String, runnerFilterAnnotationClass Class<? extends Annotation>, legacyPlatformAnnotationClassName String, testSizeRuntimeThreshold float)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter platformAnnotationClass : Class<? extends Annotation> in method public TestSize(sizeQualifierName String, platformAnnotationClass Class<? extends Annotation>, runnerFilterAnnotationClass Class<? extends Annotation>, testSizeRuntimeThreshold float) from class androidx.test.internal.runner.TestSize",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "platformAnnotationClass : Class<? extends Annotation>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 77,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TestSize(sizeQualifierName String, platformAnnotationClass Class<? extends Annotation>, runnerFilterAnnotationClass Class<? extends Annotation>, testSizeRuntimeThreshold float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestSize.java",
+		"startLine": 77,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public TestSize(sizeQualifierName String, runnerFilterAnnotationClass Class<? extends Annotation>, legacyPlatformAnnotationClassName String, testSizeRuntimeThreshold float)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private hasAnnotation(method FrameworkMethod, annotationClass Class<? extends Annotation>) : boolean extracted from public shouldRunOnUiThread(method FrameworkMethod) : boolean in class androidx.test.internal.runner.junit4.statement.UiThreadStatement",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 70,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public shouldRunOnUiThread(method FrameworkMethod) : boolean"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 79,
+		"endLine": 80,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 89,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private hasAnnotation(method FrameworkMethod, annotationClass Class<? extends Annotation>) : boolean"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 71,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public shouldRunOnUiThread(method FrameworkMethod) : boolean"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasAnnotation(method,deprecatedUiThreadTestClass)"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 11,
+		"endColumn": 61,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasAnnotation(method,deprecatedUiThreadTestClass)"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 14,
+		"endColumn": 54,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasAnnotation(method,uiThreadTestClass)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private loadUiThreadClass(className String) : Class<? extends Annotation> extracted from public shouldRunOnUiThread(method FrameworkMethod) : boolean in class androidx.test.internal.runner.junit4.statement.UiThreadStatement",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 70,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public shouldRunOnUiThread(method FrameworkMethod) : boolean"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 77,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 75,
+		"endLine": 85,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 8,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 94,
+		"endLine": 100,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private loadUiThreadClass(className String) : Class<? extends Annotation>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 7,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 95,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 97,
+		"endLine": 99,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 71,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public shouldRunOnUiThread(method FrameworkMethod) : boolean"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "loadUiThreadClass(\"android.test.UiThreadTest\")"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "loadUiThreadClass(\"androidx.test.annotation.UiThreadTest\")"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type deprecatedUiThreadTestClass : Class<android.test.UiThreadTest> to annotationClass : Class<? extends Annotation> in method private hasAnnotation(method FrameworkMethod, annotationClass Class<? extends Annotation>) : boolean from class androidx.test.internal.runner.junit4.statement.UiThreadStatement",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 38,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deprecatedUiThreadTestClass : Class<android.test.UiThreadTest>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 79,
+		"endLine": 80,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 31,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "annotationClass : Class<? extends Annotation>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable deprecatedUiThreadTestClass : Class<android.test.UiThreadTest> to annotationClass : Class<? extends Annotation> in method private hasAnnotation(method FrameworkMethod, annotationClass Class<? extends Annotation>) : boolean from class androidx.test.internal.runner.junit4.statement.UiThreadStatement",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 38,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deprecatedUiThreadTestClass : Class<android.test.UiThreadTest>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 79,
+		"endLine": 80,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 31,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "annotationClass : Class<? extends Annotation>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type deprecatedUiThreadTestClass : Class<android.test.UiThreadTest> to deprecatedUiThreadTestClass : Class<? extends Annotation> in method public shouldRunOnUiThread(method FrameworkMethod) : boolean from class androidx.test.internal.runner.junit4.statement.UiThreadStatement",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 38,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deprecatedUiThreadTestClass : Class<android.test.UiThreadTest>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 79,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 72,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 72,
+		"endLine": 73,
+		"startColumn": 33,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "deprecatedUiThreadTestClass : Class<? extends Annotation>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 81,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/junit4/statement/UiThreadStatement.java",
+		"startLine": 74,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SmallTest in method public match() : void from class androidx.test.internal.runner.TestRequestBuilderLocalTest.TestFixture",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderLocalTest.java",
+		"startLine": 46,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public match() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderLocalTest.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SmallTest"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderLocalTest.java",
+		"startLine": 49,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public match() : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "a379c872755797eab6f182ec973d139514ae6b77",
+	"url": "https://github.com/android/android-test/commit/a379c872755797eab6f182ec973d139514ae6b77",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "fa82539118eecd1085f0a1ef41aa9772ea52a0f5",
+	"url": "https://github.com/android/android-test/commit/fa82539118eecd1085f0a1ef41aa9772ea52a0f5",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter controlledLooper : ControlledLooper in method package RootViewPicker(uiController UiController, rootResultFetcher RootResultFetcher, activityLifecycleMonitor ActivityLifecycleMonitor, needsActivity AtomicReference<Boolean>, controlledLooper ControlledLooper) from class androidx.test.espresso.base.RootViewPicker",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 65,
+		"endLine": 75,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RootViewPicker(uiController UiController, rootResultFetcher RootResultFetcher, activityLifecycleMonitor ActivityLifecycleMonitor, needsActivity AtomicReference<Boolean>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "controlledLooper : ControlledLooper"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 67,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package RootViewPicker(uiController UiController, rootResultFetcher RootResultFetcher, activityLifecycleMonitor ActivityLifecycleMonitor, needsActivity AtomicReference<Boolean>, controlledLooper ControlledLooper)"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "017a186ca43c1c379d6661dabad1634baad1fbdb",
+	"url": "https://github.com/android/android-test/commit/017a186ca43c1c379d6661dabad1634baad1fbdb",
+	"refactorings": []
+}]
+}

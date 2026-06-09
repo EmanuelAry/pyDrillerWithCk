@@ -1,0 +1,780 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "e6a07a0370448fd070c37b1b5aec4dc550dacf67",
+	"url": "https://github.com/android/android-test/commit/e6a07a0370448fd070c37b1b5aec4dc550dacf67",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "ac49334ff84864c948c9a3ec2213db778aea5a57",
+	"url": "https://github.com/android/android-test/commit/ac49334ff84864c948c9a3ec2213db778aea5a57",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b40dda0809a8c9dcfcf4411300d0aecb6f0ab223",
+	"url": "https://github.com/android/android-test/commit/b40dda0809a8c9dcfcf4411300d0aecb6f0ab223",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2404b7fd4aee66f64339635753298ca264faf5cf",
+	"url": "https://github.com/android/android-test/commit/2404b7fd4aee66f64339635753298ca264faf5cf",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable count : int in method public handle(error Throwable, viewMatcher Matcher<View>) : void from class androidx.test.espresso.base.DefaultFailureHandler",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "count : int"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "bcaf62cfcd2968d73ea431d36b3dcaef6eafbf92",
+	"url": "https://github.com/android/android-test/commit/bcaf62cfcd2968d73ea431d36b3dcaef6eafbf92",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable count : int in method public handle(error Throwable, viewMatcher Matcher<View>) : void from class androidx.test.espresso.base.DefaultFailureHandler",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "count : int"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "200a6644c81deaaf8b16ed4d517a8b08fbadb3c6",
+	"url": "https://github.com/android/android-test/commit/200a6644c81deaaf8b16ed4d517a8b08fbadb3c6",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class com.google.android.apps.common.testing.broker.AdbReporter renamed to com.google.android.apps.common.testing.broker.ExecReporter",
+	"leftSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/AdbReporter.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.google.android.apps.common.testing.broker.AdbReporter"
+}],
+	"rightSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/ExecReporter.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.google.android.apps.common.testing.broker.ExecReporter"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.google.android.apps.common.testing.broker.AdbReporterModule renamed to com.google.android.apps.common.testing.broker.ExecReporterModule",
+	"leftSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/AdbReporterModule.java",
+		"startLine": 22,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.google.android.apps.common.testing.broker.AdbReporterModule"
+}],
+	"rightSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/ExecReporterModule.java",
+		"startLine": 22,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.google.android.apps.common.testing.broker.ExecReporterModule"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.google.android.apps.common.testing.broker.DeviceBrokerAnnotations.AdbReporterAnnotation renamed to com.google.android.apps.common.testing.broker.DeviceBrokerAnnotations.ExecReporterAnnotation",
+	"leftSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/DeviceBrokerAnnotations.java",
+		"startLine": 296,
+		"endLine": 299,
+		"startColumn": 3,
+		"endColumn": 45,
+		"codeElementType": "ANNOTATION_TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.google.android.apps.common.testing.broker.DeviceBrokerAnnotations.AdbReporterAnnotation"
+}],
+	"rightSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/DeviceBrokerAnnotations.java",
+		"startLine": 296,
+		"endLine": 299,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "ANNOTATION_TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.google.android.apps.common.testing.broker.DeviceBrokerAnnotations.ExecReporterAnnotation"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.google.android.apps.common.testing.broker.NoOpAdbReporter renamed to com.google.android.apps.common.testing.broker.NoOpExecReporter",
+	"leftSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/NoOpAdbReporter.java",
+		"startLine": 19,
+		"endLine": 26,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.google.android.apps.common.testing.broker.NoOpAdbReporter"
+}],
+	"rightSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/NoOpExecReporter.java",
+		"startLine": 19,
+		"endLine": 26,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.google.android.apps.common.testing.broker.NoOpExecReporter"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type adbReporter : AdbReporter to adbReporter : ExecReporter in class com.google.android.apps.common.testing.broker.SubprocessCommunicator",
+	"leftSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "adbReporter : AdbReporter"
+}],
+	"rightSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 30,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "adbReporter : ExecReporter"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type adbReporter : AdbReporter to adbReporter : ExecReporter in class com.google.android.apps.common.testing.broker.SubprocessCommunicator.Builder",
+	"leftSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 31,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "adbReporter : AdbReporter"
+}],
+	"rightSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "adbReporter : ExecReporter"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type adbReporter : AdbReporter to adbReporter : ExecReporter in method public Builder(executor ExecutorService, logDir File, executorLocation String, adbReporter ExecReporter) from class com.google.android.apps.common.testing.broker.SubprocessCommunicator.Builder",
+	"leftSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "adbReporter : AdbReporter"
+}, {
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "adbReporter : ExecReporter"
+}, {
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter Annotation",
+	"description": "Add Parameter Annotation @ExecReporterAnnotation in parameter adbReporter : ExecReporter in method public Builder(executor ExecutorService, logDir File, executorLocation String, adbReporter ExecReporter) from class com.google.android.apps.common.testing.broker.SubprocessCommunicator.Builder",
+	"leftSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "adbReporter : AdbReporter"
+}, {
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 244,
+		"endLine": 254,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Builder(executor ExecutorService, logDir File, executorLocation String, adbReporter AdbReporter)"
+}],
+	"rightSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@ExecReporterAnnotation"
+}, {
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added annotation",
+		"codeElement": "adbReporter : ExecReporter"
+}, {
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 242,
+		"endLine": 252,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable annotation",
+		"codeElement": "public Builder(executor ExecutorService, logDir File, executorLocation String, adbReporter ExecReporter)"
+}]
+},
+{
+	"type": "Remove Parameter Annotation",
+	"description": "Remove Parameter Annotation @AdbReporterAnnotation in parameter adbReporter : AdbReporter in method public Builder(executor ExecutorService, logDir File, executorLocation String, adbReporter AdbReporter) from class com.google.android.apps.common.testing.broker.SubprocessCommunicator.Builder",
+	"leftSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@AdbReporterAnnotation"
+}, {
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "adbReporter : AdbReporter"
+}, {
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 244,
+		"endLine": 254,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Builder(executor ExecutorService, logDir File, executorLocation String, adbReporter AdbReporter)"
+}],
+	"rightSideLocations": [{
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "adbReporter : ExecReporter"
+}, {
+		"filePath": "tools/device_broker/java/com/google/android/apps/common/testing/broker/SubprocessCommunicator.java",
+		"startLine": 242,
+		"endLine": 252,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "public Builder(executor ExecutorService, logDir File, executorLocation String, adbReporter ExecReporter)"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "1dc37bd4ad1ce87b31df9ac033b257faef3b2360",
+	"url": "https://github.com/android/android-test/commit/1dc37bd4ad1ce87b31df9ac033b257faef3b2360",
+	"refactorings": [{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @VisibleForTesting to @VisibleForTesting(otherwise = VisibleForTesting.PACKAGE_PRIVATE) in class androidx.test.internal.runner.ClassPathScanner",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/ClassPathScanner.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 19,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@VisibleForTesting"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/ClassPathScanner.java",
+		"startLine": 31,
+		"endLine": 229,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.ClassPathScanner"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/ClassPathScanner.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 66,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@VisibleForTesting(otherwise = VisibleForTesting.PACKAGE_PRIVATE)"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/ClassPathScanner.java",
+		"startLine": 31,
+		"endLine": 229,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.internal.runner.ClassPathScanner"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute annotation : String to annotations : List<String> in class androidx.test.internal.runner.RunnerArgs",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "annotation : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "annotations : List<String>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type annotation : String to annotations : List<String> in class androidx.test.internal.runner.RunnerArgs",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "annotation : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "annotations : List<String>"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private notAnnotations : List<String> from class androidx.test.internal.runner.RunnerArgs.Builder",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 26,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private notAnnotations : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private notAnnotations : List<String>"
+}]
+},
+{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond ArrayList<String> with ArrayList<> in attribute private notAnnotations : List<String> from class androidx.test.internal.runner.RunnerArgs.Builder",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 43,
+		"endColumn": 66,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "ArrayList<String>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 26,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private notAnnotations : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 49,
+		"endColumn": 66,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "ArrayList<>"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with diamond operator",
+		"codeElement": "private notAnnotations : List<String>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute annotation : String to annotations : List<String> in class androidx.test.internal.runner.RunnerArgs.Builder",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "annotation : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 32,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "annotations : List<String>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type annotation : String to annotations : List<String> in class androidx.test.internal.runner.RunnerArgs.Builder",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "annotation : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 32,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "annotations : List<String>"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private annotations : List<String> from class androidx.test.internal.runner.RunnerArgs.Builder",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private annotation : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/RunnerArgs.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 32,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private annotations : List<String>"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @FlakyTest in method public testSmallSkipped() : void from class androidx.test.internal.runner.TestRequestBuilderTest.SampleMultipleAnnotation",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 219,
+		"endLine": 223,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testSmallSkipped() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@FlakyTest"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 220,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public testSmallSkipped() : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "35bb830dc8206e6394c2e3947d2a8dd6db23703b",
+	"url": "https://github.com/android/android-test/commit/35bb830dc8206e6394c2e3947d2a8dd6db23703b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d4ab566d6367381935a265af543fe4d8a865649b",
+	"url": "https://github.com/android/android-test/commit/d4ab566d6367381935a265af543fe4d8a865649b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "340a706305052d30071c6c0044e62e0488c49cf8",
+	"url": "https://github.com/android/android-test/commit/340a706305052d30071c6c0044e62e0488c49cf8",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "6181037e5e89eafbe58eadcb58fa70b9af09c586",
+	"url": "https://github.com/android/android-test/commit/6181037e5e89eafbe58eadcb58fa70b9af09c586",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable count : int in method public handle(error Throwable, viewMatcher Matcher<View>) : void from class androidx.test.espresso.base.DefaultFailureHandler",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "count : int"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "808b1b7c466588f5c52b5a54f6faeb532c9884d9",
+	"url": "https://github.com/android/android-test/commit/808b1b7c466588f5c52b5a54f6faeb532c9884d9",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable count : int in method public handle(error Throwable, viewMatcher Matcher<View>) : void from class androidx.test.espresso.base.DefaultFailureHandler",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "count : int"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f872840e6b4665be7fb61aba6f5b0e9406e89ec6",
+	"url": "https://github.com/android/android-test/commit/f872840e6b4665be7fb61aba6f5b0e9406e89ec6",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "967c0ea2a86c35039c8d2aceac1ae044a63746aa",
+	"url": "https://github.com/android/android-test/commit/967c0ea2a86c35039c8d2aceac1ae044a63746aa",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "0d179a72acb7b365304675268c0f6aaea041ca14",
+	"url": "https://github.com/android/android-test/commit/0d179a72acb7b365304675268c0f6aaea041ca14",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "960dbbb9ecbd09525f86e05de73bd906c3b22f17",
+	"url": "https://github.com/android/android-test/commit/960dbbb9ecbd09525f86e05de73bd906c3b22f17",
+	"refactorings": []
+}]
+}

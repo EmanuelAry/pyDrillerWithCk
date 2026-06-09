@@ -1,0 +1,2772 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c245a952efdc70f83dce59509a03d5310de402dd",
+	"url": "https://github.com/android/android-test/commit/c245a952efdc70f83dce59509a03d5310de402dd",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "12cfe4bd422733b650342e9122bdc36f1e8c796e",
+	"url": "https://github.com/android/android-test/commit/12cfe4bd422733b650342e9122bdc36f1e8c796e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2569ae6a36a448549b0909c48b430f588c1bbe7b",
+	"url": "https://github.com/android/android-test/commit/2569ae6a36a448549b0909c48b430f588c1bbe7b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c4fb9e5167dc7c18e409f53bfc76928866ff58fb",
+	"url": "https://github.com/android/android-test/commit/c4fb9e5167dc7c18e409f53bfc76928866ff58fb",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b48aa59d13bbe0a47451bf7e3df17a1e106f355e",
+	"url": "https://github.com/android/android-test/commit/b48aa59d13bbe0a47451bf7e3df17a1e106f355e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b2e72bdc82fbaf6091a0f863a74dbc8785421e08",
+	"url": "https://github.com/android/android-test/commit/b2e72bdc82fbaf6091a0f863a74dbc8785421e08",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d2791043e19429dcf9a861000bfc8a203f1544ed",
+	"url": "https://github.com/android/android-test/commit/d2791043e19429dcf9a861000bfc8a203f1544ed",
+	"refactorings": [{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @Config(sdk = Config.ALL_SDKS) in class androidx.test.internal.runner.TestRequestBuilderLocalTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderLocalTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 31,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Config(sdk = Config.ALL_SDKS)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderLocalTest.java",
+		"startLine": 42,
+		"endLine": 126,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderLocalTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderLocalTest.java",
+		"startLine": 41,
+		"endLine": 124,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderLocalTest"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @RunWith(RobolectricTestRunner.class) to @RunWith(AndroidJUnit4.class) in class androidx.test.orchestrator.instrumentationlistener.OrchestratedInstrumentationListenerTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/instrumentationlistener/OrchestratedInstrumentationListenerTest.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@RunWith(RobolectricTestRunner.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/instrumentationlistener/OrchestratedInstrumentationListenerTest.java",
+		"startLine": 47,
+		"endLine": 215,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.orchestrator.instrumentationlistener.OrchestratedInstrumentationListenerTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/instrumentationlistener/OrchestratedInstrumentationListenerTest.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/instrumentationlistener/OrchestratedInstrumentationListenerTest.java",
+		"startLine": 47,
+		"endLine": 215,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.orchestrator.instrumentationlistener.OrchestratedInstrumentationListenerTest"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @RunWith(RobolectricTestRunner.class) to @RunWith(AndroidJUnit4.class) in class androidx.test.orchestrator.junit.BundleJUnitUtilsTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/junit/BundleJUnitUtilsTest.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@RunWith(RobolectricTestRunner.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/junit/BundleJUnitUtilsTest.java",
+		"startLine": 33,
+		"endLine": 142,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.orchestrator.junit.BundleJUnitUtilsTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/junit/BundleJUnitUtilsTest.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/junit/BundleJUnitUtilsTest.java",
+		"startLine": 33,
+		"endLine": 143,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.orchestrator.junit.BundleJUnitUtilsTest"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @RunWith(RobolectricTestRunner.class) to @RunWith(AndroidJUnit4.class) in class androidx.test.orchestrator.listeners.OrchestrationListenerManagerTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/listeners/OrchestrationListenerManagerTest.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@RunWith(RobolectricTestRunner.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/listeners/OrchestrationListenerManagerTest.java",
+		"startLine": 41,
+		"endLine": 216,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.orchestrator.listeners.OrchestrationListenerManagerTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/listeners/OrchestrationListenerManagerTest.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/orchestrator/listeners/OrchestrationListenerManagerTest.java",
+		"startLine": 41,
+		"endLine": 216,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.orchestrator.listeners.OrchestrationListenerManagerTest"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "4ae837070dc6186c0b3e3f98c608c3fa60587d9f",
+	"url": "https://github.com/android/android-test/commit/4ae837070dc6186c0b3e3f98c608c3fa60587d9f",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.TestRequestBuilderTest.JUnit3FailingTestCase moved to androidx.test.testing.fixtures.JUnit3FailingTestCase",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 407,
+		"endLine": 411,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit3FailingTestCase"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3FailingTestCase.java",
+		"startLine": 6,
+		"endLine": 11,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3FailingTestCase"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.TestRequestBuilderTest.JUnit3FailingTestSuite moved to androidx.test.testing.fixtures.JUnit3FailingTestSuite",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 413,
+		"endLine": 418,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit3FailingTestSuite"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3FailingTestSuite.java",
+		"startLine": 6,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3FailingTestSuite"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.TestRequestBuilderTest.JUnit3SuiteWithTest moved to androidx.test.testing.fixtures.JUnit3SuiteWithTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 355,
+		"endLine": 364,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit3SuiteWithTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3SuiteWithTest.java",
+		"startLine": 6,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3SuiteWithTest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Failing moved to androidx.test.testing.fixtures.JUnit4Failing",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 376,
+		"endLine": 381,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Failing"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4Failing.java",
+		"startLine": 10,
+		"endLine": 17,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.JUnit4Failing"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Ignored moved to androidx.test.testing.fixtures.JUnit4Ignored",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 383,
+		"endLine": 389,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Ignored"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4Ignored.java",
+		"startLine": 11,
+		"endLine": 19,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.JUnit4Ignored"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit4ParameterizedTest moved to androidx.test.testing.fixtures.JUnit4ParameterizedTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 86,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit4ParameterizedTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4ParameterizedTest.java",
+		"startLine": 11,
+		"endLine": 22,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.JUnit4ParameterizedTest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.TestRequestBuilderTest.RunWithAndroidJUnit4Failing moved to androidx.test.testing.fixtures.RunWithAndroidJUnit4Failing",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 399,
+		"endLine": 405,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.RunWithAndroidJUnit4Failing"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/RunWithAndroidJUnit4Failing.java",
+		"startLine": 10,
+		"endLine": 17,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.RunWithAndroidJUnit4Failing"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.TestRequestBuilderTest.RunWithJUnit4Failing moved to androidx.test.testing.fixtures.RunWithJUnit4Failing",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 391,
+		"endLine": 397,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.RunWithJUnit4Failing"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/RunWithJUnit4Failing.java",
+		"startLine": 10,
+		"endLine": 17,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.RunWithJUnit4Failing"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.TestRequestBuilderTest.SampleJUnit3Test moved to androidx.test.testing.fixtures.SampleJUnit3Test",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 124,
+		"endLine": 133,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.SampleJUnit3Test"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/SampleJUnit3Test.java",
+		"startLine": 6,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.SampleJUnit3Test"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.AppLifecycleListener moved to androidx.test.testing.fixtures.AppLifecycleListener",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AppLifecycleListener.java",
+		"startLine": 26,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.AppLifecycleListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/AppLifecycleListener.java",
+		"startLine": 26,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.AppLifecycleListener"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.BrokenCustomTestFilter moved to androidx.test.testing.fixtures.BrokenCustomTestFilter",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/BrokenCustomTestFilter.java",
+		"startLine": 22,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.BrokenCustomTestFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/BrokenCustomTestFilter.java",
+		"startLine": 22,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.BrokenCustomTestFilter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.BrokenRunnerBuilder moved to androidx.test.testing.fixtures.BrokenRunnerBuilder",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/BrokenRunnerBuilder.java",
+		"startLine": 21,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.BrokenRunnerBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/BrokenRunnerBuilder.java",
+		"startLine": 21,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.BrokenRunnerBuilder"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.CustomRunnerBuilder moved to androidx.test.testing.fixtures.CustomRunnerBuilder",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/CustomRunnerBuilder.java",
+		"startLine": 25,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.CustomRunnerBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/CustomRunnerBuilder.java",
+		"startLine": 25,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.CustomRunnerBuilder"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.CustomTestFilter moved to androidx.test.testing.fixtures.CustomTestFilter",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/CustomTestFilter.java",
+		"startLine": 21,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.CustomTestFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/CustomTestFilter.java",
+		"startLine": 21,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.CustomTestFilter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.CustomTestFilterTakesBundle moved to androidx.test.testing.fixtures.CustomTestFilterTakesBundle",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/CustomTestFilterTakesBundle.java",
+		"startLine": 22,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.CustomTestFilterTakesBundle"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/CustomTestFilterTakesBundle.java",
+		"startLine": 22,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.CustomTestFilterTakesBundle"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.MyApplication moved to androidx.test.testing.fixtures.MyApplication",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/MyApplication.java",
+		"startLine": 22,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.MyApplication"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/MyApplication.java",
+		"startLine": 22,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.MyApplication"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.internal.runner.listener.ManifestListener moved to androidx.test.testing.fixtures.ManifestListener",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/listener/ManifestListener.java",
+		"startLine": 21,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.listener.ManifestListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/ManifestListener.java",
+		"startLine": 21,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.testing.fixtures.ManifestListener"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit3Suite moved and renamed to androidx.test.testing.fixtures.JUnit3FailingTestSuiteWithSuite",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 119,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit3Suite"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3FailingTestSuiteWithSuite.java",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3FailingTestSuiteWithSuite"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class androidx.test.TimeoutTest.JUnit3StyleClass moved and renamed to androidx.test.testing.fixtures.JUnit3StyleTimeoutClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 182,
+		"endLine": 201,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.TimeoutTest.JUnit3StyleClass"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 5,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3StyleTimeoutClass"
+}]
+},
+{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @Test(timeout = TEST_TIMEOUT) to @Test(timeout = JUnit3StyleTimeoutClass.TEST_TIMEOUT) in method public checkTestTimeoutInterruptsOverArgTimeout() : void from class androidx.test.TimeoutTest.JUnit4NoRuleClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Test(timeout = TEST_TIMEOUT)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 171,
+		"endLine": 175,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkTestTimeoutInterruptsOverArgTimeout() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Test(timeout = JUnit3StyleTimeoutClass.TEST_TIMEOUT)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 174,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public checkTestTimeoutInterruptsOverArgTimeout() : void"
+}]
+},
+{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @Test(timeout = TEST_TIMEOUT) to @Test(timeout = JUnit3StyleTimeoutClass.TEST_TIMEOUT) in method public checkTestTimeoutInterruptsOverAllOthers() : void from class androidx.test.TimeoutTest.JUnit4WithRuleClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Test(timeout = TEST_TIMEOUT)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 147,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkTestTimeoutInterruptsOverAllOthers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Test(timeout = JUnit3StyleTimeoutClass.TEST_TIMEOUT)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 149,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public checkTestTimeoutInterruptsOverAllOthers() : void"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SmallTest in class androidx.test.internal.runner.AndroidLogOnlyBuilderTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SmallTest"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 54,
+		"endLine": 218,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.AndroidLogOnlyBuilderTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 51,
+		"endLine": 172,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "androidx.test.internal.runner.AndroidLogOnlyBuilderTest"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @Suite.SuiteClasses({JUnit4Test.class,AnotherJUnit4Test.class}) to @Suite.SuiteClasses({JUnit4Failing.class,AnotherJUnit4Test.class}) in class androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit4TestSuite",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Suite.SuiteClasses({JUnit4Test.class,AnotherJUnit4Test.class})"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 109,
+		"endLine": 111,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit4TestSuite"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 70,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Suite.SuiteClasses({JUnit4Failing.class,AnotherJUnit4Test.class})"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 85,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit4TestSuite"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.TestRequestBuilderTest.JUnit3FailingTestCase",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 407,
+		"endLine": 411,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit3FailingTestCase"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3FailingTestCase.java",
+		"startLine": 6,
+		"endLine": 11,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3FailingTestCase"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.TestRequestBuilderTest.JUnit3FailingTestSuite",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 413,
+		"endLine": 418,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit3FailingTestSuite"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3FailingTestSuite.java",
+		"startLine": 6,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3FailingTestSuite"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.TestRequestBuilderTest.JUnit3SuiteWithTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 355,
+		"endLine": 364,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit3SuiteWithTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3SuiteWithTest.java",
+		"startLine": 6,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3SuiteWithTest"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @RunWith(JUnit4.class) in class androidx.test.testing.fixtures.JUnit4Failing",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 376,
+		"endLine": 381,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Failing"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4Failing.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 0,
+		"endColumn": 23,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@RunWith(JUnit4.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4Failing.java",
+		"startLine": 10,
+		"endLine": 17,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.testing.fixtures.JUnit4Failing"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Failing",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 376,
+		"endLine": 381,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Failing"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4Failing.java",
+		"startLine": 10,
+		"endLine": 17,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.JUnit4Failing"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @RunWith(JUnit4.class) in class androidx.test.testing.fixtures.JUnit4Ignored",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 383,
+		"endLine": 389,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Ignored"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4Ignored.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 23,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@RunWith(JUnit4.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4Ignored.java",
+		"startLine": 11,
+		"endLine": 19,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.testing.fixtures.JUnit4Ignored"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Ignored",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 383,
+		"endLine": 389,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.JUnit4Ignored"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4Ignored.java",
+		"startLine": 11,
+		"endLine": 19,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.JUnit4Ignored"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit4ParameterizedTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 86,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit4ParameterizedTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit4ParameterizedTest.java",
+		"startLine": 11,
+		"endLine": 22,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.JUnit4ParameterizedTest"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.TestRequestBuilderTest.RunWithAndroidJUnit4Failing",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 399,
+		"endLine": 405,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.RunWithAndroidJUnit4Failing"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/RunWithAndroidJUnit4Failing.java",
+		"startLine": 10,
+		"endLine": 17,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.RunWithAndroidJUnit4Failing"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.TestRequestBuilderTest.RunWithJUnit4Failing",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 391,
+		"endLine": 397,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.RunWithJUnit4Failing"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/RunWithJUnit4Failing.java",
+		"startLine": 10,
+		"endLine": 17,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.RunWithJUnit4Failing"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.TestRequestBuilderTest.SampleJUnit3Test",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 124,
+		"endLine": 133,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestRequestBuilderTest.SampleJUnit3Test"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/SampleJUnit3Test.java",
+		"startLine": 6,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.SampleJUnit3Test"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit3Suite",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/AndroidLogOnlyBuilderTest.java",
+		"startLine": 119,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.AndroidLogOnlyBuilderTest.JUnit3Suite"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3FailingTestSuiteWithSuite.java",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3FailingTestSuiteWithSuite"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class androidx.test.TimeoutTest.JUnit3StyleClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 182,
+		"endLine": 201,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.TimeoutTest.JUnit3StyleClass"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 5,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "androidx.test.testing.fixtures.JUnit3StyleTimeoutClass"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public GLOBAL_ARG_TIMEOUT : int from class androidx.test.testing.fixtures.JUnit3StyleTimeoutClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private GLOBAL_ARG_TIMEOUT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 27,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public GLOBAL_ARG_TIMEOUT : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public GLOBAL_RULE_TIMEOUT : int from class androidx.test.testing.fixtures.JUnit3StyleTimeoutClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private GLOBAL_RULE_TIMEOUT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 27,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public GLOBAL_RULE_TIMEOUT : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public TEST_TIMEOUT : int from class androidx.test.testing.fixtures.JUnit3StyleTimeoutClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private TEST_TIMEOUT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public TEST_TIMEOUT : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public WAIT_FOR_TIMEOUT : int from class androidx.test.testing.fixtures.JUnit3StyleTimeoutClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 28,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private WAIT_FOR_TIMEOUT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 27,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public WAIT_FOR_TIMEOUT : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private GLOBAL_ARG_TIMEOUT : int from class androidx.test.TimeoutTest to public GLOBAL_ARG_TIMEOUT : int from class androidx.test.testing.fixtures.JUnit3StyleTimeoutClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private GLOBAL_ARG_TIMEOUT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 27,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public GLOBAL_ARG_TIMEOUT : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private GLOBAL_RULE_TIMEOUT : int from class androidx.test.TimeoutTest to public GLOBAL_RULE_TIMEOUT : int from class androidx.test.testing.fixtures.JUnit3StyleTimeoutClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private GLOBAL_RULE_TIMEOUT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 27,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public GLOBAL_RULE_TIMEOUT : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private TEST_TIMEOUT : int from class androidx.test.TimeoutTest to public TEST_TIMEOUT : int from class androidx.test.testing.fixtures.JUnit3StyleTimeoutClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private TEST_TIMEOUT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public TEST_TIMEOUT : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private WAIT_FOR_TIMEOUT : int from class androidx.test.TimeoutTest to public WAIT_FOR_TIMEOUT : int from class androidx.test.testing.fixtures.JUnit3StyleTimeoutClass",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/TimeoutTest.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 28,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private WAIT_FOR_TIMEOUT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/testing/fixtures/JUnit3StyleTimeoutClass.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 27,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public WAIT_FOR_TIMEOUT : int"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b7df94594a1dcee5f463e10d036e650180a16977",
+	"url": "https://github.com/android/android-test/commit/b7df94594a1dcee5f463e10d036e650180a16977",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "559eec2e3974c823df505b9b9932798b30b0706e",
+	"url": "https://github.com/android/android-test/commit/559eec2e3974c823df505b9b9932798b30b0706e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "a0594d8185f0a1626c15a623c557a7edc1366832",
+	"url": "https://github.com/android/android-test/commit/a0594d8185f0a1626c15a623c557a7edc1366832",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @RunWith(AndroidJUnit4.class) in class androidx.test.internal.runner.TestLoaderNotScanningPathTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestLoaderNotScanningPathTest.java",
+		"startLine": 18,
+		"endLine": 28,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestLoaderNotScanningPathTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestLoaderNotScanningPathTest.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestLoaderNotScanningPathTest.java",
+		"startLine": 21,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.internal.runner.TestLoaderNotScanningPathTest"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @RunWith(AndroidJUnit4.class) in class androidx.test.internal.runner.TestLoaderScanningPathTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestLoaderScanningPathTest.java",
+		"startLine": 18,
+		"endLine": 28,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.internal.runner.TestLoaderScanningPathTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestLoaderScanningPathTest.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestLoaderScanningPathTest.java",
+		"startLine": 21,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.internal.runner.TestLoaderScanningPathTest"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "1023633d958e8145ccc2f5fd4f59822b1a1629ef",
+	"url": "https://github.com/android/android-test/commit/1023633d958e8145ccc2f5fd4f59822b1a1629ef",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private getClassPathToScan() : String extracted from public setUp() : void in class androidx.test.internal.runner.ClassPathScannerTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/ClassPathScannerTest.java",
+		"startLine": 44,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setUp() : void"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/ClassPathScannerTest.java",
+		"startLine": 46,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 11,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/ClassPathScannerTest.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 30,
+		"endColumn": 74,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/ClassPathScannerTest.java",
+		"startLine": 56,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getClassPathToScan() : String"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/ClassPathScannerTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 101,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/ClassPathScannerTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 56,
+		"endColumn": 100,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/ClassPathScannerTest.java",
+		"startLine": 45,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setUp() : void"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/ClassPathScannerTest.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 50,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getClassPathToScan()"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/ClassPathScannerTest.java",
+		"startLine": 57,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c7eef4c86bb09931f21c5b5cb1c09034f0e2ec94",
+	"url": "https://github.com/android/android-test/commit/c7eef4c86bb09931f21c5b5cb1c09034f0e2ec94",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "739faab19c26727f31a0d110b4c864acc3f987c5",
+	"url": "https://github.com/android/android-test/commit/739faab19c26727f31a0d110b4c864acc3f987c5",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f4c6403fe2aeccb98f25fcc863b39aa68dc05d6c",
+	"url": "https://github.com/android/android-test/commit/f4c6403fe2aeccb98f25fcc863b39aa68dc05d6c",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "117afe60236fd9850f0a6df73f909eaa3ea797e4",
+	"url": "https://github.com/android/android-test/commit/117afe60236fd9850f0a6df73f909eaa3ea797e4",
+	"refactorings": [{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @RunWith(RobolectricTestRunner.class) to @RunWith(AndroidJUnit4.class) in class androidx.test.espresso.idling.concurrent.IdlingScheduledThreadPoolExecutorTest",
+	"leftSideLocations": [{
+		"filePath": "espresso/idling_resource/concurrent/javatests/androidx/test/espresso/idling/concurrent/IdlingScheduledThreadPoolExecutorTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@RunWith(RobolectricTestRunner.class)"
+}, {
+		"filePath": "espresso/idling_resource/concurrent/javatests/androidx/test/espresso/idling/concurrent/IdlingScheduledThreadPoolExecutorTest.java",
+		"startLine": 35,
+		"endLine": 175,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.espresso.idling.concurrent.IdlingScheduledThreadPoolExecutorTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/idling_resource/concurrent/javatests/androidx/test/espresso/idling/concurrent/IdlingScheduledThreadPoolExecutorTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "espresso/idling_resource/concurrent/javatests/androidx/test/espresso/idling/concurrent/IdlingScheduledThreadPoolExecutorTest.java",
+		"startLine": 35,
+		"endLine": 175,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.espresso.idling.concurrent.IdlingScheduledThreadPoolExecutorTest"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @RunWith(RobolectricTestRunner.class) to @RunWith(AndroidJUnit4.class) in class androidx.test.espresso.idling.concurrent.IdlingThreadPoolExecutorTest",
+	"leftSideLocations": [{
+		"filePath": "espresso/idling_resource/concurrent/javatests/androidx/test/espresso/idling/concurrent/IdlingThreadPoolExecutorTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@RunWith(RobolectricTestRunner.class)"
+}, {
+		"filePath": "espresso/idling_resource/concurrent/javatests/androidx/test/espresso/idling/concurrent/IdlingThreadPoolExecutorTest.java",
+		"startLine": 35,
+		"endLine": 169,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.espresso.idling.concurrent.IdlingThreadPoolExecutorTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/idling_resource/concurrent/javatests/androidx/test/espresso/idling/concurrent/IdlingThreadPoolExecutorTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "espresso/idling_resource/concurrent/javatests/androidx/test/espresso/idling/concurrent/IdlingThreadPoolExecutorTest.java",
+		"startLine": 35,
+		"endLine": 169,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.espresso.idling.concurrent.IdlingThreadPoolExecutorTest"
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder espresso/idling_resource/javatests/androidx/test/espresso/idling to espresso/idling_resource/javatests/androidx/test/espresso",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "46b9a3b400b8c7b29292a389a16a438ff874e194",
+	"url": "https://github.com/android/android-test/commit/46b9a3b400b8c7b29292a389a16a438ff874e194",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.espresso.intent.BundleMatchersTest moved to androidx.test.espresso.intent.matcher.BundleMatchersTest",
+	"leftSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/BundleMatchersTest.java",
+		"startLine": 35,
+		"endLine": 153,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.espresso.intent.BundleMatchersTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/BundleMatchersTest.java",
+		"startLine": 35,
+		"endLine": 153,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.espresso.intent.matcher.BundleMatchersTest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.espresso.intent.ComponentNameMatchersTest moved to androidx.test.espresso.intent.matcher.ComponentNameMatchersTest",
+	"leftSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/ComponentNameMatchersTest.java",
+		"startLine": 35,
+		"endLine": 93,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.espresso.intent.ComponentNameMatchersTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/ComponentNameMatchersTest.java",
+		"startLine": 35,
+		"endLine": 93,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.espresso.intent.matcher.ComponentNameMatchersTest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.espresso.intent.IntentMatchersTest moved to androidx.test.espresso.intent.matcher.IntentMatchersTest",
+	"leftSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 60,
+		"endLine": 524,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.espresso.intent.IntentMatchersTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 61,
+		"endLine": 521,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.espresso.intent.matcher.IntentMatchersTest"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public matchesTesting() : void from class androidx.test.espresso.intent.IntentMatchersTest",
+	"leftSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 69,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public matchesTesting() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 70,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public matchesTesting() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public matchesIntentWithNoTypeAndMatcherWithType() : void from class androidx.test.espresso.intent.IntentMatchersTest",
+	"leftSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 91,
+		"endLine": 107,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public matchesIntentWithNoTypeAndMatcherWithType() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 91,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public matchesIntentWithNoTypeAndMatcherWithType() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public matchesIntentWithOneExtraAndMatcherWithNoExtra() : void from class androidx.test.espresso.intent.IntentMatchersTest",
+	"leftSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 141,
+		"endLine": 160,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public matchesIntentWithOneExtraAndMatcherWithNoExtra() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 140,
+		"endLine": 158,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public matchesIntentWithOneExtraAndMatcherWithNoExtra() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public matchesIntentWithMultipleExtraAndMatcherWithMultipleExtra() : void from class androidx.test.espresso.intent.IntentMatchersTest",
+	"leftSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 162,
+		"endLine": 177,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public matchesIntentWithMultipleExtraAndMatcherWithMultipleExtra() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/intents/javatests/androidx/test/espresso/intent/matcher/IntentMatchersTest.java",
+		"startLine": 160,
+		"endLine": 174,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public matchesIntentWithMultipleExtraAndMatcherWithMultipleExtra() : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "78a13e4258dd1106e07575d2c35acff0ee37d10b",
+	"url": "https://github.com/android/android-test/commit/78a13e4258dd1106e07575d2c35acff0ee37d10b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "86ed3e6b90fba2c445c1514d7538e6e807b75700",
+	"url": "https://github.com/android/android-test/commit/86ed3e6b90fba2c445c1514d7538e6e807b75700",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "03535401014b100cbc93611caf41cf3dc688e438",
+	"url": "https://github.com/android/android-test/commit/03535401014b100cbc93611caf41cf3dc688e438",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "45e361a6f4c4706dcdacef4fc7aa5cfe4cf06f21",
+	"url": "https://github.com/android/android-test/commit/45e361a6f4c4706dcdacef4fc7aa5cfe4cf06f21",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @Deprecated in class androidx.test.espresso.intent.rule.IntentsTestRule",
+	"leftSideLocations": [{
+		"filePath": "espresso/intents/java/androidx/test/espresso/intent/rule/IntentsTestRule.java",
+		"startLine": 23,
+		"endLine": 71,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.espresso.intent.rule.IntentsTestRule"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/intents/java/androidx/test/espresso/intent/rule/IntentsTestRule.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "espresso/intents/java/androidx/test/espresso/intent/rule/IntentsTestRule.java",
+		"startLine": 23,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.espresso.intent.rule.IntentsTestRule"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @Deprecated in class androidx.test.rule.ActivityTestRule",
+	"leftSideLocations": [{
+		"filePath": "runner/rules/java/androidx/test/rule/ActivityTestRule.java",
+		"startLine": 46,
+		"endLine": 574,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.rule.ActivityTestRule"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/rules/java/androidx/test/rule/ActivityTestRule.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 0,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "runner/rules/java/androidx/test/rule/ActivityTestRule.java",
+		"startLine": 46,
+		"endLine": 574,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.rule.ActivityTestRule"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2b19cae531540601709f72a0a2ab38d4993934f0",
+	"url": "https://github.com/android/android-test/commit/2b19cae531540601709f72a0a2ab38d4993934f0",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "95cb1c9e4ed3792a48080001ec87b6b84d4ffd87",
+	"url": "https://github.com/android/android-test/commit/95cb1c9e4ed3792a48080001ec87b6b84d4ffd87",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5fcd768455a969a70625ac14c34159bd96ff4789",
+	"url": "https://github.com/android/android-test/commit/5fcd768455a969a70625ac14c34159bd96ff4789",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5d9b217fb74ac61206d9ee27a52ce32eae3e0ac1",
+	"url": "https://github.com/android/android-test/commit/5d9b217fb74ac61206d9ee27a52ce32eae3e0ac1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f8f7d2680d82f4821bacc025aa9f9bdcd9148fb4",
+	"url": "https://github.com/android/android-test/commit/f8f7d2680d82f4821bacc025aa9f9bdcd9148fb4",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b199e77e9f32b8cc897ecb5759f5ec1c7e37c2c6",
+	"url": "https://github.com/android/android-test/commit/b199e77e9f32b8cc897ecb5759f5ec1c7e37c2c6",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "95e9f544922aab95f9d6b89c6279a9bcd8369269",
+	"url": "https://github.com/android/android-test/commit/95e9f544922aab95f9d6b89c6279a9bcd8369269",
+	"refactorings": [{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @RunWith(RobolectricTestRunner.class) to @RunWith(AndroidJUnit4.class) in class androidx.test.orchestrator.AndroidTestOrchestratorTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/AndroidTestOrchestratorTest.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 0,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@RunWith(RobolectricTestRunner.class)"
+}, {
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/AndroidTestOrchestratorTest.java",
+		"startLine": 25,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.orchestrator.AndroidTestOrchestratorTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/AndroidTestOrchestratorTest.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/AndroidTestOrchestratorTest.java",
+		"startLine": 25,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.orchestrator.AndroidTestOrchestratorTest"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @RunWith(RobolectricTestRunner.class) to @RunWith(AndroidJUnit4.class) in class androidx.test.orchestrator.TestCoverageTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/TestCoverageTest.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 0,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@RunWith(RobolectricTestRunner.class)"
+}, {
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/TestCoverageTest.java",
+		"startLine": 17,
+		"endLine": 74,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.orchestrator.TestCoverageTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/TestCoverageTest.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/TestCoverageTest.java",
+		"startLine": 17,
+		"endLine": 74,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.orchestrator.TestCoverageTest"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @RunWith(RobolectricTestRunner.class) to @RunWith(AndroidJUnit4.class) in class androidx.test.orchestrator.TestRunnableTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/TestRunnableTest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@RunWith(RobolectricTestRunner.class)"
+}, {
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/TestRunnableTest.java",
+		"startLine": 38,
+		"endLine": 179,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.orchestrator.TestRunnableTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/TestRunnableTest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/TestRunnableTest.java",
+		"startLine": 38,
+		"endLine": 179,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.orchestrator.TestRunnableTest"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "38687352d633273a6551ae81dd5144160672ac46",
+	"url": "https://github.com/android/android-test/commit/38687352d633273a6551ae81dd5144160672ac46",
+	"refactorings": [{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SdkSuppress(maxSdkVersion = 23) in method public testOpenAllActivities() : void from class androidx.test.ui.app.MainActivityTest",
+	"leftSideLocations": [{
+		"filePath": "testapps/ui_testapp/javatests/androidx/test/ui/app/MainActivityTest.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SdkSuppress(maxSdkVersion = 23)"
+}, {
+		"filePath": "testapps/ui_testapp/javatests/androidx/test/ui/app/MainActivityTest.java",
+		"startLine": 92,
+		"endLine": 109,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testOpenAllActivities() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "testapps/ui_testapp/javatests/androidx/test/ui/app/MainActivityTest.java",
+		"startLine": 89,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testOpenAllActivities() : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "e8fe2e6d89f7ddce9225e96b70e6bb3fb25b1092",
+	"url": "https://github.com/android/android-test/commit/e8fe2e6d89f7ddce9225e96b70e6bb3fb25b1092",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "9958e875f5269dcd5638f3422e6eff14edf83645",
+	"url": "https://github.com/android/android-test/commit/9958e875f5269dcd5638f3422e6eff14edf83645",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "66f52df210afb90dad07534cc2d4606a1b6dfb7d",
+	"url": "https://github.com/android/android-test/commit/66f52df210afb90dad07534cc2d4606a1b6dfb7d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "a7a3ee9bee1de76fea76ffda8855678a40694e42",
+	"url": "https://github.com/android/android-test/commit/a7a3ee9bee1de76fea76ffda8855678a40694e42",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "1b227c80ce82fc75f539e88d5c09ca609b27479a",
+	"url": "https://github.com/android/android-test/commit/1b227c80ce82fc75f539e88d5c09ca609b27479a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5ff108cfa2d2e6327d4094704f5912b6d84de14f",
+	"url": "https://github.com/android/android-test/commit/5ff108cfa2d2e6327d4094704f5912b6d84de14f",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5489ad44b2deb90ba3f3c074cd1aa79eb6b73b6a",
+	"url": "https://github.com/android/android-test/commit/5489ad44b2deb90ba3f3c074cd1aa79eb6b73b6a",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable currentActivityState : ActivityState<A> in method public getState() : State from class androidx.test.core.app.ActivityScenario",
+	"leftSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 706,
+		"endLine": 708,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 706,
+		"endLine": 706,
+		"startColumn": 22,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "currentActivityState : ActivityState<A>"
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 707,
+		"endLine": 712,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "bc17e912e3ef9284a5ecef8ebe1eaaeb03b79349",
+	"url": "https://github.com/android/android-test/commit/bc17e912e3ef9284a5ecef8ebe1eaaeb03b79349",
+	"refactorings": [{
+	"type": "Inline Method",
+	"description": "Inline Method public isEqualTo(other Location) : void inlined to public isEqualTo(otherObj Object) : void in class androidx.test.ext.truth.location.LocationSubject",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 55,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public isEqualTo(other Location) : void"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 7,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 75,
+		"endLine": 77,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 7,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 63,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 74,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 63,
+		"endLine": 67,
+		"startColumn": 64,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 74,
+		"endLine": 84,
+		"startColumn": 51,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 45,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public isEqualTo(other Object) : void"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 7,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "isEqualTo((Location)other)"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 7,
+		"endColumn": 14,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 56,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 56,
+		"endLine": 59,
+		"startColumn": 42,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 45,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public isEqualTo(otherObj Object) : void"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 56,
+		"endLine": 58,
+		"startColumn": 7,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 67,
+		"endLine": 69,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 70,
+		"endLine": 72,
+		"startColumn": 7,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 55,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 66,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 55,
+		"endLine": 59,
+		"startColumn": 64,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 66,
+		"endLine": 76,
+		"startColumn": 51,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter other : Object to otherObj : Object in method public isEqualTo(otherObj Object) : void from class androidx.test.ext.truth.location.LocationSubject",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "other : Object"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 25,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "otherObj : Object"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "03cc09b6b1be6f7ada62c603aa75d8a12638314d",
+	"url": "https://github.com/android/android-test/commit/03cc09b6b1be6f7ada62c603aa75d8a12638314d",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable matcher : Matcher in method public describeTo(description Description) : void from class androidx.test.espresso.matcher.ViewMatchers.WithIdMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 627,
+		"endLine": 627,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 630,
+		"endLine": 630,
+		"startColumn": 31,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "matcher : Matcher"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 635,
+		"endLine": 635,
+		"startColumn": 11,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable idString : String in method public describeTo(description Description) : void from class androidx.test.espresso.matcher.ViewMatchers.WithIdMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 627,
+		"endLine": 627,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 634,
+		"endLine": 634,
+		"startColumn": 18,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "idString : String"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 635,
+		"endLine": 635,
+		"startColumn": 11,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"JdkObsolete\") in method public describeTo(description Description) : void from class androidx.test.espresso.matcher.ViewMatchers.WithIdMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 624,
+		"endLine": 637,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public describeTo(description Description) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 626,
+		"endLine": 626,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"JdkObsolete\")"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 626,
+		"endLine": 647,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public describeTo(description Description) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "694bf9b255c59c127d92e1077e805a9fe6260027",
+	"url": "https://github.com/android/android-test/commit/694bf9b255c59c127d92e1077e805a9fe6260027",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5899e0779bdca5cab30a8d422f6d040a7e4b56ce",
+	"url": "https://github.com/android/android-test/commit/5899e0779bdca5cab30a8d422f6d040a7e4b56ce",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "954dfb0b76f1a3770d5c0e45cf0fbb42d97c4139",
+	"url": "https://github.com/android/android-test/commit/954dfb0b76f1a3770d5c0e45cf0fbb42d97c4139",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d340fdd1a0bdcc7d7137a14008322e0815d16da9",
+	"url": "https://github.com/android/android-test/commit/d340fdd1a0bdcc7d7137a14008322e0815d16da9",
+	"refactorings": []
+}]
+}

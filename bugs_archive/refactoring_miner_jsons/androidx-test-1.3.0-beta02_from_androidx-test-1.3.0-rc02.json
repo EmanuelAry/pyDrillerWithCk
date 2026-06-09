@@ -1,0 +1,1287 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "867f6110d2c7973f05a1f007e6715865f80f03a0",
+	"url": "https://github.com/android/android-test/commit/867f6110d2c7973f05a1f007e6715865f80f03a0",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "aceb94834ed4dd119fd04c35c609e7bf290f2d79",
+	"url": "https://github.com/android/android-test/commit/aceb94834ed4dd119fd04c35c609e7bf290f2d79",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private startForegroundService(context Context, intent Intent) : void extracted from public publish(binder IBinder, rr PublishResultReceiver) : void in class androidx.test.services.speakeasy.client.AppConnection",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 47,
+		"endLine": 56,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public publish(binder IBinder, rr PublishResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private startForegroundService(context Context, intent Intent) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 48,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public publish(binder IBinder, rr PublishResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "startForegroundService(context,intent)"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 85,
+		"endLine": 88,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private startForegroundService(context Context, intent Intent) : void extracted from public find(key String, rr FindResultReceiver) : void in class androidx.test.services.speakeasy.client.AppConnection",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 58,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public find(key String, rr FindResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private startForegroundService(context Context, intent Intent) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 59,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public find(key String, rr FindResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "startForegroundService(context,intent)"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 85,
+		"endLine": 88,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "1bc5f8803f8b70c7a4426d3e890a0d80eeaba60c",
+	"url": "https://github.com/android/android-test/commit/1bc5f8803f8b70c7a4426d3e890a0d80eeaba60c",
+	"refactorings": [{
+	"type": "Inline Method",
+	"description": "Inline Method private startForegroundService(context Context, intent Intent) : void inlined to public publish(binder IBinder, rr PublishResultReceiver) : void in class androidx.test.services.speakeasy.client.AppConnection",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private startForegroundService(context Context, intent Intent) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 48,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public publish(binder IBinder, rr PublishResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "startForegroundService(context,intent)"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 85,
+		"endLine": 88,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 47,
+		"endLine": 56,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public publish(binder IBinder, rr PublishResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private startForegroundService(context Context, intent Intent) : void inlined to public find(key String, rr FindResultReceiver) : void in class androidx.test.services.speakeasy.client.AppConnection",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private startForegroundService(context Context, intent Intent) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 59,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public find(key String, rr FindResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "startForegroundService(context,intent)"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 85,
+		"endLine": 88,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 58,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public find(key String, rr FindResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "3de2b06a4287552bb0502872d157547202aa2aed",
+	"url": "https://github.com/android/android-test/commit/3de2b06a4287552bb0502872d157547202aa2aed",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "3da0026dc18825fdfd83c268446d78ee28b0d2a1",
+	"url": "https://github.com/android/android-test/commit/3da0026dc18825fdfd83c268446d78ee28b0d2a1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "699391719d2091a6db12b71825d5c4257ebcd976",
+	"url": "https://github.com/android/android-test/commit/699391719d2091a6db12b71825d5c4257ebcd976",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "8e950a85d9dee021c8708d7e57449c3a5110f833",
+	"url": "https://github.com/android/android-test/commit/8e950a85d9dee021c8708d7e57449c3a5110f833",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "92ac057ee6a845e0f3045d77608fa5d7b19012f4",
+	"url": "https://github.com/android/android-test/commit/92ac057ee6a845e0f3045d77608fa5d7b19012f4",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "7547927387bb4058b89bc3ad8991be2e46546f59",
+	"url": "https://github.com/android/android-test/commit/7547927387bb4058b89bc3ad8991be2e46546f59",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private startForegroundService(context Context, intent Intent) : void extracted from public publish(binder IBinder, rr PublishResultReceiver) : void in class androidx.test.services.speakeasy.client.AppConnection",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 47,
+		"endLine": 56,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public publish(binder IBinder, rr PublishResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private startForegroundService(context Context, intent Intent) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 48,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public publish(binder IBinder, rr PublishResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "startForegroundService(context,intent)"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 85,
+		"endLine": 88,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private startForegroundService(context Context, intent Intent) : void extracted from public find(key String, rr FindResultReceiver) : void in class androidx.test.services.speakeasy.client.AppConnection",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 58,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public find(key String, rr FindResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private startForegroundService(context Context, intent Intent) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 59,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public find(key String, rr FindResultReceiver) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "startForegroundService(context,intent)"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 85,
+		"endLine": 88,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/client/AppConnection.java",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "9b7e89a1885e5cec27a291d08a84e49fdcebaa42",
+	"url": "https://github.com/android/android-test/commit/9b7e89a1885e5cec27a291d08a84e49fdcebaa42",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier final in class androidx.test.espresso.contrib.DrawerActions.IdlingDrawerListener",
+	"leftSideLocations": [{
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 222,
+		"endLine": 297,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.espresso.contrib.DrawerActions.IdlingDrawerListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 208,
+		"endLine": 244,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "androidx.test.espresso.contrib.DrawerActions.IdlingDrawerListener"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type listener : DrawerListener to tag : Object in method public perform(uiController UiController, view View) : void from class androidx.test.espresso.contrib.DrawerActions.DrawerAction",
+	"leftSideLocations": [{
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 22,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "listener : DrawerListener"
+}, {
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 69,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "tag : Object"
+}, {
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 79,
+		"endLine": 86,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable listener : DrawerListener to tag : Object in method public perform(uiController UiController, view View) : void from class androidx.test.espresso.contrib.DrawerActions.DrawerAction",
+	"leftSideLocations": [{
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 22,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "listener : DrawerListener"
+}, {
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 69,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "tag : Object"
+}, {
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "espresso/contrib/java/androidx/test/espresso/contrib/DrawerActions.java",
+		"startLine": 79,
+		"endLine": 86,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f1512e61cd0dbc924342af6071fc7f40cf0e87dc",
+	"url": "https://github.com/android/android-test/commit/f1512e61cd0dbc924342af6071fc7f40cf0e87dc",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "4825c4756520b37ac48694bb74d3d9dc55a7f812",
+	"url": "https://github.com/android/android-test/commit/4825c4756520b37ac48694bb74d3d9dc55a7f812",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter isEnabled : boolean in method private IsEnabledMatcher(isEnabled boolean) from class androidx.test.espresso.matcher.ViewMatchers.IsEnabledMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 880,
+		"endLine": 881,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsEnabledMatcher()"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 914,
+		"endLine": 914,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "isEnabled : boolean"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 913,
+		"endLine": 916,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private IsEnabledMatcher(isEnabled boolean)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter isFocusable : boolean in method private IsFocusableMatcher(isFocusable boolean) from class androidx.test.espresso.matcher.ViewMatchers.IsFocusableMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 895,
+		"endLine": 896,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsFocusableMatcher()"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 934,
+		"endLine": 934,
+		"startColumn": 32,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "isFocusable : boolean"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 933,
+		"endLine": 936,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private IsFocusableMatcher(isFocusable boolean)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter isFocused : boolean in method private IsFocusedMatcher(isFocused boolean) from class androidx.test.espresso.matcher.ViewMatchers.IsFocusedMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 910,
+		"endLine": 911,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsFocusedMatcher()"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 954,
+		"endLine": 954,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "isFocused : boolean"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 953,
+		"endLine": 956,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private IsFocusedMatcher(isFocused boolean)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter hasFocus : boolean in method private HasFocusMatcher(hasFocus boolean) from class androidx.test.espresso.matcher.ViewMatchers.HasFocusMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 925,
+		"endLine": 926,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HasFocusMatcher()"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 974,
+		"endLine": 974,
+		"startColumn": 29,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "hasFocus : boolean"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 973,
+		"endLine": 976,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private HasFocusMatcher(hasFocus boolean)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter isSelected : boolean in method private IsSelectedMatcher(isSelected boolean) from class androidx.test.espresso.matcher.ViewMatchers.IsSelectedMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 940,
+		"endLine": 941,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsSelectedMatcher()"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 994,
+		"endLine": 994,
+		"startColumn": 31,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "isSelected : boolean"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 993,
+		"endLine": 996,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private IsSelectedMatcher(isSelected boolean)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter isClickable : boolean in method private IsClickableMatcher(isClickable boolean) from class androidx.test.espresso.matcher.ViewMatchers.IsClickableMatcher",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 1259,
+		"endLine": 1260,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsClickableMatcher()"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 1318,
+		"endLine": 1318,
+		"startColumn": 32,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "isClickable : boolean"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/matcher/ViewMatchers.java",
+		"startLine": 1317,
+		"endLine": 1320,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private IsClickableMatcher(isClickable boolean)"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "bbc35ad8126419771a562a0653142b3a4b8af056",
+	"url": "https://github.com/android/android-test/commit/bbc35ad8126419771a562a0653142b3a4b8af056",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "8064ecde36e11516302fef453c6f5754c43d2df1",
+	"url": "https://github.com/android/android-test/commit/8064ecde36e11516302fef453c6f5754c43d2df1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5d39f1f5d3aea9f4f2ad108775172016a585721a",
+	"url": "https://github.com/android/android-test/commit/5d39f1f5d3aea9f4f2ad108775172016a585721a",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private startForegroundService(context Context, intent Intent) : void extracted from public call(unusedMethod String, unusedpackageName String, extras Bundle) : Bundle in class androidx.test.services.speakeasy.server.SpeakEasyContentProvider",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 60,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public call(unusedMethod String, unusedpackageName String, extras Bundle) : Bundle"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 73,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private startForegroundService(context Context, intent Intent) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 62,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public call(unusedMethod String, unusedpackageName String, extras Bundle) : Bundle"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "startForegroundService(getContext(),i)"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 74,
+		"endLine": 76,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 76,
+		"endLine": 79,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 74,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable i : Intent to intent : Intent in method private startForegroundService(context Context, intent Intent) : void from class androidx.test.services.speakeasy.server.SpeakEasyContentProvider",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 12,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "i : Intent"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 63,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "intent : Intent"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyContentProvider.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method private startForegroundService(context Context, intent Intent) : void extracted from public binderDeath(key String, dead IBinder) : void in class androidx.test.services.speakeasy.server.SpeakEasyService.DeathCallback & moved to class androidx.test.services.speakeasy.server.SpeakEasyService",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 163,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public binderDeath(key String, dead IBinder) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 172,
+		"endLine": 179,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private startForegroundService(context Context, intent Intent) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 163,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public binderDeath(key String, dead IBinder) : void"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 7,
+		"endColumn": 43,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "startForegroundService(context,msg)"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 173,
+		"endLine": 175,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 175,
+		"endLine": 178,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 173,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable msg : Intent to intent : Intent in method private startForegroundService(context Context, intent Intent) : void from class androidx.test.services.speakeasy.server.SpeakEasyService",
+	"leftSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 14,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "msg : Intent"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 63,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "intent : Intent"
+}, {
+		"filePath": "services/speakeasy/java/androidx/test/services/speakeasy/server/SpeakEasyService.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

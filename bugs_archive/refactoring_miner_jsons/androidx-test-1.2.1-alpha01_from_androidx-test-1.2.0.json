@@ -1,0 +1,720 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "0650c3d4c06ecebede1e7c125b433624c8e0b92d",
+	"url": "https://github.com/android/android-test/commit/0650c3d4c06ecebede1e7c125b433624c8e0b92d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "08632757db2dff6808c3079f23dac2ef8ebea34a",
+	"url": "https://github.com/android/android-test/commit/08632757db2dff6808c3079f23dac2ef8ebea34a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b1bebea6e4f82109626f01467e92446d04b15167",
+	"url": "https://github.com/android/android-test/commit/b1bebea6e4f82109626f01467e92446d04b15167",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "fc906cc49373339c21f5f1f57ed129c1cc1100d5",
+	"url": "https://github.com/android/android-test/commit/fc906cc49373339c21f5f1f57ed129c1cc1100d5",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "fd81d3c526fc3623aa0c5ef91ecf461c245d2599",
+	"url": "https://github.com/android/android-test/commit/fd81d3c526fc3623aa0c5ef91ecf461c245d2599",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private timeout : long from class androidx.test.rule.ServiceTestRule",
+	"leftSideLocations": [{
+		"filePath": "runner/rules/java/androidx/test/rule/ServiceTestRule.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 16,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private timeout : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/rules/java/androidx/test/rule/ServiceTestRule.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private timeout : long"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private timeUnit : TimeUnit from class androidx.test.rule.ServiceTestRule",
+	"leftSideLocations": [{
+		"filePath": "runner/rules/java/androidx/test/rule/ServiceTestRule.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 20,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private timeUnit : TimeUnit"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/rules/java/androidx/test/rule/ServiceTestRule.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private timeUnit : TimeUnit"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected ServiceTestRule(timeout long, timeUnit TimeUnit) from class androidx.test.rule.ServiceTestRule",
+	"leftSideLocations": [{
+		"filePath": "runner/rules/java/androidx/test/rule/ServiceTestRule.java",
+		"startLine": 107,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ServiceTestRule(timeout long, timeUnit TimeUnit)"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/rules/java/androidx/test/rule/ServiceTestRule.java",
+		"startLine": 96,
+		"endLine": 99,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected ServiceTestRule(timeout long, timeUnit TimeUnit)"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "de41a282082182052fa18a7504723c9883e7a332",
+	"url": "https://github.com/android/android-test/commit/de41a282082182052fa18a7504723c9883e7a332",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "8656460c1e76b19ac708ad000a25e59a75a4859f",
+	"url": "https://github.com/android/android-test/commit/8656460c1e76b19ac708ad000a25e59a75a4859f",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "06ffe165aec95723da722e0adb6ac3bd19c1d70e",
+	"url": "https://github.com/android/android-test/commit/06ffe165aec95723da722e0adb6ac3bd19c1d70e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "be88e72b84b44f31d071886da5dd395991326ddf",
+	"url": "https://github.com/android/android-test/commit/be88e72b84b44f31d071886da5dd395991326ddf",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "e8b6f1e7e91f540459b963229e685f1c512d16ea",
+	"url": "https://github.com/android/android-test/commit/e8b6f1e7e91f540459b963229e685f1c512d16ea",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "a9e77d1d132118833d3f3fb0d4749cb3c3baba63",
+	"url": "https://github.com/android/android-test/commit/a9e77d1d132118833d3f3fb0d4749cb3c3baba63",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "85294e6760b74932696f85e69bf2c64ff4c3432a",
+	"url": "https://github.com/android/android-test/commit/85294e6760b74932696f85e69bf2c64ff4c3432a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d4696d2a9bd3c02843c929c4099d13582a8244d8",
+	"url": "https://github.com/android/android-test/commit/d4696d2a9bd3c02843c929c4099d13582a8244d8",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d0774fe4f4276ac4f48be069be0d6f747c032b0b",
+	"url": "https://github.com/android/android-test/commit/d0774fe4f4276ac4f48be069be0d6f747c032b0b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f50fa4722623f92c5adbfad0ae94c08ac3612ec1",
+	"url": "https://github.com/android/android-test/commit/f50fa4722623f92c5adbfad0ae94c08ac3612ec1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "e6e4f47be3f8b70fccf905e09f13b93dcd942a45",
+	"url": "https://github.com/android/android-test/commit/e6e4f47be3f8b70fccf905e09f13b93dcd942a45",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "3357417c4dfe06d10a29e305698405971695bd8e",
+	"url": "https://github.com/android/android-test/commit/3357417c4dfe06d10a29e305698405971695bd8e",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable error : AssertionError in method private waitForActivityToBecomeAnyOf(expectedStates State...) : void from class androidx.test.core.app.ActivityScenario",
+	"leftSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 303,
+		"endLine": 308,
+		"startColumn": 24,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "error : AssertionError"
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 321,
+		"endLine": 321,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 303,
+		"endLine": 307,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 310,
+		"endLine": 314,
+		"startColumn": 7,
+		"endColumn": 14,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable error : AssertionError in method private waitForActivityToBecomeAnyOf(expectedStates State...) : void from class androidx.test.core.app.ActivityScenario",
+	"leftSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 313,
+		"endLine": 319,
+		"startColumn": 22,
+		"endColumn": 17,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "error : AssertionError"
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 321,
+		"endLine": 321,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 303,
+		"endLine": 307,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 310,
+		"endLine": 314,
+		"startColumn": 7,
+		"endColumn": 14,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "68f9d9008e6d57c5aaa65ce09a408e0d683b50f2",
+	"url": "https://github.com/android/android-test/commit/68f9d9008e6d57c5aaa65ce09a408e0d683b50f2",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "ad7a2a9877920782c4056ab2528452851ab15bcb",
+	"url": "https://github.com/android/android-test/commit/ad7a2a9877920782c4056ab2528452851ab15bcb",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b8468aa3750e14bbe53a27c2918ec2a63b750397",
+	"url": "https://github.com/android/android-test/commit/b8468aa3750e14bbe53a27c2918ec2a63b750397",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "fd6cc03b58987bf778af8a5d042f6e1681028b2a",
+	"url": "https://github.com/android/android-test/commit/fd6cc03b58987bf778af8a5d042f6e1681028b2a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "370115ff01bb16f70ebf3a7659a2f39e41358c18",
+	"url": "https://github.com/android/android-test/commit/370115ff01bb16f70ebf3a7659a2f39e41358c18",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "a3f5104bba60b6918d87ac7d38a951ed048917bf",
+	"url": "https://github.com/android/android-test/commit/a3f5104bba60b6918d87ac7d38a951ed048917bf",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "318c77ec111bcb9828b58053a035842eb65053e0",
+	"url": "https://github.com/android/android-test/commit/318c77ec111bcb9828b58053a035842eb65053e0",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "61938345eb6e392bc02ccb689db40efabec67b7f",
+	"url": "https://github.com/android/android-test/commit/61938345eb6e392bc02ccb689db40efabec67b7f",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "e627068961a51019f84129daf77c47e6fea614be",
+	"url": "https://github.com/android/android-test/commit/e627068961a51019f84129daf77c47e6fea614be",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "977deb987fff72a88170a33f2618621e1cc5ff8e",
+	"url": "https://github.com/android/android-test/commit/977deb987fff72a88170a33f2618621e1cc5ff8e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "3bfc8c6241abc29b811cb1724fb7a22861144f9e",
+	"url": "https://github.com/android/android-test/commit/3bfc8c6241abc29b811cb1724fb7a22861144f9e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "601f767c4b482842eaf0e6125217ca9773a7ef9e",
+	"url": "https://github.com/android/android-test/commit/601f767c4b482842eaf0e6125217ca9773a7ef9e",
+	"refactorings": [{
+	"type": "Replace Anonymous With Lambda",
+	"description": "Replace Anonymous With Lambda androidx.test.ext.truth.content.IntentCorrespondences.action.new Correspondence<Intent,Intent> with (actual, expected) -> Objects.equal(actual.getAction(),expected.getAction()) in method public action() : Correspondence<Intent,Intent> from class androidx.test.ext.truth.content.IntentCorrespondences",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 19,
+		"endLine": 29,
+		"startColumn": 49,
+		"endColumn": 6,
+		"codeElementType": "ANONYMOUS_CLASS_DECLARATION",
+		"description": "anonymous class declaration",
+		"codeElement": "androidx.test.ext.truth.content.IntentCorrespondences.action.new Correspondence<Intent,Intent>"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 18,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public action() : Correspondence<Intent,Intent>"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "LAMBDA_EXPRESSION",
+		"description": "lambda expression",
+		"codeElement": "(actual, expected) -> Objects.equal(actual.getAction(),expected.getAction())"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 18,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with introduced lambda",
+		"codeElement": "public action() : Correspondence<Intent,Intent>"
+}]
+},
+{
+	"type": "Replace Anonymous With Lambda",
+	"description": "Replace Anonymous With Lambda androidx.test.ext.truth.content.IntentCorrespondences.data.new Correspondence<Intent,Intent> with (actual, expected) -> Objects.equal(actual.getData(),expected.getData()) in method public data() : Correspondence<Intent,Intent> from class androidx.test.ext.truth.content.IntentCorrespondences",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 33,
+		"endLine": 43,
+		"startColumn": 49,
+		"endColumn": 6,
+		"codeElementType": "ANONYMOUS_CLASS_DECLARATION",
+		"description": "anonymous class declaration",
+		"codeElement": "androidx.test.ext.truth.content.IntentCorrespondences.data.new Correspondence<Intent,Intent>"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 32,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public data() : Correspondence<Intent,Intent>"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "LAMBDA_EXPRESSION",
+		"description": "lambda expression",
+		"codeElement": "(actual, expected) -> Objects.equal(actual.getData(),expected.getData())"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 24,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with introduced lambda",
+		"codeElement": "public data() : Correspondence<Intent,Intent>"
+}]
+},
+{
+	"type": "Replace Anonymous With Lambda",
+	"description": "Replace Anonymous With Lambda androidx.test.ext.truth.content.IntentCorrespondences.all.new Correspondence<Intent,Intent> with (actual, expected) -> {for(Correspondence<Intent,Intent> innerCorrespondence: correspondences){if(!innerCorrespondence.compare(actual,expected)){return false; in method public all(correspondences Correspondence<Intent,Intent>...) : Correspondence<Intent,Intent> from class androidx.test.ext.truth.content.IntentCorrespondences",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 49,
+		"endLine": 71,
+		"startColumn": 49,
+		"endColumn": 6,
+		"codeElementType": "ANONYMOUS_CLASS_DECLARATION",
+		"description": "anonymous class declaration",
+		"codeElement": "androidx.test.ext.truth.content.IntentCorrespondences.all.new Correspondence<Intent,Intent>"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 46,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public all(correspondences Correspondence<Intent,Intent>...) : Correspondence<Intent,Intent>"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 41,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "LAMBDA_EXPRESSION",
+		"description": "lambda expression",
+		"codeElement": "(actual, expected) -> {for(Correspondence<Intent,Intent> innerCorrespondence: correspondences){if(!innerCorrespondence.compare(actual,expected)){return false;"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/content/IntentCorrespondences.java",
+		"startLine": 30,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with introduced lambda",
+		"codeElement": "public all(correspondences Correspondence<Intent,Intent>...) : Correspondence<Intent,Intent>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "76167dede15075a4619e691be363707c2033b2e6",
+	"url": "https://github.com/android/android-test/commit/76167dede15075a4619e691be363707c2033b2e6",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "6fc0cc1bc3ae332c83cb4ae6e9f1dfaed6dd5a33",
+	"url": "https://github.com/android/android-test/commit/6fc0cc1bc3ae332c83cb4ae6e9f1dfaed6dd5a33",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f6b176b4815292414845c7685d623fc3e9dc26bd",
+	"url": "https://github.com/android/android-test/commit/f6b176b4815292414845c7685d623fc3e9dc26bd",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "4fbb9c9975e5f1ee30f22cd1fa032d4d3d040b4a",
+	"url": "https://github.com/android/android-test/commit/4fbb9c9975e5f1ee30f22cd1fa032d4d3d040b4a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "3597c5c92b191f09935fe6a144254284075a38a9",
+	"url": "https://github.com/android/android-test/commit/3597c5c92b191f09935fe6a144254284075a38a9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "19ad87463550b2c4594573f75f2c675fbcf29109",
+	"url": "https://github.com/android/android-test/commit/19ad87463550b2c4594573f75f2c675fbcf29109",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b095ef779f18470b9c1c23ee781f37e86f0b86ee",
+	"url": "https://github.com/android/android-test/commit/b095ef779f18470b9c1c23ee781f37e86f0b86ee",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "daf2db024fc249cc0b14b0553f0673416a877792",
+	"url": "https://github.com/android/android-test/commit/daf2db024fc249cc0b14b0553f0673416a877792",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "78385a95d651d69151ccfcc8145125bec7a784a5",
+	"url": "https://github.com/android/android-test/commit/78385a95d651d69151ccfcc8145125bec7a784a5",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "9f059d364bfed8aaa11ffd8c09f1bb27201ce01b",
+	"url": "https://github.com/android/android-test/commit/9f059d364bfed8aaa11ffd8c09f1bb27201ce01b",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public TypeTextAction(stringToBeTyped String, tapToFocus boolean, clickAction GeneralClickAction) extracted from public TypeTextAction(stringToBeTyped String, tapToFocus boolean) in class androidx.test.espresso.action.TypeTextAction",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 62,
+		"endLine": 74,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public TypeTextAction(stringToBeTyped String, tapToFocus boolean)"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 80,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public TypeTextAction(stringToBeTyped String, tapToFocus boolean, clickAction GeneralClickAction)"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 68,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public TypeTextAction(stringToBeTyped String, tapToFocus boolean)"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(stringToBeTyped,tapToFocus,null)"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private defaultClickAction() : GeneralClickAction extracted from public perform(uiController UiController, view View) : void in class androidx.test.espresso.action.TypeTextAction",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 93,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public perform(uiController UiController, view View) : void"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 103,
+		"endLine": 104,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 158,
+		"endLine": 165,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private defaultClickAction() : GeneralClickAction"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 159,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 115,
+		"endLine": 151,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public perform(uiController UiController, view View) : void"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/action/TypeTextAction.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "defaultClickAction()"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "1b61d57827f5c55bcbadbf375a71ab206e122e97",
+	"url": "https://github.com/android/android-test/commit/1b61d57827f5c55bcbadbf375a71ab206e122e97",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f81e00a6b3672e45207ac0cf46c019f9a201d248",
+	"url": "https://github.com/android/android-test/commit/f81e00a6b3672e45207ac0cf46c019f9a201d248",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "7d28590b0575bb6be19c458b5b7a2373aa1deca7",
+	"url": "https://github.com/android/android-test/commit/7d28590b0575bb6be19c458b5b7a2373aa1deca7",
+	"refactorings": []
+}]
+}

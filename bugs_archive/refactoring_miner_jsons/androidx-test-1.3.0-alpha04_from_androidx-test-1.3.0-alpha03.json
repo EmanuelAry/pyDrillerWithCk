@@ -1,0 +1,963 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "909c84f293ef74a9190050a2f5e1461e560a8155",
+	"url": "https://github.com/android/android-test/commit/909c84f293ef74a9190050a2f5e1461e560a8155",
+	"refactorings": [{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable m : Message in method package loopAndInterrogate(handler InterrogationHandler<R>) : R from class androidx.test.espresso.base.Interrogator",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 19,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "m : Message"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 125,
+		"endLine": 182,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package loopAndInterrogate(handler InterrogationHandler<R>) : R"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 25,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "m : Message"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 120,
+		"endLine": 175,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "package loopAndInterrogate(handler InterrogationHandler<R>) : R"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "229a41cd3a53e9b5aa29b9a6d8f706aa10459a0b",
+	"url": "https://github.com/android/android-test/commit/229a41cd3a53e9b5aa29b9a6d8f706aa10459a0b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "8991c3166fe18bf58bb5a37fc6676d08b12fcd70",
+	"url": "https://github.com/android/android-test/commit/8991c3166fe18bf58bb5a37fc6676d08b12fcd70",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "3b6ccd367f828023c8b525e5298de95ed1eb3e76",
+	"url": "https://github.com/android/android-test/commit/3b6ccd367f828023c8b525e5298de95ed1eb3e76",
+	"refactorings": [{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable m : Message in method package loopAndInterrogate(handler InterrogationHandler<R>) : R from class androidx.test.espresso.base.Interrogator",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 25,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "m : Message"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 120,
+		"endLine": 175,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package loopAndInterrogate(handler InterrogationHandler<R>) : R"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 19,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "m : Message"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 125,
+		"endLine": 182,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "package loopAndInterrogate(handler InterrogationHandler<R>) : R"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "188895b26b0dcc98b8a7f8af3ec44b420dc78898",
+	"url": "https://github.com/android/android-test/commit/188895b26b0dcc98b8a7f8af3ec44b420dc78898",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5b05bd1a647717d27603e11a93784082505c5fa5",
+	"url": "https://github.com/android/android-test/commit/5b05bd1a647717d27603e11a93784082505c5fa5",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @ExperimentalTestStorage in class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 44,
+		"endLine": 320,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.services.storage.TestStorage"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 25,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@ExperimentalTestStorage"
+}, {
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 43,
+		"endLine": 358,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.services.storage.TestStorage"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @Beta in class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 6,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Beta"
+}, {
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 44,
+		"endLine": 320,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.services.storage.TestStorage"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 43,
+		"endLine": 358,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "androidx.test.services.storage.TestStorage"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private contentResolver : ContentResolver from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 52,
+		"endLine": 53,
+		"startColumn": 40,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private contentResolver : ContentResolver"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 33,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private contentResolver : ContentResolver"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public openInputFile(pathname String) : InputStream from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 58,
+		"endLine": 67,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public openInputFile(pathname String) : InputStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 112,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public openInputFile(pathname String) : InputStream"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public getInputArg(argName String) : String from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 84,
+		"endLine": 114,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getInputArg(argName String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 127,
+		"endLine": 163,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public getInputArg(argName String) : String"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public getInputArgs() : Map<String,String> from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 116,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getInputArgs() : Map<String,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 165,
+		"endLine": 174,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public getInputArgs() : Map<String,String>"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public openOutputFile(pathname String) : OutputStream from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 127,
+		"endLine": 139,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public openOutputFile(pathname String) : OutputStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 176,
+		"endLine": 191,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public openOutputFile(pathname String) : OutputStream"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public addOutputProperties(properties Map<String,Serializable>) : void from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 155,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addOutputProperties(properties Map<String,Serializable>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 193,
+		"endLine": 219,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public addOutputProperties(properties Map<String,Serializable>) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public getOutputProperties() : Map<String,Serializable> from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 183,
+		"endLine": 211,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getOutputProperties() : Map<String,Serializable>"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 221,
+		"endLine": 249,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public getOutputProperties() : Map<String,Serializable>"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package getInputStream(uri Uri) : InputStream from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 217,
+		"endLine": 237,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getInputStream(uri Uri) : InputStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 318,
+		"endLine": 338,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package getInputStream(uri Uri) : InputStream"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package getOutputStream(uri Uri) : OutputStream from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 239,
+		"endLine": 256,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getOutputStream(uri Uri) : OutputStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 340,
+		"endLine": 357,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package getOutputStream(uri Uri) : OutputStream"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public TestStorage() from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 3,
+		"endColumn": 27,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private TestStorage()"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 54,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public TestStorage()"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "8545f1231094043ef387a921cabc6b5442331231",
+	"url": "https://github.com/android/android-test/commit/8545f1231094043ef387a921cabc6b5442331231",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c9995bbe0114665ad277ca35ce8f3e6a9ab72087",
+	"url": "https://github.com/android/android-test/commit/c9995bbe0114665ad277ca35ce8f3e6a9ab72087",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable outputStream : OutputStream in method public addOutputProperties(properties Map<String,Serializable>) : void from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 7,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 20,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "outputStream : OutputStream"
+}, {
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "8f13c8e7d4c903623a81b5ea026f189ace671e94",
+	"url": "https://github.com/android/android-test/commit/8f13c8e7d4c903623a81b5ea026f189ace671e94",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @ExperimentalTestStorage in class androidx.test.services.storage.TestStorageConstants",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorageConstants.java",
+		"startLine": 20,
+		"endLine": 51,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.services.storage.TestStorageConstants"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorageConstants.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 0,
+		"endColumn": 25,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@ExperimentalTestStorage"
+}, {
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorageConstants.java",
+		"startLine": 18,
+		"endLine": 69,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.services.storage.TestStorageConstants"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @Beta in class androidx.test.services.storage.TestStorageConstants",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorageConstants.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 0,
+		"endColumn": 6,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Beta"
+}, {
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorageConstants.java",
+		"startLine": 20,
+		"endLine": 51,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.services.storage.TestStorageConstants"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorageConstants.java",
+		"startLine": 18,
+		"endLine": 69,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "androidx.test.services.storage.TestStorageConstants"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "4acdc7aaa836540abd3f935078ef4e2830afdcb2",
+	"url": "https://github.com/android/android-test/commit/4acdc7aaa836540abd3f935078ef4e2830afdcb2",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "563c76ff9e76703fec7adbdf79dd30c95dbb5b06",
+	"url": "https://github.com/android/android-test/commit/563c76ff9e76703fec7adbdf79dd30c95dbb5b06",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2a7336d7a5776eed865011c5e61a055c05d68974",
+	"url": "https://github.com/android/android-test/commit/2a7336d7a5776eed865011c5e61a055c05d68974",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "ddca716ec5f283b13423b2aff364f9d91cd44878",
+	"url": "https://github.com/android/android-test/commit/ddca716ec5f283b13423b2aff364f9d91cd44878",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable result : Map<String,String> in method public getInputArgs() : Map<String,String> from class androidx.test.services.storage.TestStorage",
+	"leftSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "result : Map<String,String>"
+}, {
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 5,
+		"endColumn": 19,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/storage/java/androidx/test/services/storage/TestStorage.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "9a9822aed4cdf1812e536e6fb21649e0380337de",
+	"url": "https://github.com/android/android-test/commit/9a9822aed4cdf1812e536e6fb21649e0380337de",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter delegateRunner : String to details : String in method private throwInitializationError(details String, cause Throwable) : void from class androidx.test.ext.junit.runners.AndroidJUnit4",
+	"leftSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 48,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "delegateRunner : String"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 90,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 48,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "details : String"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable constructor : Constructor<? extends Runner> in method private loadRunner(testClass Class<?>, runnerClassName String) : Runner from class androidx.test.ext.junit.runners.AndroidJUnit4",
+	"leftSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 35,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "constructor : Constructor<? extends Runner>"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable details : String in method private loadRunner(testClass Class<?>, runnerClassName String) : Runner from class androidx.test.ext.junit.runners.AndroidJUnit4",
+	"leftSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 36,
+		"endColumn": 37,
+		"codeElementType": "CATCH_CLAUSE_EXCEPTION_NAME",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 14,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "details : String"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Variable Annotation",
+	"description": "Remove Variable Annotation @SuppressWarnings(\"unchecked\") in variable runnerClass : Class<? extends Runner> in method private loadRunner(testClass Class<?>, className String) : Runner from class androidx.test.ext.junit.runners.AndroidJUnit4",
+	"leftSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 31,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "runnerClass : Class<? extends Runner>"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 67,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private loadRunner(testClass Class<?>, className String) : Runner"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 29,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "runnerClass : Class<? extends Runner>"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 69,
+		"endLine": 109,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "private loadRunner(testClass Class<?>, runnerClassName String) : Runner"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter className : String to runnerClassName : String in method private loadRunner(testClass Class<?>, runnerClassName String) : Runner from class androidx.test.ext.junit.runners.AndroidJUnit4",
+	"leftSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 56,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "className : String"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 70,
+		"endLine": 71,
+		"startColumn": 7,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 56,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "runnerClassName : String"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 77,
+		"endLine": 80,
+		"startColumn": 7,
+		"endColumn": 14,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 101,
+		"endLine": 102,
+		"startColumn": 7,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 98,
+		"endLine": 99,
+		"startColumn": 7,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 87,
+		"endLine": 92,
+		"startColumn": 7,
+		"endColumn": 14,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method private loadRunner(testClass Class<?>, runnerClassName String) : Runner from class androidx.test.ext.junit.runners.AndroidJUnit4",
+	"leftSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 67,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private loadRunner(testClass Class<?>, className String) : Runner"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "ext/junit/java/androidx/test/ext/junit/runners/AndroidJUnit4.java",
+		"startLine": 69,
+		"endLine": 109,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "private loadRunner(testClass Class<?>, runnerClassName String) : Runner"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d8f65b561d04f7d0d63fbab84aa257c9bd7c6d89",
+	"url": "https://github.com/android/android-test/commit/d8f65b561d04f7d0d63fbab84aa257c9bd7c6d89",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c77bfef7f0835301a3ed82e5a73053d9d5512c03",
+	"url": "https://github.com/android/android-test/commit/c77bfef7f0835301a3ed82e5a73053d9d5512c03",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "08adbbf3cf2116687f371250c744d48369c9c221",
+	"url": "https://github.com/android/android-test/commit/08adbbf3cf2116687f371250c744d48369c9c221",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f4d544942537e58d7393bc1ebbb19608af3f332e",
+	"url": "https://github.com/android/android-test/commit/f4d544942537e58d7393bc1ebbb19608af3f332e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "83a1d7e80ce3b02f66e7f96b06911865a3f87c7c",
+	"url": "https://github.com/android/android-test/commit/83a1d7e80ce3b02f66e7f96b06911865a3f87c7c",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "beb13b74596ea37321b2acaf3d8053fca5de1418",
+	"url": "https://github.com/android/android-test/commit/beb13b74596ea37321b2acaf3d8053fca5de1418",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b578fb07be19cb6b99cd8e6e2d7e780432898d48",
+	"url": "https://github.com/android/android-test/commit/b578fb07be19cb6b99cd8e6e2d7e780432898d48",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "306bac1170e071f3dbd2cbe3d6c7ce0abb465500",
+	"url": "https://github.com/android/android-test/commit/306bac1170e071f3dbd2cbe3d6c7ce0abb465500",
+	"refactorings": []
+}]
+}

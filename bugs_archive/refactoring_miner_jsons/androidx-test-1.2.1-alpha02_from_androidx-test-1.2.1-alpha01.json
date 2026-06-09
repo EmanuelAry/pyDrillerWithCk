@@ -1,0 +1,39 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "ef59895f4132aa13f01b263e5342d5cbb73b37a9",
+	"url": "https://github.com/android/android-test/commit/ef59895f4132aa13f01b263e5342d5cbb73b37a9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "4e6736e9c0949fb4f89e3baad61c99deef644777",
+	"url": "https://github.com/android/android-test/commit/4e6736e9c0949fb4f89e3baad61c99deef644777",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "284a786929d53fea11951f029a57a2293e3e8f73",
+	"url": "https://github.com/android/android-test/commit/284a786929d53fea11951f029a57a2293e3e8f73",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d707d4ea999704e6b2ec03235a983ae31b4db355",
+	"url": "https://github.com/android/android-test/commit/d707d4ea999704e6b2ec03235a983ae31b4db355",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c155ace6ef91c57cdb62551b7d9ab7fbc91a804e",
+	"url": "https://github.com/android/android-test/commit/c155ace6ef91c57cdb62551b7d9ab7fbc91a804e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "24a7e5f950730a8dcff1f0fbdf47d89fa5047e4c",
+	"url": "https://github.com/android/android-test/commit/24a7e5f950730a8dcff1f0fbdf47d89fa5047e4c",
+	"refactorings": []
+}]
+}

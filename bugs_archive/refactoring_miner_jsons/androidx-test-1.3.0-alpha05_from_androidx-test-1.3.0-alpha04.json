@@ -1,0 +1,1287 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "030d188d93333fe6800dbfd8961b312a5a942213",
+	"url": "https://github.com/android/android-test/commit/030d188d93333fe6800dbfd8961b312a5a942213",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "cc4eaf6bb86b4fded6d9397fb8982e0bb076725d",
+	"url": "https://github.com/android/android-test/commit/cc4eaf6bb86b4fded6d9397fb8982e0bb076725d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "fce074d5aa7b2f17b430a82e3ec1a63d900a71c8",
+	"url": "https://github.com/android/android-test/commit/fce074d5aa7b2f17b430a82e3ec1a63d900a71c8",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "e50fde003e6eadaf40e00897e9a6534e316d388d",
+	"url": "https://github.com/android/android-test/commit/e50fde003e6eadaf40e00897e9a6534e316d388d",
+	"refactorings": [{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @RunWith(RobolectricTestRunner.class) to @RunWith(AndroidJUnit4.class) in class androidx.test.orchestrator.listeners.OrchestrationXmlTestRunListenerTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListenerTest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@RunWith(RobolectricTestRunner.class)"
+}, {
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListenerTest.java",
+		"startLine": 45,
+		"endLine": 303,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.orchestrator.listeners.OrchestrationXmlTestRunListenerTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListenerTest.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@RunWith(AndroidJUnit4.class)"
+}, {
+		"filePath": "runner/android_test_orchestrator/javatests/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListenerTest.java",
+		"startLine": 46,
+		"endLine": 305,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "androidx.test.orchestrator.listeners.OrchestrationXmlTestRunListenerTest"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : IOException to e : IOException|XmlPullParserException in method private generateDocument(reportDir File, elapsedTime long) : void from class androidx.test.orchestrator.listeners.OrchestrationXmlTestRunListener",
+	"leftSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 14,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : IOException"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 7,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 14,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : IOException|XmlPullParserException"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 7,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type serializer : KXmlSerializer to serializer : XmlSerializer in method private generateDocument(reportDir File, elapsedTime long) : void from class androidx.test.orchestrator.listeners.OrchestrationXmlTestRunListener",
+	"leftSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 22,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "serializer : KXmlSerializer"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 7,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 7,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 7,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 21,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "serializer : XmlSerializer"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 7,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 7,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 7,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type serializer : KXmlSerializer to serializer : XmlSerializer in method package printTestResults(serializer XmlSerializer, timestamp String, elapsedTime long) : void from class androidx.test.orchestrator.listeners.OrchestrationXmlTestRunListener",
+	"leftSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 25,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "serializer : KXmlSerializer"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 5,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 281,
+		"endLine": 282,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 5,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 7,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "serializer : XmlSerializer"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 5,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 283,
+		"endLine": 284,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 5,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 7,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type serializer : KXmlSerializer to serializer : XmlSerializer in method package print(serializer XmlSerializer, testId TestIdentifier, testResult TestResult) : void from class androidx.test.orchestrator.listeners.OrchestrationXmlTestRunListener",
+	"leftSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 14,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "serializer : KXmlSerializer"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 306,
+		"endLine": 306,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 307,
+		"endLine": 307,
+		"startColumn": 5,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 309,
+		"endLine": 310,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 311,
+		"endLine": 312,
+		"startColumn": 5,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 5,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 318,
+		"endLine": 318,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 321,
+		"endLine": 321,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 324,
+		"endLine": 324,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 325,
+		"endLine": 325,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "serializer : XmlSerializer"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 5,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 311,
+		"endLine": 312,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 313,
+		"endLine": 314,
+		"startColumn": 5,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 326,
+		"endLine": 326,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 332,
+		"endLine": 332,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type serializer : KXmlSerializer to serializer : XmlSerializer in method private printFailedTest(serializer XmlSerializer, tag String, stack String) : void from class androidx.test.orchestrator.listeners.OrchestrationXmlTestRunListener",
+	"leftSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 333,
+		"endLine": 333,
+		"startColumn": 32,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "serializer : KXmlSerializer"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 343,
+		"endLine": 343,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 32,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "serializer : XmlSerializer"
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "runner/android_test_orchestrator/java/androidx/test/orchestrator/listeners/OrchestrationXmlTestRunListener.java",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "1f8310fc8e59d6f34126045e066816ea240c5f56",
+	"url": "https://github.com/android/android-test/commit/1f8310fc8e59d6f34126045e066816ea240c5f56",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "60c7fc7ac4c21aeafc34f4134e13466bddd7e370",
+	"url": "https://github.com/android/android-test/commit/60c7fc7ac4c21aeafc34f4134e13466bddd7e370",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d03ae8b5a1ac0773dd91f0d9afb38b5e8a5fc5b9",
+	"url": "https://github.com/android/android-test/commit/d03ae8b5a1ac0773dd91f0d9afb38b5e8a5fc5b9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "602c1d6a0423e9c76848b20a581ff47b4ef69951",
+	"url": "https://github.com/android/android-test/commit/602c1d6a0423e9c76848b20a581ff47b4ef69951",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "7fef3fbd8f4a68a2cf584721930c276eb49b16ee",
+	"url": "https://github.com/android/android-test/commit/7fef3fbd8f4a68a2cf584721930c276eb49b16ee",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b4ecdca5e243417dc0b03877eef6acf52fcf50b6",
+	"url": "https://github.com/android/android-test/commit/b4ecdca5e243417dc0b03877eef6acf52fcf50b6",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private dummyMethodToGetAnnotations() : void from class androidx.test.services.events.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 58,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMethodToGetAnnotations() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 58,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private dummyMethodToGetAnnotations() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testMethodToGetAnnotations() : void renamed to private dummyMethodToGetAnnotations() : void in class androidx.test.services.events.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 58,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMethodToGetAnnotations() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 58,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private dummyMethodToGetAnnotations() : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "92fbfcba123ff4e94c2bcdeea34c57be233b289b",
+	"url": "https://github.com/android/android-test/commit/92fbfcba123ff4e94c2bcdeea34c57be233b289b",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : ClassNotFoundException|NoClassDefFoundError to e : ClassNotFoundException|LinkageError in method private doCreateRunner(className String, isScanningPath boolean) : void from class androidx.test.internal.runner.TestLoader",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestLoader.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 14,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : ClassNotFoundException|NoClassDefFoundError"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestLoader.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestLoader.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 14,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : ClassNotFoundException|LinkageError"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestLoader.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d0598bdc51c32fc59ddd957642245f12eef69414",
+	"url": "https://github.com/android/android-test/commit/d0598bdc51c32fc59ddd957642245f12eef69414",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "00b5e0e9dbe84d58533cdb77ba5624d82922ac75",
+	"url": "https://github.com/android/android-test/commit/00b5e0e9dbe84d58533cdb77ba5624d82922ac75",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "fad1ed5296455bd6ac307dc39c61e20473393976",
+	"url": "https://github.com/android/android-test/commit/fad1ed5296455bd6ac307dc39c61e20473393976",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private getAllActiveActivities() : List<Activity> extracted from private waitForAtLeastOneActivityToBeResumed() : void in class androidx.test.espresso.base.RootViewPicker",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 152,
+		"endLine": 195,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private waitForAtLeastOneActivityToBeResumed() : void"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 11,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 7,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 164,
+		"endLine": 166,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 164,
+		"endLine": 166,
+		"startColumn": 77,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 196,
+		"endLine": 203,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getAllActiveActivities() : List<Activity>"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 7,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 199,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 199,
+		"endLine": 201,
+		"startColumn": 73,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 152,
+		"endLine": 194,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private waitForAtLeastOneActivityToBeResumed() : void"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 35,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getAllActiveActivities()"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 24,
+		"endColumn": 48,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getAllActiveActivities()"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/RootViewPicker.java",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 5,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "ce49216ba7a5862b33599862d515b3e4fb2c6e09",
+	"url": "https://github.com/android/android-test/commit/ce49216ba7a5862b33599862d515b3e4fb2c6e09",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "15f5bd0af82a5a96200e1542c1b905a2a8f0050e",
+	"url": "https://github.com/android/android-test/commit/15f5bd0af82a5a96200e1542c1b905a2a8f0050e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "8bcd3580cfc097f7108fb2e4770be25c9574f7a0",
+	"url": "https://github.com/android/android-test/commit/8bcd3580cfc097f7108fb2e4770be25c9574f7a0",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "3daef2b189cd69d7b4f93b1961ee66daf34d649a",
+	"url": "https://github.com/android/android-test/commit/3daef2b189cd69d7b4f93b1961ee66daf34d649a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2b716a151aff9cf8b14d0b93a5b44a299515616c",
+	"url": "https://github.com/android/android-test/commit/2b716a151aff9cf8b14d0b93a5b44a299515616c",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d113300e3043d41f1308d2a2df2c10cd81632976",
+	"url": "https://github.com/android/android-test/commit/d113300e3043d41f1308d2a2df2c10cd81632976",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f86c0432606e8aa41722227408da44b23ed1eb6b",
+	"url": "https://github.com/android/android-test/commit/f86c0432606e8aa41722227408da44b23ed1eb6b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d38972eebcbe5d340f1c2404326dc20abf555208",
+	"url": "https://github.com/android/android-test/commit/d38972eebcbe5d340f1c2404326dc20abf555208",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "210d6de78a699b22249724c5f21a9e1804d6e8e1",
+	"url": "https://github.com/android/android-test/commit/210d6de78a699b22249724c5f21a9e1804d6e8e1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "702b7ab60e102ce8fd3e0a81d0e1eaacb15fe194",
+	"url": "https://github.com/android/android-test/commit/702b7ab60e102ce8fd3e0a81d0e1eaacb15fe194",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f1172a4e0d2ce5ad1171ef3768e0ab3e4564ef92",
+	"url": "https://github.com/android/android-test/commit/f1172a4e0d2ce5ad1171ef3768e0ab3e4564ef92",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "a179eb99f302e036837985aa8d9c2d5befc5e9ab",
+	"url": "https://github.com/android/android-test/commit/a179eb99f302e036837985aa8d9c2d5befc5e9ab",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "88ba78269aa9796720092d7efec30cf8b2995cd8",
+	"url": "https://github.com/android/android-test/commit/88ba78269aa9796720092d7efec30cf8b2995cd8",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "844ff4a1e17f93f1633891bf4df2eed1a1f43219",
+	"url": "https://github.com/android/android-test/commit/844ff4a1e17f93f1633891bf4df2eed1a1f43219",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2e0efe7aa8852c5e4667dfb55ce640bc601855c3",
+	"url": "https://github.com/android/android-test/commit/2e0efe7aa8852c5e4667dfb55ce640bc601855c3",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c2b701713f30ac7477d9c58664e885353f5e59b3",
+	"url": "https://github.com/android/android-test/commit/c2b701713f30ac7477d9c58664e885353f5e59b3",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "7b161a7446f747b3fbca6a787fa29e49837753ae",
+	"url": "https://github.com/android/android-test/commit/7b161a7446f747b3fbca6a787fa29e49837753ae",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "3f1d6620c214b5a5b2556b986a9cf0df4405699b",
+	"url": "https://github.com/android/android-test/commit/3f1d6620c214b5a5b2556b986a9cf0df4405699b",
+	"refactorings": [{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @LooperMode(PAUSED) in class androidx.test.core.app.ActivityScenarioTest",
+	"leftSideLocations": [{
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 0,
+		"endColumn": 20,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@LooperMode(PAUSED)"
+}, {
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 52,
+		"endLine": 488,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.core.app.ActivityScenarioTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 48,
+		"endLine": 482,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "androidx.test.core.app.ActivityScenarioTest"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @TextLayoutMode(REALISTIC) in class androidx.test.core.app.ActivityScenarioTest",
+	"leftSideLocations": [{
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 0,
+		"endColumn": 27,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@TextLayoutMode(REALISTIC)"
+}, {
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 52,
+		"endLine": 488,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.core.app.ActivityScenarioTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 48,
+		"endLine": 482,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "androidx.test.core.app.ActivityScenarioTest"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2b0ff6e0555834c7a6b5533edfcf67de9162a9a3",
+	"url": "https://github.com/android/android-test/commit/2b0ff6e0555834c7a6b5533edfcf67de9162a9a3",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "92b1c68fc83d1ecd5d2b8b6bbafbc37bcd303ead",
+	"url": "https://github.com/android/android-test/commit/92b1c68fc83d1ecd5d2b8b6bbafbc37bcd303ead",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "6d7f7bbd912c4df919011140f9c1ea8407758146",
+	"url": "https://github.com/android/android-test/commit/6d7f7bbd912c4df919011140f9c1ea8407758146",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "7422eb91c2df54e0cf006bb2ffe42599538dbea3",
+	"url": "https://github.com/android/android-test/commit/7422eb91c2df54e0cf006bb2ffe42599538dbea3",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "16eb3aadb3cacadf0933ec70572d2afdb20cab33",
+	"url": "https://github.com/android/android-test/commit/16eb3aadb3cacadf0933ec70572d2afdb20cab33",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "0ef66c344c3cae205886b74c524f31908e06a27a",
+	"url": "https://github.com/android/android-test/commit/0ef66c344c3cae205886b74c524f31908e06a27a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "6d673bab254bd81ca4ef10e484d8bab91fc67861",
+	"url": "https://github.com/android/android-test/commit/6d673bab254bd81ca4ef10e484d8bab91fc67861",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c2e30f960902e594e9b541f5ef2aa4e1e32f6eed",
+	"url": "https://github.com/android/android-test/commit/c2e30f960902e594e9b541f5ef2aa4e1e32f6eed",
+	"refactorings": []
+}]
+}

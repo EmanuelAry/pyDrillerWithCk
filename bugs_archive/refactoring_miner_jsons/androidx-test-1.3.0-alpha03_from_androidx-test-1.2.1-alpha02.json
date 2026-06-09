@@ -1,0 +1,1320 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "133950785aed8d44e9cf04cd0a2a787a41f20e0d",
+	"url": "https://github.com/android/android-test/commit/133950785aed8d44e9cf04cd0a2a787a41f20e0d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "10a6400cd55b2a53982b862db10bb875766d9c7b",
+	"url": "https://github.com/android/android-test/commit/10a6400cd55b2a53982b862db10bb875766d9c7b",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.services.events.discovery.Annotation moved to androidx.test.services.events.Annotation",
+	"leftSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/discovery/Annotation.java",
+		"startLine": 23,
+		"endLine": 85,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.services.events.discovery.Annotation"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/Annotation.java",
+		"startLine": 23,
+		"endLine": 85,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.services.events.Annotation"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.services.events.discovery.AnnotationToParcelableParser moved to androidx.test.services.events.AnnotationToParcelableParser",
+	"leftSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/discovery/AnnotationToParcelableParser.java",
+		"startLine": 24,
+		"endLine": 90,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.services.events.discovery.AnnotationToParcelableParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/AnnotationToParcelableParser.java",
+		"startLine": 24,
+		"endLine": 90,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.services.events.AnnotationToParcelableParser"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.services.events.discovery.AnnotationValue moved to androidx.test.services.events.AnnotationValue",
+	"leftSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/discovery/AnnotationValue.java",
+		"startLine": 23,
+		"endLine": 93,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.services.events.discovery.AnnotationValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/AnnotationValue.java",
+		"startLine": 23,
+		"endLine": 93,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.services.events.AnnotationValue"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type testCase : TestCase to testCase : androidx.test.services.events.TestCase in method public testCaseToParcelableTest_basicClassNameAndMethodNameGiven() : void from class androidx.test.services.events.discovery.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 14,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "testCase : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 44,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "testCase : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type testCaseFromParcel : TestCase to testCaseFromParcel : androidx.test.services.events.TestCase in method public testCaseToParcelableTest_basicClassNameAndMethodNameGiven() : void from class androidx.test.services.events.discovery.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 14,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "testCaseFromParcel : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 53,
+		"endLine": 54,
+		"startColumn": 44,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "testCaseFromParcel : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type testCase : TestCase to testCase : androidx.test.services.events.TestCase in method public testCaseToParcelableTest_withMethodAnnotations() : void from class androidx.test.services.events.discovery.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 14,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "testCase : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 44,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "testCase : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type testCaseFromParcel : TestCase to testCaseFromParcel : androidx.test.services.events.TestCase in method public testCaseToParcelableTest_withMethodAnnotations() : void from class androidx.test.services.events.discovery.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 14,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "testCaseFromParcel : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 88,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 90,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 92,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 94,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 87,
+		"endLine": 88,
+		"startColumn": 44,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "testCaseFromParcel : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 95,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 97,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 99,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 101,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "484f303616510d166e66d888108dec2ca895106e",
+	"url": "https://github.com/android/android-test/commit/484f303616510d166e66d888108dec2ca895106e",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.services.events.discovery.DummyAnnotation moved to androidx.test.services.events.DummyAnnotation",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/DummyAnnotation.java",
+		"startLine": 23,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ANNOTATION_TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.services.events.discovery.DummyAnnotation"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/DummyAnnotation.java",
+		"startLine": 23,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ANNOTATION_TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.services.events.DummyAnnotation"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class androidx.test.services.events.discovery.TestCaseParcelableTest moved to androidx.test.services.events.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 31,
+		"endLine": 106,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "androidx.test.services.events.discovery.TestCaseParcelableTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 30,
+		"endLine": 99,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "androidx.test.services.events.TestCaseParcelableTest"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type testCase : androidx.test.services.events.TestCase to testCase : TestCase in method public testCaseToParcelableTest_basicClassNameAndMethodNameGiven() : void from class androidx.test.services.events.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 44,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "testCase : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 14,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "testCase : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type testCaseFromParcel : androidx.test.services.events.TestCase to testCaseFromParcel : TestCase in method public testCaseToParcelableTest_basicClassNameAndMethodNameGiven() : void from class androidx.test.services.events.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 53,
+		"endLine": 54,
+		"startColumn": 44,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "testCaseFromParcel : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 14,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "testCaseFromParcel : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type testCase : androidx.test.services.events.TestCase to testCase : TestCase in method public testCaseToParcelableTest_withMethodAnnotations() : void from class androidx.test.services.events.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 44,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "testCase : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 14,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "testCase : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type testCaseFromParcel : androidx.test.services.events.TestCase to testCaseFromParcel : TestCase in method public testCaseToParcelableTest_withMethodAnnotations() : void from class androidx.test.services.events.TestCaseParcelableTest",
+	"leftSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 87,
+		"endLine": 88,
+		"startColumn": 44,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "testCaseFromParcel : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 97,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 99,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 101,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 95,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/discovery/TestCaseParcelableTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 14,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "testCaseFromParcel : TestCase"
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 90,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 92,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 94,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 88,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "services/events/javatests/androidx/test/services/events/TestCaseParcelableTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public describeContents() : int from class androidx.test.services.events.discovery.TestCase to public describeContents() : int from class androidx.test.services.events.run.TestRunEvent",
+	"leftSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/discovery/TestCase.java",
+		"startLine": 94,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public describeContents() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/run/TestRunEvent.java",
+		"startLine": 54,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public describeContents() : int"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "216728a560ea14d99b12d8d672fdee37d58ea9ac",
+	"url": "https://github.com/android/android-test/commit/216728a560ea14d99b12d8d672fdee37d58ea9ac",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public testEnableAccessibilityChecksTwice_throwsIllegalStateException() : void renamed to public enableIsIdempotent() : void in class androidx.test.ui.app.AccessibilityChecksTest",
+	"leftSideLocations": [{
+		"filePath": "testapps/ui_testapp/javatests/androidx/test/ui/app/AccessibilityChecksTest.java",
+		"startLine": 149,
+		"endLine": 159,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testEnableAccessibilityChecksTwice_throwsIllegalStateException() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "testapps/ui_testapp/javatests/androidx/test/ui/app/AccessibilityChecksTest.java",
+		"startLine": 149,
+		"endLine": 153,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public enableIsIdempotent() : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "804534290a7854566855029a1cf905b246dc350f",
+	"url": "https://github.com/android/android-test/commit/804534290a7854566855029a1cf905b246dc350f",
+	"refactorings": [{
+	"type": "Change Type Declaration Kind",
+	"description": "Change Type Declaration Kind enum to class in type androidx.test.services.events.discovery.TestDiscoveryEvent",
+	"leftSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/discovery/TestDiscoveryEvent.java",
+		"startLine": 22,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.services.events.discovery.TestDiscoveryEvent"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/events/java/androidx/test/services/events/discovery/TestDiscoveryEvent.java",
+		"startLine": 22,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed type declaration kind",
+		"codeElement": "androidx.test.services.events.discovery.TestDiscoveryEvent"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d107c5f217b9d8763f8d761a264c590a55804a1d",
+	"url": "https://github.com/android/android-test/commit/d107c5f217b9d8763f8d761a264c590a55804a1d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d47e64635312e5956e3c8372a38e923fe7f3faf9",
+	"url": "https://github.com/android/android-test/commit/d47e64635312e5956e3c8372a38e923fe7f3faf9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "79427163fa91bbfc6e93c6f63e500736d79764e5",
+	"url": "https://github.com/android/android-test/commit/79427163fa91bbfc6e93c6f63e500736d79764e5",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter activityOptions : Bundle in method public startActivity(intent Intent, activityOptions Bundle) : void from class androidx.test.core.app.InstrumentationActivityInvoker",
+	"leftSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/InstrumentationActivityInvoker.java",
+		"startLine": 334,
+		"endLine": 364,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public startActivity(intent Intent) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/InstrumentationActivityInvoker.java",
+		"startLine": 353,
+		"endLine": 353,
+		"startColumn": 44,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "activityOptions : Bundle"
+}, {
+		"filePath": "core/java/androidx/test/core/app/InstrumentationActivityInvoker.java",
+		"startLine": 351,
+		"endLine": 382,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public startActivity(intent Intent, activityOptions Bundle) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter activityOptions : Bundle in method private launchInternal(activityOptions Bundle) : void from class androidx.test.core.app.ActivityScenario",
+	"leftSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 216,
+		"endLine": 239,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private launchInternal() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 31,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "activityOptions : Bundle"
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 240,
+		"endLine": 265,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private launchInternal(activityOptions Bundle) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter activityOptions : Bundle in method public startActivity(intent Intent, activityOptions Bundle) : void from class androidx.test.internal.platform.app.ActivityInvoker",
+	"leftSideLocations": [{
+		"filePath": "runner/monitor/java/androidx/test/internal/platform/app/ActivityInvoker.java",
+		"startLine": 50,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 37,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public startActivity(intent Intent) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/monitor/java/androidx/test/internal/platform/app/ActivityInvoker.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 37,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "activityOptions : Bundle"
+}, {
+		"filePath": "runner/monitor/java/androidx/test/internal/platform/app/ActivityInvoker.java",
+		"startLine": 52,
+		"endLine": 56,
+		"startColumn": 3,
+		"endColumn": 71,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public startActivity(intent Intent, activityOptions Bundle) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "4abe89b71ae24593bac97b7d884040eb17e2255e",
+	"url": "https://github.com/android/android-test/commit/4abe89b71ae24593bac97b7d884040eb17e2255e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f4d8611bce27e85198aba47d289c77119e56c9ff",
+	"url": "https://github.com/android/android-test/commit/f4d8611bce27e85198aba47d289c77119e56c9ff",
+	"refactorings": [{
+	"type": "Add Parameter Annotation",
+	"description": "Add Parameter Annotation @Nullable in parameter subject : Location in method private LocationSubject(failureMetadata FailureMetadata, subject Location) from class androidx.test.ext.truth.location.LocationSubject",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 60,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "subject : Location"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LocationSubject(failureMetadata FailureMetadata, subject Location)"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 60,
+		"endColumn": 69,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Nullable"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 60,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added annotation",
+		"codeElement": "subject : Location"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable annotation",
+		"codeElement": "private LocationSubject(failureMetadata FailureMetadata, subject Location)"
+}]
+},
+{
+	"type": "Add Parameter Annotation",
+	"description": "Add Parameter Annotation @Nullable in parameter other : Location in method public isEqualTo(other Location) : void from class androidx.test.ext.truth.location.LocationSubject",
+	"leftSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "other : Location"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 44,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isEqualTo(other Location) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Nullable"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added annotation",
+		"codeElement": "other : Location"
+}, {
+		"filePath": "ext/truth/java/androidx/test/ext/truth/location/LocationSubject.java",
+		"startLine": 55,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable annotation",
+		"codeElement": "public isEqualTo(other Location) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "4d7b6eb4db4f6e3b47acc3d4c8cf09deeb9a6bae",
+	"url": "https://github.com/android/android-test/commit/4d7b6eb4db4f6e3b47acc3d4c8cf09deeb9a6bae",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : ClassNotFoundException to e : ClassNotFoundException|NoClassDefFoundError in method private doCreateRunner(className String, isScanningPath boolean) : void from class androidx.test.internal.runner.TestLoader",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestLoader.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : ClassNotFoundException"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestLoader.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestLoader.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 14,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : ClassNotFoundException|NoClassDefFoundError"
+}, {
+		"filePath": "runner/android_junit_runner/java/androidx/test/internal/runner/TestLoader.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "86f432ea77cce427388704f60e8b7ce6c408d5cc",
+	"url": "https://github.com/android/android-test/commit/86f432ea77cce427388704f60e8b7ce6c408d5cc",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f5a7240e8f9e475d4e49f14820e4af28342b1118",
+	"url": "https://github.com/android/android-test/commit/f5a7240e8f9e475d4e49f14820e4af28342b1118",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "092ba8fed4b6f480aa755bcdfe06e9bc4a019073",
+	"url": "https://github.com/android/android-test/commit/092ba8fed4b6f480aa755bcdfe06e9bc4a019073",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2a89c034f6d4627c71852c99dd5fe4385007d10f",
+	"url": "https://github.com/android/android-test/commit/2a89c034f6d4627c71852c99dd5fe4385007d10f",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d615ec4bc39d7bfa3480b1dccb1931ab5a84e7b4",
+	"url": "https://github.com/android/android-test/commit/d615ec4bc39d7bfa3480b1dccb1931ab5a84e7b4",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f431c3a2dfded7ca33567d3979a2dd1a468dc998",
+	"url": "https://github.com/android/android-test/commit/f431c3a2dfded7ca33567d3979a2dd1a468dc998",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d547448d5e7f6b0f7d6c8858da125e97b195acea",
+	"url": "https://github.com/android/android-test/commit/d547448d5e7f6b0f7d6c8858da125e97b195acea",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "73c0c15f9b0795548d999a82a1ac408786645eff",
+	"url": "https://github.com/android/android-test/commit/73c0c15f9b0795548d999a82a1ac408786645eff",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "9c481584e1a87fceadb992b162c4304f8705e3d1",
+	"url": "https://github.com/android/android-test/commit/9c481584e1a87fceadb992b162c4304f8705e3d1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "6f4d494f25807c5bfff9cb9cab15ff5228c08707",
+	"url": "https://github.com/android/android-test/commit/6f4d494f25807c5bfff9cb9cab15ff5228c08707",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "2f9e54a188545c861c9e91880f00f03ec214ba9b",
+	"url": "https://github.com/android/android-test/commit/2f9e54a188545c861c9e91880f00f03ec214ba9b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "a6828348f7e512408613a42cddac739f19a085a9",
+	"url": "https://github.com/android/android-test/commit/a6828348f7e512408613a42cddac739f19a085a9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "dd9580d833a526799931bbff8d194b72dd05b08f",
+	"url": "https://github.com/android/android-test/commit/dd9580d833a526799931bbff8d194b72dd05b08f",
+	"refactorings": [{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable m : Message in method package loopAndInterrogate(handler InterrogationHandler<R>) : R from class androidx.test.espresso.base.Interrogator",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 25,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "m : Message"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 120,
+		"endLine": 175,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package loopAndInterrogate(handler InterrogationHandler<R>) : R"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 19,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "m : Message"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/Interrogator.java",
+		"startLine": 125,
+		"endLine": 182,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "package loopAndInterrogate(handler InterrogationHandler<R>) : R"
+}]
+}
+]
+}]
+}

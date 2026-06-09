@@ -1,0 +1,201 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "04445bc0086e3289da1ebbccb521754b400796ad",
+	"url": "https://github.com/android/android-test/commit/04445bc0086e3289da1ebbccb521754b400796ad",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable runnableAction : Runnable in method public onActivity(action ActivityAction<A>) : ActivityScenario<A> from class androidx.test.core.app.ActivityScenario",
+	"leftSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 527,
+		"endLine": 539,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 527,
+		"endLine": 539,
+		"startColumn": 14,
+		"endColumn": 10,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "runnableAction : Runnable"
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 545,
+		"endLine": 545,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "c369de2558ddc1bbd171a6b736aa37984cb6ce6e",
+	"url": "https://github.com/android/android-test/commit/c369de2558ddc1bbd171a6b736aa37984cb6ce6e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "07d19157de55d00fe24ed148c1f0c1445ddc53d2",
+	"url": "https://github.com/android/android-test/commit/07d19157de55d00fe24ed148c1f0c1445ddc53d2",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "f3dac7974b3bbbe298deba6fb3a6b8c4677c4796",
+	"url": "https://github.com/android/android-test/commit/f3dac7974b3bbbe298deba6fb3a6b8c4677c4796",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter times : int in method private waitUntilNextFrame(times int) : void from class androidx.test.espresso.Espresso",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/Espresso.java",
+		"startLine": 283,
+		"endLine": 299,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private waitUntilNextFrame() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/Espresso.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 42,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "times : int"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/Espresso.java",
+		"startLine": 284,
+		"endLine": 304,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private waitUntilNextFrame(times int) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5a0d296ebc9a3a6a14bdc30fa03be0b1322ac3cb",
+	"url": "https://github.com/android/android-test/commit/5a0d296ebc9a3a6a14bdc30fa03be0b1322ac3cb",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "691c9da7e31c1adea4150e2eccd748bdec587b83",
+	"url": "https://github.com/android/android-test/commit/691c9da7e31c1adea4150e2eccd748bdec587b83",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "191d87dc79a82f4007838d3ae84b9730e6fa9130",
+	"url": "https://github.com/android/android-test/commit/191d87dc79a82f4007838d3ae84b9730e6fa9130",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "15f48bdd8d29eca16bd4025ce8917ff7b802e830",
+	"url": "https://github.com/android/android-test/commit/15f48bdd8d29eca16bd4025ce8917ff7b802e830",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "08b8c89f38d55ad249287ca5aaf22e81e0b3631d",
+	"url": "https://github.com/android/android-test/commit/08b8c89f38d55ad249287ca5aaf22e81e0b3631d",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @LooperMode(PAUSED) in class androidx.test.core.app.ActivityScenarioTest",
+	"leftSideLocations": [{
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 38,
+		"endLine": 380,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.core.app.ActivityScenarioTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 0,
+		"endColumn": 20,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@LooperMode(PAUSED)"
+}, {
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 44,
+		"endLine": 416,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.core.app.ActivityScenarioTest"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d329d65810d446589101dc748309e4a0bdbe7412",
+	"url": "https://github.com/android/android-test/commit/d329d65810d446589101dc748309e4a0bdbe7412",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @TextLayoutMode(REALISTIC) in class androidx.test.core.app.ActivityScenarioTest",
+	"leftSideLocations": [{
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 44,
+		"endLine": 416,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "androidx.test.core.app.ActivityScenarioTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 27,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@TextLayoutMode(REALISTIC)"
+}, {
+		"filePath": "core/javatests/androidx/test/core/app/ActivityScenarioTest.java",
+		"startLine": 48,
+		"endLine": 464,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "androidx.test.core.app.ActivityScenarioTest"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "de3cc1dbd7402f8a284a22fc0de57915d52daf25",
+	"url": "https://github.com/android/android-test/commit/de3cc1dbd7402f8a284a22fc0de57915d52daf25",
+	"refactorings": []
+}]
+}

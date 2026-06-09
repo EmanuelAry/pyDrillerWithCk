@@ -1,0 +1,312 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "eefad557240c3dd2ebbc7a2b8621337aed311045",
+	"url": "https://github.com/android/android-test/commit/eefad557240c3dd2ebbc7a2b8621337aed311045",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "9dd6931f071437ccddb0630f0cf72ddc6eae2874",
+	"url": "https://github.com/android/android-test/commit/9dd6931f071437ccddb0630f0cf72ddc6eae2874",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : AssertionError to e : RuntimeException in method public runOnMainSyncShouldRethrowAssertionException() : void from class androidx.test.runner.MonitoringInstrumentationTest",
+	"leftSideLocations": [{
+		"filePath": "runner/monitor/javatests/androidx/test/runner/MonitoringInstrumentationTest.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 14,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : AssertionError"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/monitor/javatests/androidx/test/runner/MonitoringInstrumentationTest.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 14,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : RuntimeException"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable errorMessage : String to expectedErrorMessage : String in method public runOnMainSyncShouldRethrowAssertionException() : void from class androidx.test.runner.MonitoringInstrumentationTest",
+	"leftSideLocations": [{
+		"filePath": "runner/monitor/javatests/androidx/test/runner/MonitoringInstrumentationTest.java",
+		"startLine": 105,
+		"endLine": 106,
+		"startColumn": 18,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "errorMessage : String"
+}, {
+		"filePath": "runner/monitor/javatests/androidx/test/runner/MonitoringInstrumentationTest.java",
+		"startLine": 105,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 100,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/monitor/javatests/androidx/test/runner/MonitoringInstrumentationTest.java",
+		"startLine": 107,
+		"endLine": 108,
+		"startColumn": 18,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "expectedErrorMessage : String"
+}, {
+		"filePath": "runner/monitor/javatests/androidx/test/runner/MonitoringInstrumentationTest.java",
+		"startLine": 107,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter runner : Runnable to runnable : Runnable in method public runOnMainSync(runnable Runnable) : void from class androidx.test.runner.MonitoringInstrumentation",
+	"leftSideLocations": [{
+		"filePath": "runner/monitor/java/androidx/test/runner/MonitoringInstrumentation.java",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 29,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "runner : Runnable"
+}, {
+		"filePath": "runner/monitor/java/androidx/test/runner/MonitoringInstrumentation.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 5,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/monitor/java/androidx/test/runner/MonitoringInstrumentation.java",
+		"startLine": 431,
+		"endLine": 431,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "runnable : Runnable"
+}, {
+		"filePath": "runner/monitor/java/androidx/test/runner/MonitoringInstrumentation.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "cba38f5ee553974a970de0d6e30c016351d2581e",
+	"url": "https://github.com/android/android-test/commit/cba38f5ee553974a970de0d6e30c016351d2581e",
+	"refactorings": [{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private activityInvoker : ActivityInvoker from class androidx.test.core.app.ActivityScenario",
+	"leftSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 117,
+		"endLine": 119,
+		"startColumn": 40,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private activityInvoker : ActivityInvoker"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 139,
+		"endLine": 141,
+		"startColumn": 33,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private activityInvoker : ActivityInvoker"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private launchInternal() : void extracted from public launch(startActivityIntent Intent) : ActivityScenario<A> in class androidx.test.core.app.ActivityScenario",
+	"leftSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 195,
+		"endLine": 223,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public launch(startActivityIntent Intent) : ActivityScenario<A>"
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 213,
+		"endLine": 214,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 213,
+		"endLine": 236,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private launchInternal() : void"
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 5,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 194,
+		"endLine": 211,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public launch(startActivityIntent Intent) : ActivityScenario<A>"
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "scenario.launchInternal()"
+}, {
+		"filePath": "core/java/androidx/test/core/app/ActivityScenario.java",
+		"startLine": 218,
+		"endLine": 224,
+		"startColumn": 5,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "e953f7f873bbd70860bf4fc945720dab940a35a3",
+	"url": "https://github.com/android/android-test/commit/e953f7f873bbd70860bf4fc945720dab940a35a3",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "78dc2c4a08422baa7db43d38db60370f14c749c0",
+	"url": "https://github.com/android/android-test/commit/78dc2c4a08422baa7db43d38db60370f14c749c0",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "10374923cbaacc2121fca34500df1dac6a6c642b",
+	"url": "https://github.com/android/android-test/commit/10374923cbaacc2121fca34500df1dac6a6c642b",
+	"refactorings": []
+}]
+}

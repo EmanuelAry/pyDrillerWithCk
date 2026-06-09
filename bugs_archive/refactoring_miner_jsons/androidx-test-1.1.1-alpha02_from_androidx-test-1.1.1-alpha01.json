@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "160b0c0864f53e0fdc9ec5b91938ef962fe84af8",
+	"url": "https://github.com/android/android-test/commit/160b0c0864f53e0fdc9ec5b91938ef962fe84af8",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable count : int in method public handle(error Throwable, viewMatcher Matcher<View>) : void from class androidx.test.espresso.base.DefaultFailureHandler",
+	"leftSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "count : int"
+}, {
+		"filePath": "espresso/core/java/androidx/test/espresso/base/DefaultFailureHandler.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "5dbe78408b8cf91313044982a12e467c76fedc8d",
+	"url": "https://github.com/android/android-test/commit/5dbe78408b8cf91313044982a12e467c76fedc8d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "d000241fa98044182b43296ad259e50b65b6fdfe",
+	"url": "https://github.com/android/android-test/commit/d000241fa98044182b43296ad259e50b65b6fdfe",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "e391649696de8b127bbba10c2cc6fba78806f84e",
+	"url": "https://github.com/android/android-test/commit/e391649696de8b127bbba10c2cc6fba78806f84e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "75710be3fb7e2e9d74649e0bb43d2481e6236fbc",
+	"url": "https://github.com/android/android-test/commit/75710be3fb7e2e9d74649e0bb43d2481e6236fbc",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "08de5f8e67ff8fa35dc760d268fcec65efbba84b",
+	"url": "https://github.com/android/android-test/commit/08de5f8e67ff8fa35dc760d268fcec65efbba84b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "020d431e40cf66ac95202610fcb822838a975588",
+	"url": "https://github.com/android/android-test/commit/020d431e40cf66ac95202610fcb822838a975588",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "7c8e582d18fa446920d5a3968b80056b796ce8bd",
+	"url": "https://github.com/android/android-test/commit/7c8e582d18fa446920d5a3968b80056b796ce8bd",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "0388d16097183ddb4b7b987024d6f72a34842291",
+	"url": "https://github.com/android/android-test/commit/0388d16097183ddb4b7b987024d6f72a34842291",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "56884b136ab9439bc8b4012775ee6b6c7192b4fc",
+	"url": "https://github.com/android/android-test/commit/56884b136ab9439bc8b4012775ee6b6c7192b4fc",
+	"refactorings": [{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type IOException in method public testBothPackageAndNotClass() : void from class androidx.test.internal.runner.TestRequestBuilderTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1320,
+		"endLine": 1329,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testBothPackageAndNotClass() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1333,
+		"endLine": 1333,
+		"startColumn": 51,
+		"endColumn": 62,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1331,
+		"endLine": 1349,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public testBothPackageAndNotClass() : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type IOException in method public testBothPackageAndNotMethod() : void from class androidx.test.internal.runner.TestRequestBuilderTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1342,
+		"endLine": 1351,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testBothPackageAndNotMethod() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1368,
+		"endLine": 1368,
+		"startColumn": 52,
+		"endColumn": 63,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1366,
+		"endLine": 1385,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public testBothPackageAndNotMethod() : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type IOException in method public testPackageAndClassAndMethod() : void from class androidx.test.internal.runner.TestRequestBuilderTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1353,
+		"endLine": 1362,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testPackageAndClassAndMethod() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1388,
+		"endLine": 1388,
+		"startColumn": 53,
+		"endColumn": 64,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1387,
+		"endLine": 1401,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public testPackageAndClassAndMethod() : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type IOException in method public testPackageAndClassAndNotMethod() : void from class androidx.test.internal.runner.TestRequestBuilderTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1364,
+		"endLine": 1374,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testPackageAndClassAndNotMethod() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1404,
+		"endLine": 1404,
+		"startColumn": 56,
+		"endColumn": 67,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1403,
+		"endLine": 1417,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public testPackageAndClassAndNotMethod() : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type IOException in method public testPackageAndNotClassAndMethod() : void from class androidx.test.internal.runner.TestRequestBuilderTest",
+	"leftSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1376,
+		"endLine": 1386,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testPackageAndNotClassAndMethod() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1420,
+		"endLine": 1420,
+		"startColumn": 56,
+		"endColumn": 67,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "runner/android_junit_runner/javatests/androidx/test/internal/runner/TestRequestBuilderTest.java",
+		"startLine": 1419,
+		"endLine": 1433,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public testPackageAndNotClassAndMethod() : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "7e7a822e7098399c32c0451873b5a5a649c3a6a0",
+	"url": "https://github.com/android/android-test/commit/7e7a822e7098399c32c0451873b5a5a649c3a6a0",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/android/android-test.git",
+	"sha1": "b0c918886b1ea5ca4d1f1963d623921bc752e073",
+	"url": "https://github.com/android/android-test/commit/b0c918886b1ea5ca4d1f1963d623921bc752e073",
+	"refactorings": []
+}]
+}
